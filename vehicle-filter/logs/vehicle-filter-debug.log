@@ -1,0 +1,272 @@
+[2025-05-19 11:43:21] Filter values:
+Data: Array
+(
+    [make] => 
+    [model] => 
+    [listing] => 
+    [year] => 0
+    [engine] => 
+)
+
+--------------------------------------------------------------------------------
+[2025-05-19 11:43:21] Vehicle ID query:
+Data: SELECT vb.vehicle_id
+        FROM wp_vehicle_base AS vb
+        JOIN wp_vehicle_engine AS ve ON ve.vehicle_id = vb.vehicle_id
+        JOIN wp_engine AS e ON e.engine_id = ve.engine_id
+        WHERE vb.make = ''
+        AND vb.model = ''
+        AND vb.listing = ''
+        AND 0 BETWEEN vb.year_from AND vb.year_to
+        AND e.engine_code = 'wp_engine'
+        LIMIT 1
+--------------------------------------------------------------------------------
+[2025-05-19 11:43:21] Found vehicle_id:
+--------------------------------------------------------------------------------
+[2025-05-19 11:43:21] No vehicle found with the selected criteria
+--------------------------------------------------------------------------------
+[2025-05-19 11:43:23] Getting makes from table: wp_vehicle_base
+--------------------------------------------------------------------------------
+[2025-05-19 11:43:23] Filter values:
+Data: Array
+(
+    [make] => 
+    [model] => 
+    [listing] => 
+    [year] => 0
+    [engine] => 
+)
+
+--------------------------------------------------------------------------------
+[2025-05-19 11:43:23] Vehicle ID query:
+Data: SELECT vb.vehicle_id
+        FROM wp_vehicle_base AS vb
+        JOIN wp_vehicle_engine AS ve ON ve.vehicle_id = vb.vehicle_id
+        JOIN wp_engine AS e ON e.engine_id = ve.engine_id
+        WHERE vb.make = ''
+        AND vb.model = ''
+        AND vb.listing = ''
+        AND 0 BETWEEN vb.year_from AND vb.year_to
+        AND e.engine_code = 'wp_engine'
+        LIMIT 1
+--------------------------------------------------------------------------------
+[2025-05-19 11:43:23] Found makes:
+Data: Array
+(
+    [0] => Abarth
+    [1] => Acura
+    [2] => Alfa Romeo
+    [3] => Alpine
+    [4] => Audi
+    [5] => Austin
+    [6] => BMW
+    [7] => Buick
+    [8] => Cadillac
+    [9] => Chevrolet
+    [10] => Chrysler
+    [11] => Chrysler America
+    [12] => Citroen
+    [13] => Cupra
+    [14] => Dacia
+    [15] => Daewoo
+    [16] => Daihatsu
+    [17] => Daimler
+    [18] => Dodge
+    [19] => Ferrari
+    [20] => Fiat
+    [21] => Ford
+    [22] => Ford America
+    [23] => GMC
+    [24] => Honda
+    [25] => Honda MK X
+    [26] => Hyundai
+    [27] => Ineos
+    [28] => Innocenti
+    [29] => Isuzu
+    [30] => Iveco
+    [31] => Jaguar
+    [32] => Jeep
+    [33] => Jenson
+    [34] => Kia
+    [35] => Lada
+    [36] => Lancia
+    [37] => Land Rover
+    [38] => Lexus
+    [39] => Man
+    [40] => Mazda
+    [41] => Mercedes
+    [42] => Mercedes-Benz
+    [43] => Mercury
+    [44] => MG
+    [45] => Mini
+    [46] => Mitsubishi
+    [47] => Morgan
+    [48] => Morris
+    [49] => Nissan
+    [50] => Oldsmobile
+    [51] => Opel
+    [52] => Peugeot
+    [53] => Plymouth
+    [54] => Pontiac
+    [55] => Porsche
+    [56] => Ram Truck
+    [57] => Renault
+    [58] => Riley
+    [59] => Rover
+    [60] => Saab
+    [61] => Scion
+    [62] => Seat
+    [63] => Skoda
+    [64] => Ssang Yong
+    [65] => Subaru
+    [66] => Suzuki
+    [67] => Tesla
+    [68] => Toyota
+    [69] => Triumph
+    [70] => Vauxhall
+    [71] => Volkswagen
+    [72] => Volvo
+    [73] => Wolsley
+)
+
+--------------------------------------------------------------------------------
+[2025-05-19 11:43:23] Found vehicle_id:
+--------------------------------------------------------------------------------
+[2025-05-19 11:43:23] No vehicle found with the selected criteria
+--------------------------------------------------------------------------------
+[2025-05-19 11:43:23] Filter values:
+Data: Array
+(
+    [make] => 
+    [model] => 
+    [listing] => 
+    [year] => 0
+    [engine] => 
+)
+
+--------------------------------------------------------------------------------
+[2025-05-19 11:43:23] Vehicle ID query:
+Data: SELECT vb.vehicle_id
+        FROM wp_vehicle_base AS vb
+        JOIN wp_vehicle_engine AS ve ON ve.vehicle_id = vb.vehicle_id
+        JOIN wp_engine AS e ON e.engine_id = ve.engine_id
+        WHERE vb.make = ''
+        AND vb.model = ''
+        AND vb.listing = ''
+        AND 0 BETWEEN vb.year_from AND vb.year_to
+        AND e.engine_code = 'wp_engine'
+        LIMIT 1
+--------------------------------------------------------------------------------
+[2025-05-19 11:43:23] Found vehicle_id:
+--------------------------------------------------------------------------------
+[2025-05-19 11:43:23] No vehicle found with the selected criteria
+--------------------------------------------------------------------------------
+[2025-05-19 11:45:31] Filter values:
+Data: Array
+(
+    [make] => 
+    [model] => 
+    [listing] => 
+    [year] => 0
+    [engine] => 
+)
+
+--------------------------------------------------------------------------------
+[2025-05-19 11:45:31] Vehicle ID query:
+Data: SELECT vb.vehicle_id
+        FROM wp_vehicle_base AS vb
+        JOIN wp_vehicle_engine AS ve ON ve.vehicle_id = vb.vehicle_id
+        JOIN wp_engine AS e ON e.engine_id = ve.engine_id
+        WHERE vb.make = ''
+        AND vb.model = ''
+        AND vb.listing = ''
+        AND 0 BETWEEN vb.year_from AND vb.year_to
+        AND e.engine_code = 'wp_engine'
+        LIMIT 1
+--------------------------------------------------------------------------------
+[2025-05-19 11:45:31] Found vehicle_id:
+--------------------------------------------------------------------------------
+[2025-05-19 11:45:31] No vehicle found with the selected criteria
+--------------------------------------------------------------------------------
+[2025-05-19 11:45:31] Getting makes from table: wp_vehicle_base
+--------------------------------------------------------------------------------
+[2025-05-19 11:45:31] Found makes:
+Data: Array
+(
+    [0] => Abarth
+    [1] => Acura
+    [2] => Alfa Romeo
+    [3] => Alpine
+    [4] => Audi
+    [5] => Austin
+    [6] => BMW
+    [7] => Buick
+    [8] => Cadillac
+    [9] => Chevrolet
+    [10] => Chrysler
+    [11] => Chrysler America
+    [12] => Citroen
+    [13] => Cupra
+    [14] => Dacia
+    [15] => Daewoo
+    [16] => Daihatsu
+    [17] => Daimler
+    [18] => Dodge
+    [19] => Ferrari
+    [20] => Fiat
+    [21] => Ford
+    [22] => Ford America
+    [23] => GMC
+    [24] => Honda
+    [25] => Honda MK X
+    [26] => Hyundai
+    [27] => Ineos
+    [28] => Innocenti
+    [29] => Isuzu
+    [30] => Iveco
+    [31] => Jaguar
+    [32] => Jeep
+    [33] => Jenson
+    [34] => Kia
+    [35] => Lada
+    [36] => Lancia
+    [37] => Land Rover
+    [38] => Lexus
+    [39] => Man
+    [40] => Mazda
+    [41] => Mercedes
+    [42] => Mercedes-Benz
+    [43] => Mercury
+    [44] => MG
+    [45] => Mini
+    [46] => Mitsubishi
+    [47] => Morgan
+    [48] => Morris
+    [49] => Nissan
+    [50] => Oldsmobile
+    [51] => Opel
+    [52] => Peugeot
+    [53] => Plymouth
+    [54] => Pontiac
+    [55] => Porsche
+    [56] => Ram Truck
+    [57] => Renault
+    [58] => Riley
+    [59] => Rover
+    [60] => Saab
+    [61] => Scion
+    [62] => Seat
+    [63] => Skoda
+    [64] => Ssang Yong
+    [65] => Subaru
+    [66] => Suzuki
+    [67] => Tesla
+    [68] => Toyota
+    [69] => Triumph
+    [70] => Vauxhall
+    [71] => Volkswagen
+    [72] => Volvo
+    [73] => Wolsley
+)
+
+--------------------------------------------------------------------------------
