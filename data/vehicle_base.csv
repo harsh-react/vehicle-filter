@@ -1,0 +1,2742 @@
+vehicle_id,make,model,listing,year_from,year_to
+1,Abarth,500,500 (312) Hatchback  2007 > 2023,2007,2023
+2,Abarth,500C,500C (312) Cabriolet  2007 > 2023,2007,2023
+3,Abarth,500C,500C (313) Cabriolet  2007 > 2023,2007,2023
+4,Abarth,595 / 695,595 / 695 (312) Hatchback  2007 > 2023,2007,2023
+5,Abarth,595C / 695C,595C / 695C (312) Cabriolet  2007 > 2023,2007,2023
+6,Abarth,595C / 695C,595C / 695C (313) Cabriolet  2007 > 2023,2007,2023
+7,Alfa Romeo,147,147  Hatchback  2000 > 2010,2000,2010
+8,Alfa Romeo,147 GTA,147 GTA  Hatchback  2003 > 2005,2003,2005
+9,Alfa Romeo,156,156  Saloon  1997 > 2006,1997,2006
+10,Alfa Romeo,156,156  Sportwagen  1997 > 2006,1997,2006
+11,Alfa Romeo,156 GTA,156 GTA  Saloon  2001 > 2006,2001,2006
+12,Alfa Romeo,159,159  Saloon  2005 > 2012,2005,2012
+13,Alfa Romeo,159,159  Sportwagen  2005 > 2012,2005,2012
+14,Alfa Romeo,75,75  Saloon  1985 > 1991,1985,1991
+15,Alfa Romeo,Brera,Brera  Coupé  2005 > 2011,2005,2011
+16,Alfa Romeo,GT,GT  Coupé  2004 > 2010,2004,2010
+17,Alfa Romeo,GTV,GTV () Coupé,,
+18,Alfa Romeo,MiTo,MiTo  Hatchback  2008 > 2018,2008,2018
+19,Alfa Romeo,Spider,Spider  Convertible  2006 > 2011,2006,2011
+20,Audi,A1,"A1 (8XA,8XF) Hatchback  2010 > 2018",2010,2018
+21,Audi,A1,A1 (GBA) Hatchback,,
+22,Audi,A2,A2 (8Z) Hatchback  2000 > 2005,2000,2005
+23,Audi,A3,A3 (8L) Hatchback  1996 > 2003,1996,2003
+24,Audi,A3,A3 (8L) Hatchback  Quattro 1999 > 2003,1999,2003
+25,Audi,A3,A3 (8P) Hatchback  2003 > 2012,2003,2012
+26,Audi,A3,A3 (8P) Hatchback  Quattro 2003 > 2012,2003,2012
+27,Audi,A3,A3 (8P) Sportback  2003 > 2012,2003,2012
+28,Audi,A3,A3 (8P) Sportback  Quattro 2003 > 2012,2003,2012
+29,Audi,A3,A3 (8V) Cabriolet  Quattro 2014 > 2019,2014,2019
+30,Audi,A3,A3 (8V) Hatchback  2012 > 2019,2012,2019
+31,Audi,A3,A3 (8V) Saloon  2012 > 2019,2012,2019
+32,Audi,A3,A3 (8V) Sportback  2012 > 2019,2012,2019
+33,Audi,A3,A3 (8Y) Saloon  2020 >,2020,
+34,Audi,A4,A4 (B6/B7) Avant  2000 > 2007,2000,2007
+35,Audi,A4,A4 (B6/B7) Avant  2001 > 2007,2001,2007
+36,Audi,A4,A4 (B6/B7) Avant  Quattro 2000 > 2007,2000,2007
+37,Audi,A4,A4 (B6/B7) Avant Quattro 2000 > 2007,2000,2007
+38,Audi,A4,A4 (B6/B7) Saloon  2000 > 2007,2000,2007
+39,Audi,A4,A4 (B6/B7) Saloon  Quattro 2000 > 2007,2000,2007
+40,Audi,A4,A4 (B6/B7) Saloon Quattro 2000 > 2007,2000,2007
+41,Audi,A4,A4 (B8) Avant  2008 > 2015,2008,2015
+42,Audi,A4,A4 (B8) Avant  Quattro 2008 > 2015,2008,2015
+43,Audi,A4,A4 (B8) Saloon  2008 > 2015,2008,2015
+44,Audi,A4,A4 (B8) Saloon  Quattro 2008 > 2015,2008,2015
+45,Audi,A5,A5 (8T) Cabriolet  2009 > 2015,2009,2015
+46,Audi,A5,A5 (8T) Cabriolet  Quattro 2009 > 2015,2009,2015
+47,Audi,A5,A5 (8T) Coupé  2007 > 2015,2007,2015
+48,Audi,A5,A5 (8T) Coupé  Quattro 2007 > 2015,2007,2015
+49,Audi,A5,A5 (8T) Sportback  2009 > 2015,2009,2015
+50,Audi,A5,A5 (8T) Sportback  Quattro 2009 > 2015,2009,2015
+51,Audi,A6,A6 (C5) Avant  1998 > 2004,1998,2004
+52,Audi,A6,A6 (C5) Avant  Quattro 1997 > 2004,1997,2004
+53,Audi,A6,A6 (C5) Saloon  1997 > 2004,1997,2004
+54,Audi,A6,A6 (C5) Saloon  Quattro 1997 > 2004,1997,2004
+55,Audi,A6,A6 (C6) Avant  2005 > 2011,2005,2011
+56,Audi,A6,A6 (C6) Avant  Quattro 2005 > 2011,2005,2011
+57,Audi,A6,A6 (C6) Saloon  2004 > 2011,2004,2011
+58,Audi,A6,A6 (C6) Saloon  Quattro 2004 > 2011,2004,2011
+59,Audi,A6,A6 (C7) Avant  2011 > 2018,2011,2018
+60,Audi,A6,A6 (C7) Avant  Quattro 2011 > 2018,2011,2018
+61,Audi,A6,A6 (C7) Saloon  2011 > 2018,2011,2018
+62,Audi,A6,A6 (C7) Saloon  Quattro 2011 > 2018,2011,2018
+63,Audi,A7,A7 (4G) Sportback  2010 > 2018,2010,2018
+64,Audi,A7,A7 (4G) Sportback  Quattro 2010 > 2018,2010,2018
+65,Audi,Q3,Q3 (F38) Hatchback  2018 >,2018,
+66,Audi,Q3,Q3 (F38) Hatchback  Quattro 2018 >,2018,
+67,Audi,Q5,Q5 (8R) Hatchback  2008 > 2016,2008,2016
+68,Audi,Q5,Q5 (8R) Hatchback  Quattro 2008 > 2016,2008,2016
+69,Audi,S3,S3 (8L) Hatchback  Quattro 1999 > 2003,1999,2003
+70,Audi,S3,S3 (8P) Hatchback  Quattro 2006 > 2012,2006,2012
+71,Audi,S3,S3 (8P) Sportback  Quattro 2006 > 2012,2006,2012
+72,Audi,S4,S4 (B6/B7) Avant  Quattro 2003 > 2007,2003,2007
+73,Audi,S4,S4 (B6/B7) Saloon  Quattro 2003 > 2007,2003,2007
+74,Audi,S4,S4 (B8) Avant  Quattro 2008 > 2013,2008,2013
+75,Audi,S4,S4 (B8) Saloon  Quattro 2008 > 2013,2008,2013
+76,Audi,S5,S5 (8T) Coupé  Quattro 2007 > 2017,2007,2017
+77,Audi,S5,S5 (8T) Sportback  Quattro 2007 > 2017,2007,2017
+78,Audi,TT,TT (8J) Coupé  2006 > 2013,2006,2013
+79,Audi,TT,TT (8J) Coupé  Quattro 2006 > 2013,2006,2013
+80,Audi,TT,TT (8J) Roadster  2006 > 2013,2006,2013
+81,Audi,TT,TT (8J) Roadster  Quattro 2006 > 2013,2006,2013
+82,Audi,TT,TT (8N) Coupé  1998 > 2006,1998,2006
+83,Audi,TT,TT (8N) Coupé  Quattro 1998 > 2006,1998,2006
+84,Audi,TT,TT (8N) Roadster  1998 > 2006,1998,2006
+85,Audi,TT,TT (8N) Roadster  Quattro 1998 > 2006,1998,2006
+86,Audi,TT,TT (FV) Coupé  2014 > 2019,2014,2019
+87,Audi,TT,TT (FV) Coupé  Quattro 2014 > 2019,2014,2019
+88,Audi,TT,TT (FV) Roadster  2014 > 2019,2014,2019
+89,Audi,TT,TT (FV) Roadster  Quattro 2014 > 2019,2014,2019
+90,BMW,1-Series,1-Series (E81) Hatchback  2004 > 2011,2004,2011
+91,BMW,1-Series,1-Series (E82) Coupé  2004 > 2011,2004,2011
+92,BMW,1-Series,1-Series (E88) Cabriolet  2004 > 2011,2004,2011
+93,BMW,1-Series,1-Series (F20) Hatchback  2011 > 2018,2011,2018
+94,BMW,1-Series,1-Series (F20) Hatchback xDrive 2011 > 2018,2011,2018
+95,BMW,1-Series,1-Series (F21) Hatchback  2011 > 2018,2011,2018
+96,BMW,1-Series,1-Series (F21) Hatchback xDrive 2011 > 2018,2011,2018
+97,BMW,2-Series,2-Series (F22) Coupé  2010 > 2019,2010,2019
+98,BMW,2-Series,2-Series (F23) Cabriolet  2010 > 2019,2010,2019
+99,BMW,3-Series,3-Series (E30) Saloon  1982 > 1991,1982,1991
+100,BMW,3-Series,3-Series (E30) Touring  1982 > 1991,1982,1991
+101,BMW,3-Series,3-Series (E36) Cabriolet  1991 > 1999,1991,1999
+102,BMW,3-Series,3-Series (E36) Cabriolet  1992 > 1999,1992,1999
+103,BMW,3-Series,3-Series (E36) Coupé  1991 > 1998,1991,1998
+104,BMW,3-Series,3-Series (E36) Coupé  1992 > 1999,1992,1999
+105,BMW,3-Series,3-Series (E36) Saloon  1991 > 1998,1991,1998
+106,BMW,3-Series,3-Series (E36) Saloon  1992 > 1999,1992,1999
+107,BMW,3-Series,3-Series (E36) Touring  1994 > 1999,1994,1999
+108,BMW,3-Series,3-Series (E46) Cabriolet  1998 > 2005,1998,2005
+109,BMW,3-Series,3-Series (E46) Compact  2001 > 2005,2001,2005
+110,BMW,3-Series,3-Series (E46) Coupé  1998 > 2005,1998,2005
+111,BMW,3-Series,3-Series (E46) Coupé  1999 > 2005,1999,2005
+112,BMW,3-Series,3-Series (E46) Saloon  1998 > 2005,1998,2005
+113,BMW,3-Series,3-Series (E46) Touring  1998 > 2005,1998,2005
+114,BMW,3-Series,3-Series (E90) Coupé  2005 > 2011,2005,2011
+115,BMW,3-Series,3-Series (E90) Saloon  2005 > 2011,2005,2011
+116,BMW,3-Series,3-Series (E90X) Saloon xDrive 2005 > 2011,2005,2011
+117,BMW,3-Series,3-Series (E91) Cabriolet  2005 > 2011,2005,2011
+118,BMW,3-Series,3-Series (E91) Touring  2005 > 2011,2005,2011
+119,BMW,3-Series,3-Series (E91) Touring / cabrio  2006 > 2011,2006,2011
+120,BMW,3-Series,3-Series (E91X) Touring xDrive 2005 > 2011,2005,2011
+121,BMW,3-Series,3-Series (E92) Coupé  2005 > 2011,2005,2011
+122,BMW,3-Series,3-Series (E92X) Coupé xDrive 2005 > 2011,2005,2011
+123,BMW,3-Series,3-Series (E93) Cabriolet  2005 > 2011,2005,2011
+124,BMW,3-Series,3-Series (E93X) Cabriolet xDrive 2005 > 2011,2005,2011
+125,BMW,3-Series,3-Series (F30) Saloon  2011 > 2019,2011,2019
+126,BMW,3-Series,3-Series (F30) Saloon xDrive 2011 > 2019,2011,2019
+127,BMW,3-Series,3-Series (F31) Touring  2012 > 2019,2012,2019
+128,BMW,3-Series,3-Series (F31) Touring  xDrive 2012 > 2019,2012,2019
+129,BMW,3-Series,3-Series (F34) GT  2012 > 2019,2012,2019
+130,BMW,3-Series,3-Series lk Saloon  2005 > 2011,2005,2011
+131,BMW,4-Series,4-Series (F32) Coupé  2012 > 2019,2012,2019
+132,BMW,4-Series,4-Series (F33) Cabriolet  2012 > 2019,2012,2019
+133,BMW,4-Series,4-Series (F36) Gran Coupé  2012 > 2019,2012,2019
+134,BMW,5-Series,"520, 523,530, 520d",,
+135,BMW,5-Series,"540i, 545i, 550i, 525d, 530d, 535d",,
+136,BMW,5-Series,5-Series (E39) Saloon  1995 > 2003,1995,2003
+137,BMW,5-Series,5-Series (E60) Saloon  2003 > 2009,2003,2009
+138,BMW,5-Series,5-Series (F10) Saloon  2009 > 2017,2009,2017
+139,BMW,5-Series,5-Series (F11) Touring  2009 > 2017,2009,2017
+140,BMW,M3,M3 (E36) Saloon  1993 > 1999,1993,1999
+141,BMW,M3,M3 (E46) Saloon  2000 > 2006,2000,2006
+142,BMW,M5,M5 (E39) Saloon  1998 > 2003,1998,2003
+143,BMW,Z3,Z3 (E36) Coupé  1997 > 2003,1997,2003
+144,BMW,Z3,Z3 (E36) Roadster  1994 > 2003,1994,2003
+145,BMW,Z3,Z3 (E36) Roadster  1996 > 2003,1996,2003
+146,BMW,Z3M Coupe,Z3M Coupe (E36) Coupé  1997 > 2002,1997,2002
+147,BMW,Z3M Roadster,Z3M Roadster (E36) Roadster  1996 > 2003,1996,2003
+148,BMW,Z-Series,Z-Series (E85) Roadster  2002 > 2008,2002,2008
+149,BMW,Z-Series,Z-Series (E86) Coupé  2006 > 2009,2006,2009
+150,BMW,Z-Series,Z-Series (E89) Roadster  2008 > 2016,2008,2016
+151,Chevrolet,Cruze,Cruze (J300) Hatchback  2008 > 2016,2008,2016
+152,Chevrolet,Cruze,Cruze (J300) Saloon  2008 > 2016,2008,2016
+153,Chrysler America,Crossfire,Crossfire  Cabriolet  2003 > 2006,2003,2006
+154,Chrysler America,Crossfire,Crossfire  Coupé  2003 > 2006,2003,2006
+155,Citroen,AX,AX  Hatchback  1986 > 1996,1986,1996
+156,Citroen,AX,AX  Hatchback  1991 > 1996,1991,1996
+157,Citroen,C4,C4  Coupé  2004 > 2010,2004,2010
+158,Citroen,C4,C4  Hatchback  2004 > 2010,2004,2010
+159,Citroen,Saxo,Saxo  Hatchback  1996 > 2004,1996,2004
+160,Citroen,Xsara,Xsara  Coupé  1997 > 2004,1997,2004
+161,Citroen,Xsara,Xsara  Coupé  1998 > 2004,1998,2004
+162,Citroen,Xsara,Xsara  Hatchback  1997 > 2004,1997,2004
+163,Citroen,Xsara,Xsara  Hatchback  1998 > 2004,1998,2004
+164,Dacia,Duster,Duster (HM) SUV 4x4,,
+165,Dacia,Duster,Duster (HS) SUV 4x4,,
+166,Fiat,124,124  Spider  2016 > 2020,2016,2020
+167,Fiat,500,500 (312) Hatchback  2007 > 2019,2007,2019
+168,Fiat,500C,500C (312) Cabriolet  2007 > 2019,2007,2019
+169,Fiat,Coupé,Coupé    1995 > 2000,1995,2000
+170,Fiat,Coupé,Coupé (175)   1995 > 2000,1995,2000
+171,Fiat,Coupé Turbo,Coupé Turbo    1995 > 2000,1995,2000
+172,Fiat,Grande Punto,Grande Punto (199) Hatchback  2007 > 2018,2007,2018
+173,Fiat,Panda,Panda  Hatchback  2003 > 2011,2003,2011
+174,Fiat,Punto,Punto (176) Hatchback  1993 > 1999,1993,1999
+175,Fiat,Punto,Punto (188) Hatchback  1999 > 2009,1999,2009
+176,Ford,C-Max,C-Max  MPV  2003 > 2010,2003,2010
+177,Ford,Fiesta,Fiesta (MK5) Hatchback  2002 > 2008,2002,2008
+178,Ford,Fiesta,Fiesta (Mk6) Hatchback  2008 > 2012,2008,2012
+179,Ford,Focus,Focus  Cabriolet  2007 > 2010,2007,2010
+180,Ford,Focus,Focus (Mk2) Hatchback  2004 > 2011,2004,2011
+181,Ford,Focus,Focus (Mk3) Hatchback  2011 > 2014,2011,2014
+182,Ford,Focus ST,Focus ST (Mk2) Hatchback  2004 > 2011,2004,2011
+183,Ford,Ka,Ka  Hatchback  2008 > 2015,2008,2015
+184,Ford,Mustang,Mustang  Cabriolet  2015 > 2018,2015,2018
+185,Ford,Mustang,Mustang  Coupé  2015 > 2018,2015,2018
+186,Ford,Sierra Cosworth,Sierra Cosworth  Saloon  1986 > 1986,1986,1986
+187,Ford,Sierra Cosworth,Sierra Cosworth  Saloon  1987 > 1989,1987,1989
+188,Ford,Sierra Cosworth,Sierra Cosworth  Saloon 4X4 1990 > 1992,1990,1992
+189,Ford America,Mustang,Mustang  Cabriolet  2004 > 2010,2004,2010
+190,Ford America,Mustang,Mustang  Cabriolet  2010 > 2014,2010,2014
+191,Ford America,Mustang,Mustang  Coupé  2004 > 2010,2004,2010
+192,Ford America,Mustang,Mustang  Coupé  2010 > 2014,2010,2014
+193,Ford America,Mustang Shelby GT500,Mustang Shelby GT500  Coupé  2004 > 2010,2004,2010
+194,Ford America,Mustang Shelby GT500,Mustang Shelby GT500  Coupé  2010 > 2014,2010,2014
+195,Honda,Accord,Accord  Saloon  2008 > 2014,2008,2014
+196,Honda,Accord,Accord  Tourer  2008 > 2014,2008,2014
+197,Honda,Accord,Accord (CL7/9) Saloon  2003 > 2008,2003,2008
+198,Honda,Civic,Civic (EG) Hatchback  1992 > 1995,1992,1995
+199,Honda,Civic,Civic (EG) Saloon  1992 > 1995,1992,1995
+200,Honda,Civic,"Civic (EJ, EK) Coupé  1995 > 2000",1995,2000
+201,Honda,Civic,"Civic (EJ, EK) Hatchback  1995 > 2000",1995,2000
+202,Honda,Civic,"Civic (EJ, EK) Saloon  1995 > 2000",1995,2000
+203,Honda,Civic,Civic (EP1/2) Hatchback  2001 > 2002,2001,2002
+204,Honda,Civic,Civic (EP1/2) Hatchback  2003 > 2005,2003,2005
+205,Honda,Civic,Civic (EU5-9) Hatchback  2000 > 2002,2000,2002
+206,Honda,Civic,Civic (EU5-9) Hatchback  2003 > 2005,2003,2005
+207,Honda,Civic,Civic (FD) Hatchback  2006 > 2012,2006,2012
+208,Honda,Civic,Civic (FD) Saloon  2006 > 2012,2006,2012
+209,Honda,Civic Type 'R',Civic Type 'R' (EP3) Hatchback  2001 > 2005,2001,2005
+210,Honda,CRX,"CRX (EG, EH) Coupé  1992 > 2000",1992,2000
+211,Honda,CRX,"CRX (EJ, EK) Coupé  1995 > 2000",1995,2000
+212,Honda,Integra Type 'R',Integra Type 'R' (DC2) Coupé  1998 > 2001,1998,2001
+213,Honda,S2000,S2000  Roadster  1999 > 2008,1999,2008
+214,Honda,Civic,nan,,
+215,Honda MK X,Civic Mk X,Civic Mk X (FK) Hatchback,,
+216,Hyundai,Veloster,Veloster  Coupé  2011 > 2015,2011,2015
+217,Kia,Cee'd,Cee'd (J5) Hatchback  2012 > 2018,2012,2018
+218,Kia,Cee'd,Cee'd (J5) Sportwagen  2012 > 2018,2012,2018
+219,Kia,Pro Cee'd,Pro Cee'd (J5) Hatchback  2012 > 2018,2012,2018
+220,Lancia,Ypsilon,Ypsilon (840) Hatchback  1996 > 2003,1996,2003
+221,Lexus,IS200,IS200 (XE10) Saloon  1998 > 2005,1998,2005
+222,Lexus,IS200,IS200 (XE10) SportCross  1998 > 2005,1998,2005
+223,Lexus,IS300,IS300 (XE10) Saloon  1998 > 2005,1998,2005
+224,Lexus,IS300,IS300 (XE10) SportCross  1998 > 2005,1998,2005
+225,Mazda,MX5,,,
+226,Mazda,2,2 (DY) Hatchback  2004 > 2007,2004,2007
+227,Mazda,3,3 (BK) Hatchback  2003 > 2008,2003,2008
+228,Mazda,3,3 (BK) Saloon  2003 > 2008,2003,2008
+229,Mazda,3,3 (BL) Hatchback  2009 > 2013,2009,2013
+230,Mazda,3,3 (BL) Saloon  2009 > 2013,2009,2013
+231,Mazda,3,3 (BM/BN) Hatchback  2013 > 2018,2013,2018
+232,Mazda,3,3 (BM/BN) Saloon  2013 > 2018,2013,2018
+233,Mazda,3 MPS,3 MPS (BK) Hatchback  2003 > 2008,2003,2008
+234,Mazda,3 MPS,3 MPS (BL) Hatchback  2009 > 2013,2009,2013
+235,Mazda,5,5 (CR) MPV  2005 > 2010,2005,2010
+236,Mazda,5,5 (CW) MPV  2010 > 2017,2010,2017
+237,Mazda,5,5 (GJ/GL) Saloon  2010 > 2013,2010,2013
+238,Mazda,6,6 (GJ/GL) Saloon  2013 > 2020,2013,2020
+239,Mazda,6,6 (GJ/GL) SportBreak  2012 > 2020,2012,2020
+240,Mazda,MX-5,MX-5 (NA) Roadster  1989 > 1997,1989,1997
+241,Mazda,MX-5,MX-5 (NB) Roadster  1998 > 2005,1998,2005
+242,Mazda,MX-5,MX-5 (NC) Roadster  2005 > 2013,2005,2013
+243,Mazda,MX-5,MX-5 (ND) Roadster  2015 >,2015,
+244,Mazda,2,Race Series,,
+245,Mazda,RX-8,RX-8  Coupé  2003 > 2007,2003,2007
+246,Mazda,RX-8,RX-8  Coupé  2008 > 2008,2008,2008
+247,Mazda,RX-8,RX-8  Coupé  2009 > 2012,2009,2012
+248,Mercedes-Benz,E-Class,,,
+249,Mercedes-Benz,190-series,190-series (W201) Saloon  1983 > 1993,1983,1993
+250,Mercedes-Benz,190-series,190-series (W201) Saloon  1984 > 1990,1984,1990
+251,Mercedes-Benz,A-Class,A-Class (W176) Hatchback  2013 > 2018,2013,2018
+252,Mercedes-Benz,B-Class,B-Class (W246) Hatchback  2013 > 2018,2013,2018
+253,Mercedes-Benz,C-Class,C-Class (C204) Sport Coupé  2007 > 2014,2007,2014
+254,Mercedes-Benz,C-Class,C-Class (S204) Combi  2007 > 2014,2007,2014
+255,Mercedes-Benz,C-Class,C-Class (S205) Combi  2013 > 2020,2013,2020
+256,Mercedes-Benz,C-Class,C-Class (W202) Combi  1996 > 2000,1996,2000
+257,Mercedes-Benz,C-Class,C-Class (W202) Saloon  1993 > 1995,1993,1995
+258,Mercedes-Benz,C-Class,C-Class (W202) Saloon  1996 > 2000,1996,2000
+259,Mercedes-Benz,C-Class,C-Class (W203) Combi  2000 > 2008,2000,2008
+260,Mercedes-Benz,C-Class,C-Class (W203) Saloon  2000 > 2008,2000,2008
+261,Mercedes-Benz,C-Class,C-Class (W203) Sport Coupé  2000 > 2008,2000,2008
+262,Mercedes-Benz,C-Class,C-Class (W204) Saloon  2007 > 2014,2007,2014
+263,Mercedes-Benz,C-Class,C-Class (W205) Saloon  2013 > 2020,2013,2020
+264,Mercedes-Benz,C-Class AMG,C-Class AMG (W202) Saloon  1997 > 2001,1997,2001
+265,Mercedes-Benz,CLA-Class,CLA-Class (C117) Saloon  2015 > 2018,2015,2018
+266,Mercedes-Benz,CLA-Class,CLA-Class (X117) Shooting Brake  2015 > 2018,2015,2018
+267,Mercedes-Benz,CLC-Class,CLC-Class (CL203) Coupé  2008 > 2011,2008,2011
+268,Mercedes-Benz,CLK-Class,CLK-Class (A209) Cabriolet  2002 > 2009,2002,2009
+269,Mercedes-Benz,CLK-Class,CLK-Class (C209) Coupé  2002 > 2009,2002,2009
+270,Mercedes-Benz,CLK-Class,CLK-Class (W208) Cabriolet  1996 > 2002,1996,2002
+271,Mercedes-Benz,CLK-Class,CLK-Class (W208) Coupé  1996 > 2002,1996,2002
+272,Mercedes-Benz,E-Class,E-Class (W210) Saloon  1995 > 2002,1995,2002
+273,Mercedes-Benz,E-Class,E-Class (W211) Saloon  2002 > 2009,2002,2009
+274,Mercedes-Benz,SLK-Class,SLK-Class (R170) Roadster  1997 > 2004,1997,2004
+275,Mini,Clubman Cooper,Clubman Cooper (R55) Clubman  2006 > 2014,2006,2014
+276,Mini,Clubman Cooper 'S',Clubman Cooper 'S' (R55) Clubman  2006 > 2014,2006,2014
+277,Mini,Clubman One,Clubman One (R55) Clubman  2006 > 2014,2006,2014
+278,Mini,Cooper,Cooper (F55) Hatchback,,
+279,Mini,Cooper,Cooper (F56) Hatchback,,
+280,Mini,Cooper,Cooper (F57) Cabriolet,,
+281,Mini,Cooper,Cooper (R52) Cabriolet  2002 > 2006,2002,2006
+282,Mini,Cooper,Cooper (R53) Cabriolet  2002 > 2006,2002,2006
+283,Mini,Cooper,Cooper (R53) Hatchback  2002 > 2006,2002,2006
+284,Mini,Cooper,Cooper (R56) Hatchback  2006 > 2013,2006,2013
+285,Mini,Cooper,Cooper (R57) Cabriolet  2006 > 2013,2006,2013
+286,Mini,Cooper 'S',Cooper 'S' (F55) Hatchback,,
+287,Mini,Cooper 'S',Cooper 'S' (F56) Hatchback,,
+288,Mini,Cooper 'S',Cooper 'S' (F57) Cabriolet,,
+289,Mini,Cooper 'S',Cooper 'S' (R52) Cabriolet  2002 > 2006,2002,2006
+290,Mini,Cooper 'S',Cooper 'S' (R53) Cabriolet  2002 > 2006,2002,2006
+291,Mini,Cooper 'S',Cooper 'S' (R53) Hatchback  2002 > 2006,2002,2006
+292,Mini,Cooper 'S',Cooper 'S' (R56) Hatchback  2006 > 2013,2006,2013
+293,Mini,Cooper 'S',Cooper 'S' (R57) Cabriolet  2006 > 2013,2006,2013
+294,Mini,Cooper 'S',Cooper 'S' (R58) Coupé  2010 > 2015,2010,2015
+295,Mini,Cooper 'S',Cooper 'S' (R59) Roadster  2010 > 2015,2010,2015
+296,Mini,John Cooper Works,John Cooper Works (F56),,
+297,Mini,John Cooper Works,John Cooper Works(F56),,
+298,Mini,One,One (F55) Hatchback,,
+299,Mini,One,One (F56) Hatchback,,
+300,Mini,One,One (F57) Cabriolet,,
+301,Mini,One,One (R53) Hatchback  2002 > 2006,2002,2006
+302,Mini,One,One (R56) Hatchback  2006 > 2013,2006,2013
+303,Mini,One,One (R57) Cabriolet  2006 > 2013,2006,2013
+304,Nissan,350Z,350Z (Z33) Cabriolet  2003 > 2009,2003,2009
+305,Nissan,350Z,350Z (Z33) Coupé  2003 > 2009,2003,2009
+306,Opel,Agila,Agila  Hatchback  2007 > 2014,2007,2014
+307,Opel,Astra,Astra (G) Hatchback  1998 > 2004,1998,2004
+308,Opel,Astra,Astra (H) Hatchback  2004 > 2009,2004,2009
+309,Opel,Astra,Astra (J) Hatchback  2009 > 2015,2009,2015
+310,Opel,Astra,Astra (J) Saloon  2009 > 2015,2009,2015
+311,Opel,Corsa,Corsa  Hatchback  2000 > 2006,2000,2006
+312,Opel,Corsa,Corsa  Hatchback  2006 > 2014,2006,2014
+313,Opel,Corsa,Corsa  Hatchback  2014 > 2019,2014,2019
+314,Opel,Signum,Signum  Hatchback  2003 > 2005,2003,2005
+315,Opel,Tigra,Tigra  Coupé  2004 > 2009,2004,2009
+316,Peugeot,106,106  Hatchback  1991 > 1996,1991,1996
+317,Peugeot,106,106  Hatchback  1996 > 2006,1996,2006
+318,Peugeot,106 GTI,106 GTI  Hatchback  1996 > 2006,1996,2006
+319,Peugeot,205 GTI,205 GTI  Hatchback  1984 > 1994,1984,1994
+320,Peugeot,206,206  Hatchback  1998 > 2006,1998,2006
+321,Peugeot,206 CC,206 CC  Cabriolet  1998 > 2006,1998,2006
+322,Peugeot,206 GTI,206 GTI  Hatchback  1998 > 2006,1998,2006
+323,Peugeot,206 RC,206 RC  Coupé  1998 > 2006,1998,2006
+324,Peugeot,206 SW,206 SW  Sportwagen  1998 > 2006,1998,2006
+325,Peugeot,206+,206+  Hatchback  2006 > 2013,2006,2013
+326,Peugeot,306,306  Cabriolet  1993 > 2002,1993,2002
+327,Peugeot,306,306  Hatchback  1993 > 2002,1993,2002
+328,Peugeot,306 GTI,306 GTI  Hatchback  1993 > 2002,1993,2002
+329,Peugeot,307,307  Hatchback  2000 > 2007,2000,2007
+330,Peugeot,307 CC,307 CC  Cabriolet  2003 > 2007,2003,2007
+331,Peugeot,307 GTI,307 GTI  Hatchback  2000 > 2007,2000,2007
+332,Peugeot,307 SW,307 SW  Sportwagen  2002 > 2007,2002,2007
+333,Porsche,911 Carrera,911 Carrera (964) Convertible  1991 > 1993,1991,1993
+334,Porsche,911 Carrera,911 Carrera (964) Coupé  1991 > 1993,1991,1993
+335,Porsche,911 Carrera,911 Carrera (964) Targa  1991 > 1993,1991,1993
+336,Porsche,911 Carrera,911 Carrera (996) Convertible  1997 > 2005,1997,2005
+337,Porsche,911 Carrera,911 Carrera (996) Coupé  1997 > 2005,1997,2005
+338,Porsche,911 Carrera,911 Carrera (996) Targa  1997 > 2005,1997,2005
+339,Porsche,911 Turbo,911 Turbo (964) Convertible  1990 > 1993,1990,1993
+340,Porsche,911 Turbo,911 Turbo (964) Coupé  1990 > 1993,1990,1993
+341,Porsche,911 Turbo,911 Turbo (964) Targa  1990 > 1993,1990,1993
+342,Porsche,Boxster,Boxster (986) Roadster  1996 > 2004,1996,2004
+343,Renault,Clio,Clio (Mk3) Estate  2005 > 2012,2005,2012
+344,Renault,Clio,Clio (Mk3) Hatchback  2005 > 2012,2005,2012
+345,Renault,Clio,Clio (MK4) Hatchback  2013 > 2018,2013,2018
+346,Renault,Clio 172,Clio 172 (Mk2) Hatchback  1999 > 2006,1999,2006
+347,Renault,Clio 182,Clio 182 (Mk2) Hatchback  1999 > 2006,1999,2006
+348,Renault,Clio GT,Clio GT (Mk3) Hatchback  2005 > 2012,2005,2012
+349,Renault,Clio RS,Clio RS (Mk3) Hatchback  2005 > 2012,2005,2012
+350,Renault,Duster,Duster (HM) SUV 4x4,,
+351,Renault,Duster,Duster (HS) SUV 4x4,,
+352,Renault,Mégane,Mégane (II) Cabriolet  2002 > 2009,2002,2009
+353,Renault,Mégane,Mégane (II) Estate  2002 > 2009,2002,2009
+354,Renault,Mégane,Mégane (II) Hatchback  2002 > 2009,2002,2009
+355,Saab,9-3,9-3 (YS3D) Cabriolet  1998 > 2002,1998,2002
+356,Saab,9-3,9-3 (YS3D) Hatchback  1998 > 2002,1998,2002
+357,Scion,FR-S,FR-S  Coupé  2012 > 2020,2012,2020
+358,Seat,Altea,Altea (5P) MPV  2004 > 2015,2004,2015
+359,Seat,Cordoba,Cordoba (6K) Estate  1993 > 2002,1993,2002
+360,Seat,Cordoba,Cordoba (6K) Saloon  1993 > 2002,1993,2002
+361,Seat,Cordoba,Cordoba (6L) Saloon  2002 > 2008,2002,2008
+362,Seat,Cordoba Sport,Cordoba Sport (6L) Saloon  2002 > 2008,2002,2008
+363,Seat,Exeo,Exeo (3R) Saloon  2009 > 2013,2009,2013
+364,Seat,Exeo ST,Exeo ST (3R) Estate  2009 > 2013,2009,2013
+365,Seat,Ibiza,Ibiza (6F) Hatchback,,
+366,Seat,Ibiza,Ibiza (6J/6P) Hatchback  2008 > 2017,2008,2017
+367,Seat,Ibiza,Ibiza (6K) Hatchback  1993 > 2002,1993,2002
+368,Seat,Ibiza,Ibiza (6L) Hatchback  2002 > 2008,2002,2008
+369,Seat,Ibiza Cupra,Ibiza Cupra (6L) Hatchback  2004 > 2008,2004,2008
+370,Seat,Ibiza FR,Ibiza FR (6L) Hatchback  2004 > 2008,2004,2008
+371,Seat,Ibiza Sport,Ibiza Sport (6L) Hatchback  2002 > 2008,2002,2008
+372,Seat,Ibiza ST,Ibiza ST (6J/6P) Estate  2010 > 2017,2010,2017
+373,Seat,Leon,Leon (1M) Hatchback  1999 > 2005,1999,2005
+374,Seat,Leon,Leon (5F) Hatchback  2013 > 2019,2013,2019
+375,Seat,Leon 4,Leon 4 (1M) Hatchback 4WD 1999 > 2005,1999,2005
+376,Seat,Leon Cupra,Leon Cupra (1M) Hatchback  1999 > 2005,1999,2005
+377,Seat,Leon Cupra 'R',Leon Cupra 'R' (1M) Hatchback  2002 > 2005,2002,2005
+378,Seat,Leon FR,Leon FR (1P) Hatchback  2005 > 2012,2005,2012
+379,Seat,Leon II,Leon II (1P) Hatchback  2005 > 2012,2005,2012
+380,Seat,Leon II Cupra,Leon II Cupra (1P) Hatchback  2005 > 2012,2005,2012
+381,Seat,Leon II Cupra,Leon II Cupra (5F) Hatchback  2013 > 2019,2013,2019
+382,Seat,Leon ST,Leon ST (5F) Estate  2013 > 2019,2013,2019
+383,Seat,Leon,Seat Leon (1M),,
+384,Seat,Toledo,Toledo (1M) Saloon  1999 > 2004,1999,2004
+385,Seat,Toledo,Toledo (5P) MPV  2004 > 2009,2004,2009
+386,Skoda,Fabia,Fabia (5J) Combi  2006 > 2014,2006,2014
+387,Skoda,Fabia,Fabia (5J) Hatchback  2006 > 2014,2006,2014
+388,Skoda,Fabia,Fabia (6Y) Combi  2000 > 2007,2000,2007
+389,Skoda,Fabia,Fabia (6Y) Hatchback  2000 > 2007,2000,2007
+390,Skoda,Fabia,Fabia (PJ) Combi,,
+391,Skoda,Fabia,Fabia (PJ) Hatchback,,
+392,Skoda,Fabia VRS,Fabia VRS (5J) Combi  2010 > 2014,2010,2014
+393,Skoda,Fabia VRS,Fabia VRS (5J) Hatchback  2010 > 2014,2010,2014
+394,Skoda,Fabia VRS,Fabia VRS (6Y) Hatchback  2000 > 2007,2000,2007
+395,Skoda,Octavia 3,Octavia 3 (5E) Combi  2013 > 2019,2013,2019
+396,Skoda,Octavia 3,Octavia 3 (5E) Hatchback  2013 > 2019,2013,2019
+397,Skoda,Octavia 3 VRS,Octavia 3 VRS (5E) Combi  2013 > 2019,2013,2019
+398,Skoda,Octavia 3 VRS,Octavia 3 VRS (5E) Saloon  2013 > 2019,2013,2019
+399,Skoda,Octavia MK1,Octavia MK1 (1U) Combi  1997 > 2004,1997,2004
+400,Skoda,Octavia MK1,Octavia MK1 (1U) Hatchback  1997 > 2004,1997,2004
+401,Skoda,Octavia Mk1 VRS,Octavia Mk1 VRS (1U) Combi  1997 > 2004,1997,2004
+402,Skoda,Octavia Mk1 VRS,Octavia Mk1 VRS (1U) Hatchback  1997 > 2004,1997,2004
+403,Skoda,Octavia Mk2,Octavia Mk2 (1Z) Combi  2005 > 2012,2005,2012
+404,Skoda,Octavia Mk2,Octavia Mk2 (1Z) Hatchback  2005 > 2012,2005,2012
+405,Skoda,Octavia Mk2 VRS,Octavia Mk2 VRS (1Z) Combi  2005 > 2012,2005,2012
+406,Skoda,Octavia Mk2 VRS,Octavia Mk2 VRS (1Z) Saloon  2005 > 2012,2005,2012
+407,Skoda,Rapid,Rapid (NH1) Hatchback  2012 > 2018,2012,2018
+408,Skoda,Roomster,Roomster (5J) MPV  2006 > 2014,2006,2014
+409,Skoda,Scala,Scala (PJ) Hatchback,,
+410,Skoda,Octavia,Skoda Octavia 1 RS Combi,,
+411,Skoda,Octavia,Skoda Octavia 1 RS Sedan,,
+412,Skoda,Superb,Superb (3U) Saloon  2002 > 2008,2002,2008
+413,Skoda,Superb 2,Superb 2 (3T) Combi  2008 > 2015,2008,2015
+414,Skoda,Superb 2,Superb 2 (3T) Combi 4Motion 2008 > 2015,2008,2015
+415,Skoda,Superb 2,Superb 2 (3T) Saloon  2008 > 2015,2008,2015
+416,Skoda,Superb 2,Superb 2 (3T) Saloon 4Motion 2008 > 2015,2008,2015
+417,Subaru,BRZ,BRZ  Coupé  2012 > 2020,2012,2020
+418,Subaru,Impreza,Impreza (GD) Saloon  2000 > 2002,2000,2002
+419,Subaru,Impreza,Impreza (GD) Saloon  2002 > 2005,2002,2005
+420,Subaru,Impreza,Impreza (GD) Saloon  2005 > 2007,2005,2007
+421,Subaru,Impreza,Impreza (GE) Saloon  2007 > 2011,2007,2011
+422,Subaru,Impreza,Impreza (GG) Estate  2000 > 2002,2000,2002
+423,Subaru,Impreza,Impreza (GG) Estate  2002 > 2005,2002,2005
+424,Subaru,Impreza,Impreza (GG) Estate  2005 > 2007,2005,2007
+425,Subaru,Impreza,Impreza (GG) Estate 4x4 2005 > 2007,2005,2007
+426,Subaru,Impreza,Impreza (GH) Hatchback 4x4 2007 > 2011,2007,2011
+427,Subaru,Impreza WRX,Impreza WRX (GD) Saloon 4WD 2000 > 2002,2000,2002
+428,Subaru,Impreza WRX,Impreza WRX (GD) Saloon 4WD 2002 > 2005,2002,2005
+429,Subaru,Impreza WRX,Impreza WRX (GD) Saloon 4WD 2005 > 2007,2005,2007
+430,Subaru,Impreza WRX,Impreza WRX (GD) Saloon 4x4 2005 > 2007,2005,2007
+431,Subaru,Impreza WRX,Impreza WRX (GG) Estate 4WD 2000 > 2002,2000,2002
+432,Subaru,Impreza WRX,Impreza WRX (GG) Estate 4WD 2002 > 2005,2002,2005
+433,Subaru,Impreza WRX,Impreza WRX (GG) Estate 4WD 2005 > 2007,2005,2007
+434,Subaru,Impreza WRX,Impreza WRX (GR) Hatchback 4WD 2007 > 2011,2007,2011
+435,Subaru,Impreza WRX,Impreza WRX (GV) Saloon 4WD 2007 > 2011,2007,2011
+436,Subaru,Legacy,Legacy (BL) Saloon 4WD 2005 > 2009,2005,2009
+437,Subaru,Legacy,Legacy (BP) Estate 4WD 2005 > 2009,2005,2009
+438,Suzuki,Jimny,Jimny (JB64/67) SUV 4X4 2018 > 2023,2018,2023
+439,Suzuki,Splash,Splash  Hatchback  2007 > 2015,2007,2015
+440,Suzuki,Swift,Swift   (MZ/EZ) Hatchback  2005 > 2010,2005,2010
+441,Suzuki,Swift Sport,Swift Sport (MZ/EZ) Hatchback  2005 > 2010,2005,2010
+442,Tesla,Model 3,Model 3 (5Y0) Saloon  2017 >,2017,
+443,Tesla,Model 3,Model 3 (5Y1) Saloon  2017 >,2017,
+444,Tesla,Model 3,Model 3 (5Y1) Saloon 4WD 2017 >,2017,
+445,Tesla,Model 3,Model 3 (5Y2) Saloon 4WD 2017 >,2017,
+446,Toyota,Corolla,Corolla (E11) Hatchback  1995 > 2000,1995,2000
+447,Toyota,Corolla,Corolla (E130) Estate  2000 > 2006,2000,2006
+448,Toyota,Corolla,Corolla (E130) Hatchback  2000 > 2006,2000,2006
+449,Toyota,Corolla,Corolla (EE120/130) Hatchback  2000 > 2006,2000,2006
+450,Toyota,Corolla,Corolla (EE120/130) Saloon  2000 > 2006,2000,2006
+451,Toyota,GT86,GT86  Coupé  2012 > 2020,2012,2020
+452,Toyota,MR2,MR2 (AW11) Coupé  1985 > 1986,1985,1986
+453,Toyota,MR2,MR2 (AW11) Coupé  1986 > 1989,1986,1989
+454,Toyota,MR2,MR2 (SW20) Coupé  1990 > 1996,1990,1996
+455,Toyota,MR2,MR2 (ZZW30) Spider  2000 > 2004,2000,2004
+456,Toyota,Yaris,Yaris (P9) Hatchback  2005 >,2005,
+457,Toyota,Yaris,Yaris (XP10) Hatchback  1998 > 2005,1998,2005
+458,Toyota,Yaris II,Yaris II (XP90) Hatchback  2005 > 2011,2005,2011
+459,Toyota,Yaris III,Yaris III (XP130) Hatchback  2011 > 2020,2011,2020
+460,Toyota,Yaris T-Sport,Yaris T-Sport (XP10) Hatchback  1998 > 2005,1998,2005
+461,Toyota,MR2,MR2  Roadster  1985 > 1985,1985,1985
+462,Toyota,MR2,MR2  Roadster  1986 > 1989,1986,1989
+463,Vauxhall,Zafira,Zafira (A ) MPV  1999 > 2005,1999,2005
+464,Vauxhall,Agila,Agila  Hatchback  2007 > 2014,2007,2014
+465,Vauxhall,Astra,Astra (H) Hatchback  2004 > 2009,2004,2009
+466,Vauxhall,Astra,Astra (H) Saloon  2004 > 2009,2004,2009
+467,Vauxhall,Astra,Astra (J) Hatchback  2009 > 2015,2009,2015
+468,Vauxhall,Astra,Astra (Mk4) Cabriolet  1998 > 2004,1998,2004
+469,Vauxhall,Astra,Astra (Mk4) Coupé  1998 > 2004,1998,2004
+470,Vauxhall,Astra,Astra (Mk4) Estate  1998 > 2004,1998,2004
+471,Vauxhall,Astra,Astra (Mk4) Hatchback  1998 > 2004,1998,2004
+472,Vauxhall,Astra GTC,Astra GTC (H) Hatchback  2004 > 2009,2004,2009
+473,Vauxhall,Astra Twin Top,Astra Twin Top (H) Cabriolet  2004 > 2009,2004,2009
+474,Vauxhall,Corsa,Corsa (C) Hatchback  2000 > 2006,2000,2006
+475,Vauxhall,Corsa,Corsa (D) Hatchback  2006 > 2014,2006,2014
+476,Vauxhall,Corsa,Corsa (E) Hatchback  2014 > 2019,2014,2019
+477,Vauxhall,Corsa Gsi,Corsa Gsi (C) Hatchback  2000 > 2006,2000,2006
+478,Vauxhall,Corsa VXR,Corsa VXR (D) Hatchback  2006 > 2014,2006,2014
+479,Vauxhall,Corsa VXR,Corsa VXR (E) Hatchback  2014 > 2019,2014,2019
+480,Vauxhall,Vectra,Vectra (Mk3) Estate  2002 > 2005,2002,2005
+481,Vauxhall,Vectra,Vectra (Mk3) Hatchback  2002 > 2005,2002,2005
+482,Vauxhall,Vectra,Vectra (Mk3) Saloon  2002 > 2005,2002,2005
+483,Vauxhall,Zafira,Zafira (A) MPV  1999 > 2005,1999,2005
+484,Volkswagen,Arteon,Arteon (3H7) Hatchback  2017 > 2023,2017,2023
+485,Volkswagen,Beetle,Beetle  Cabriolet  1998 > 2011,1998,2011
+486,Volkswagen,Beetle,Beetle  Saloon  1998 > 2011,1998,2011
+487,Volkswagen,Beetle,Beetle  Saloon  2011 > 2018,2011,2018
+488,Volkswagen,Bora,Bora  Saloon  1998 > 2005,1998,2005
+489,Volkswagen,Bora,Bora  Saloon 4-Motion 1999 > 2000,1999,2000
+490,Volkswagen,Bora,Bora  Saloon 4-Motion 2000 > 2002,2000,2002
+491,Volkswagen,Bora,Bora  Variant 4-Motion 1999 > 2005,1999,2005
+492,Volkswagen,Caddy,Caddy (MK3) Van  2004 > 2015,2004,2015
+493,Volkswagen,Caddy,Caddy (MK4) Van  2015 > 2020,2015,2020
+494,Volkswagen,Caddy Maxi,Caddy Maxi (MK3) Van  2004 > 2015,2004,2015
+495,Volkswagen,Caddy Maxi,Caddy Maxi (MK4) Van  2015 > 2020,2015,2020
+496,Volkswagen,Corrado,Corrado  Coupé  1991 > 1995,1991,1995
+497,Volkswagen,Fox,Fox  Hatchback  2005 > 2011,2005,2011
+498,Volkswagen,Golf 1,Golf 1 (Mk1) Cabriolet  1979 > 1993,1979,1993
+499,Volkswagen,Golf 1 GTI,Golf 1 GTI (Mk1) Hatchback  1976 > 1983,1976,1983
+500,Volkswagen,Golf II,Golf II (MK2) Hatchback  1983 > 1991,1983,1991
+501,Volkswagen,Golf II GTI,Golf II GTI (MK2) Hatchback  1983 > 1991,1983,1991
+502,Volkswagen,Golf III,Golf III (MK3) Hatchback  1991 > 1994,1991,1994
+503,Volkswagen,Golf III,Golf III (MK3) Hatchback  1994 > 1997,1994,1997
+504,Volkswagen,Golf III GTI,Golf III GTI (MK3) Hatchback  1991 > 1994,1991,1994
+505,Volkswagen,Golf III GTI,Golf III GTI (MK3) Hatchback  1994 > 1997,1994,1997
+506,Volkswagen,Golf III VR6,Golf III VR6 (MK3) Hatchback  1991 > 1994,1991,1994
+507,Volkswagen,Golf III VR6,Golf III VR6 (MK3) Hatchback  1994 > 1997,1994,1997
+508,Volkswagen,Golf IV,Golf IV (MK4) Hatchback  1997 > 2003,1997,2003
+509,Volkswagen,Golf IV,Golf IV (MK4) Hatchback 4-Motion 1997 > 2003,1997,2003
+510,Volkswagen,Golf IV,Golf IV (MK4) Hatchback 4-Motion 1998 > 1999,1998,1999
+511,Volkswagen,Golf IV,Golf IV (MK4) Hatchback 4-Motion 1999 > 2003,1999,2003
+512,Volkswagen,Golf IV,Golf IV (MK4) Hatchback 4-Motion 2000 > 2003,2000,2003
+513,Volkswagen,Golf IV,Golf IV (MK4) Variant  1999 > 2004,1999,2004
+514,Volkswagen,Golf IV,Golf IV (MK5) Hatchback  1997 > 2003,1997,2003
+515,Volkswagen,Golf IV,Golf IV (MK6) Hatchback  1997 > 2003,1997,2003
+516,Volkswagen,Golf IV GTI,Golf IV GTI (MK4) Hatchback  1997 > 2003,1997,2003
+517,Volkswagen,Golf V,Golf V (MK5) Hatchback  2003 > 2008,2003,2008
+518,Volkswagen,Golf V,Golf V (MK5) Variant  2003 > 2008,2003,2008
+519,Volkswagen,Golf V GTI,Golf V GTI (MK5) Hatchback  2003 > 2008,2003,2008
+520,Volkswagen,Golf V Plus,Golf V Plus (MK5) MPV  2003 > 2008,2003,2008
+521,Volkswagen,Golf V R32,Golf V R32 (MK5) Hatchback 4-Motion 2003 > 2008,2003,2008
+522,Volkswagen,Golf VI,Golf VI (MK6) Hatchback  2008 > 2012,2008,2012
+523,Volkswagen,Golf VI,Golf VI (MK6) Variant  2009 > 2013,2009,2013
+524,Volkswagen,Golf VI GTD,Golf VI GTD (MK6) Hatchback  2008 > 2012,2008,2012
+525,Volkswagen,Golf VI GTI,Golf VI GTI (MK6) Hatchback  2008 > 2012,2008,2012
+526,Volkswagen,Golf VI Plus,Golf VI Plus (MK6) Hatchback  2009 > 2013,2009,2013
+527,Volkswagen,Golf VI R,Golf VI R (MK6) Hatchback 4-Motion 2008 > 2012,2008,2012
+528,Volkswagen,Golf VII,Golf VII (MK7) Hatchback  2013 > 2019,2013,2019
+529,Volkswagen,Golf VII,Golf VII (MK7) Variant  2013 > 2019,2013,2019
+530,Volkswagen,Golf VII GTD,Golf VII GTD (MK7) Hatchback  2013 > 2019,2013,2019
+531,Volkswagen,Golf VII GTD,Golf VII GTD (MK7) Variant  2013 > 2019,2013,2019
+532,Volkswagen,Golf VII GTE,Golf VII GTE (MK7) Hatchback  2013 > 2019,2013,2019
+533,Volkswagen,Golf VII GTI,Golf VII GTI (MK7) Hatchback  2013 > 2019,2013,2019
+534,Volkswagen,Golf VII R,Golf VII R (MK7) Hatchback 4-Motion 2013 > 2019,2013,2019
+535,Volkswagen,Golf VII R,Golf VII R (MK7) Variant 4-Motion 2013 > 2019,2013,2019
+536,Volkswagen,Golf VIII,Golf VIII (MK8) Hatchback  2020 >,2020,
+537,Volkswagen,Jetta 2,Jetta 2 (Mk2) Saloon  1984 > 1992,1984,1992
+538,Volkswagen,Jetta 2 GTI,Jetta 2 GTI (Mk2) Saloon  1984 > 1992,1984,1992
+539,Volkswagen,Jetta 5,Jetta 5 (Mk5) Saloon  2005 > 2010,2005,2010
+540,Volkswagen,Jetta 6,Jetta 6 (Mk6) Saloon  2010 > 2017,2010,2017
+541,Volkswagen,Lupo,Lupo  Hatchback  1998 > 2005,1998,2005
+542,Volkswagen,Passat,Passat (3B) Saloon  1996 > 2000,1996,2000
+543,Volkswagen,Passat,Passat (3B) Saloon 4-Motion 1997 > 2000,1997,2000
+544,Volkswagen,Passat,Passat (3B) Variant  1996 > 2000,1996,2000
+545,Volkswagen,Passat,Passat (3B) Variant 4-Motion 1997 > 2000,1997,2000
+546,Volkswagen,Passat,Passat (3BG) Saloon  2000 > 2005,2000,2005
+547,Volkswagen,Passat,Passat (3BG) Saloon 4-Motion 2000 > 2005,2000,2005
+548,Volkswagen,Passat,Passat (3BG) Variant  2000 > 2005,2000,2005
+549,Volkswagen,Passat,Passat (3BG) Variant 4-Motion 2000 > 2005,2000,2005
+550,Volkswagen,Passat,Passat (3C) Coupé  2008 > 2017,2008,2017
+551,Volkswagen,Passat,Passat (3C) Coupé 4-Motion 2008 > 2017,2008,2017
+552,Volkswagen,Passat,Passat (3C) Saloon  2005 > 2014,2005,2014
+553,Volkswagen,Passat,Passat (3C) Saloon 4-Motion 2005 > 2014,2005,2014
+554,Volkswagen,Passat,Passat (3C) Variant  2005 > 2014,2005,2014
+555,Volkswagen,Passat,Passat (3C) Variant 4-Motion 2005 > 2014,2005,2014
+556,Volkswagen,Passat,Passat (B8) Saloon  2015 > 2023,2015,2023
+557,Volkswagen,Passat,Passat (B8) Saloon 4-Motion 2015 > 2023,2015,2023
+558,Volkswagen,Passat,Passat (B8) Variant  2015 > 2023,2015,2023
+559,Volkswagen,Passat,Passat (B8) Variant 4-Motion 2015 > 2023,2015,2023
+560,Volkswagen,Passat R36,Passat R36 (3C) Saloon 4-Motion 2005 > 2014,2005,2014
+561,Volkswagen,Passat R36,Passat R36 (3C) Variant 4-Motion 2005 > 2014,2005,2014
+562,Volkswagen,Polo,Polo (6C) Hatchback  2014 > 2017,2014,2017
+563,Volkswagen,Polo,Polo (6N) Hatchback  1994 > 1999,1994,1999
+564,Volkswagen,Polo,Polo (6N2) Hatchback  1999 > 2001,1999,2001
+565,Volkswagen,Polo,Polo (6R) Hatchback  2009 > 2014,2009,2014
+566,Volkswagen,Polo,Polo (9N) Hatchback  2001 > 2009,2001,2009
+567,Volkswagen,Polo GTI,Polo GTI (6C) Hatchback  2014 > 2017,2014,2017
+568,Volkswagen,Polo GTI,Polo GTI (6N) Hatchback  1994 > 1999,1994,1999
+569,Volkswagen,Polo GTI,Polo GTI (6R) Hatchback  2009 > 2014,2009,2014
+570,Volkswagen,Polo GTI,Polo GTI (9N) Hatchback  2001 > 2009,2001,2009
+571,Volkswagen,Scirocco,Scirocco (Mk3) Coupé  2008 > 2017,2008,2017
+572,Volkswagen,Sharan,Sharan (7N) MPV  2010 > 2020,2010,2020
+573,Volkswagen,Sharan,Sharan (7N) MPV 4-Motion 2010 > 2020,2010,2020
+574,Volkswagen,Touran,Touran (1T) MPV  2003 > 2010,2003,2010
+575,Volkswagen,Touran,Touran (1T) MPV  2010 > 2015,2010,2015
+576,Volkswagen,Transporter,Transporter (T4) Bus  1990 > 2003,1990,2003
+577,Volkswagen,Transporter,Transporter (T4) Bus Syncro 1990 > 2003,1990,2003
+578,Volkswagen,Transporter,Transporter (T4) Multivan  1990 > 2003,1990,2003
+579,Volkswagen,Transporter,Transporter (T4) Multivan Syncro 1990 > 2003,1990,2003
+580,Volkswagen,Transporter,Transporter (T4) Van  1990 > 2003,1990,2003
+581,Volkswagen,Transporter,Transporter (T4) Van Syncro 1990 > 2003,1990,2003
+582,Volkswagen,Transporter,Transporter (T5) Van  2003 > 2015,2003,2015
+583,Volkswagen,Transporter,Transporter (T5) Van 4-Motion 2003 > 2015,2003,2015
+584,Volkswagen,Transporter,Transporter (T6) Van  2015 > 2020,2015,2020
+585,Volkswagen,Transporter,Transporter (T6) Van 4-Motion 2015 > 2020,2015,2020
+586,Volkswagen,Transporter,Transporter (T6.1) Van  2020 > 2023,2020,2023
+587,Volkswagen,Vento VR6,Vento VR6 (A3) Saloon  1991 > 1997,1991,1997
+588,Volvo,V50 Estate,,,
+589,Volvo,850,850  Estate  1992 > 1997,1992,1997
+590,Volvo,850,850  Saloon  1992 > 1997,1992,1997
+591,Volvo,V70 Estate,"850 Wagon, incl. T-5, T5-R",,
+592,Volvo,C30,C30  Hatchback  2007 > 2014,2007,2014
+593,Volvo,C70,C70 (Mk1) Convertible  1997 > 2005,1997,2005
+594,Volvo,C70,C70 (Mk1) Coupé  1997 > 2005,1997,2005
+595,Volvo,C70,C70 (Mk2) Convertible  2006 > 2013,2006,2013
+596,Volvo,C70,C70 (Mk2) Coupé  2006 > 2013,2006,2013
+597,Volvo,S40,S40 (S2) Saloon  2004 > 2012,2004,2012
+598,Volvo,S60,S60 (I) Saloon  2000 > 2010,2000,2010
+599,Volvo,S60,S60 (II) Saloon  2010 > 2019,2010,2019
+600,Volvo,S70,S70 (I) Saloon  1997 > 1999,1997,1999
+601,Volvo,S80,S80 (I) Saloon  1998 > 2006,1998,2006
+602,Volvo,V50,V50 (I) Estate  2004 > 2012,2004,2012
+603,Volvo,V60,V60 (II) Estate  2010 > 2019,2010,2019
+604,Volvo,V60,V60 (II) Estate AWD 2010 > 2019,2010,2019
+605,Volvo,V70,V70 (I) Estate  1997 > 1999,1997,1999
+606,Volvo,V70,V70 (II) Estate  2000 > 2006,2000,2006
+607,Volvo,V70,V70 (III) Estate  2007 > 2016,2007,2016
+608,Audi,A3,A3 (8V) Cabriolet  2014 > 2019,2014,2019
+609,Audi,A3,A3 (8V) Hatchback  Quattro 2012 > 2019,2012,2019
+610,Audi,A3,A3 (8V) Saloon  Quattro 2012 > 2019,2012,2019
+611,Audi,A3,A3 (8V) Sportback  Quattro 2012 > 2019,2012,2019
+612,Audi,A3,A3 (8Y) Hatchback  2020 >,2020,
+613,Audi,A3,A3 (8Y) Hatchback  Quattro 2020 >,2020,
+614,Audi,A3,A3 (8Y) Saloon  Quattro 2020 >,2020,
+615,Audi,RS3,RS3 (8V) Hatchback  Quattro 2012 > 2019,2012,2019
+616,Audi,RS3,RS3 (8V) Saloon  Quattro 2012 > 2019,2012,2019
+617,Audi,RS3,RS3 (8V) Sportback  Quattro 2012 > 2019,2012,2019
+618,Audi,RS3,RS3 (8Y) Hatchback  Quattro 2020 >,2020,
+619,Audi,RS3,RS3 (8Y) Saloon  Quattro 2020 >,2020,
+620,Audi,S3,S3 (8V) Hatchback  Quattro 2012 > 2019,2012,2019
+621,Audi,S3,S3 (8V) Saloon  Quattro 2012 > 2019,2012,2019
+622,Audi,S3,S3 (8V) Sportback  Quattro 2012 > 2019,2012,2019
+623,Audi,S3,S3 (8Y) Hatchback  Quattro 2020 >,2020,
+624,Audi,S3,S3 (8Y) Saloon  Quattro 2020 >,2020,
+625,Chevrolet,Camaro,Camaro  Coupé  2010 > 2015,2010,2015
+626,Chevrolet,Camaro,Camaro  Coupé  2016 > 2023,2016,2023
+627,Ford,Mustang,Mustang  Cabriolet  2004 > 2010,2004,2010
+628,Ford,Mustang,Mustang  Coupé  2004 > 2010,2004,2010
+629,Ford,Mustang,Mustang (S550) Cabriolet  2015 > 2023,2015,2023
+630,Ford,Mustang,Mustang (S550) Coupé  2015 > 2023,2015,2023
+631,Ford,Mustang,Mustang (S650) Cabriolet  2024 >,2024,
+632,Ford,Mustang,Mustang (S650) Coupé  2024 >,2024,
+633,Ford,Mustang Shelby GT500,Mustang Shelby GT500  Coupé  2004 > 2010,2004,2010
+634,Ford,Mustang Shelby GT500,Mustang Shelby GT500  Coupé  2010 > 2014,2010,2014
+635,Honda,Civic,Civic (10th Gen) Hatchback  2016 > 2023,2016,2023
+636,Honda,Civic,Civic (10th Gen) Saloon  2016 > 2023,2016,2023
+637,Honda,Civic,Civic (11th Gen) Hatchback  2021 >,2021,
+638,Honda,Civic,Civic (11th Gen) Saloon  2021 >,2021,
+639,Seat,Leon,Leon (KL1) Hatchback  2020 >,2020,
+640,Seat,Leon,Leon (KL1) Hatchback 4X4 2020 >,2020,
+641,Seat,Leon,Leon (KL8) Sports Tourer  2020 >,2020,
+642,Seat,Leon,Leon (KL8) Sports Tourer 4X4 2020 >,2020,
+643,Seat,Leon ST,Leon ST (5F) Hatchback  2013 > 2019,2013,2019
+644,Skoda,Octavia 4,Octavia 4 (NX) Combi  2020 >,2020,
+645,Skoda,Octavia 4,Octavia 4 (NX) Combi 4X4 2020 >,2020,
+646,Skoda,Octavia 4,Octavia 4 (NX) Hatchback  2020 >,2020,
+647,Skoda,Octavia 4,Octavia 4 (NX) Hatchback 4X4 2020 >,2020,
+648,Skoda,Octavia 4 VRS,Octavia 4 VRS (NX) Combi 4X4 2020 >,2020,
+649,Skoda,Octavia 4 VRS,Octavia 4 VRS (NX) Hatchback 4X4 2020 >,2020,
+650,Subaru,BRZ,BRZ () Coupé  2012 > 2020,2012,2020
+651,Subaru,BRZ,BRZ () Coupé  2020 >,2020,
+652,Tesla,Model 3,Model 3 (5Y3) Saloon  2017 >,2017,
+653,Tesla,Model 3,Model 3 (5Y3) Saloon AWD 2017 >,2017,
+654,Tesla,Model Y,Model Y (5Y3) Saloon AWD 2020 >,2020,
+655,Toyota,GR86,GR86 () Coupé  2020 >,2020,
+656,Toyota,GT86,GT86 () Coupé  2012 > 2020,2012,2020
+657,Volkswagen,Golf VII,Golf VII (MK7) Variant 4-Motion 2013 > 2019,2013,2019
+658,Volkswagen,Golf VII Sportsvan,Golf VII Sportsvan (MK7) MPV  2013 > 2019,2013,2019
+659,Volkswagen,Golf VIII,Golf VIII (MK8) Variant  2020 >,2020,
+660,Volkswagen,Golf VIII GTD,Golf VIII GTD (MK8) Hatchback  2020 >,2020,
+661,Volkswagen,Golf VIII GTD,Golf VIII GTD (MK8) Variant  2020 >,2020,
+662,Volkswagen,Golf VIII GTI,Golf VIII GTI (MK8) Hatchback  2020 >,2020,
+663,Volkswagen,Golf VIII R,Golf VIII R (MK8) Hatchback 4-Motion 2020 >,2020,
+664,Volkswagen,Golf VIII R,Golf VIII R (MK8) Variant 4-Motion 2020 >,2020,
+665,Alfa Romeo,75,75 () Saloon  1985 > 1991,1985,1991
+666,Alfa Romeo,155,155 Saloon,1992,1997
+667,Alfa Romeo,156,156 () Saloon  1997 > 2006,1997,2006
+668,Alfa Romeo,156,156 () Sportwagen  1997 > 2006,1997,2006
+669,Alfa Romeo,159,159 () Saloon  2005 > 2012,2005,2012
+670,Alfa Romeo,156 GTA,156 GTA () Saloon  2001 > 2006,2001,2006
+671,Alfa Romeo,Brera,Brera () Coupé  2005 > 2011,2005,2011
+672,Alfa Romeo,MiTo,MiTo () Hatchback  2008 > 2018,2008,2018
+673,Alfa Romeo,Spider,Spider () Convertible  2006 > 2011,2006,2011
+674,Audi,A3,A3 (8P) Cabriolet  2003 > 2012,2003,2012
+675,Audi,A4,A4 (B5) Saloon  1994 > 2000,1994,2000
+676,BMW,3 Series,3-Series (E30) Saloon,1982,1990
+677,BMW,3 Series,3-Series (E46) Coupe,1998,2005
+678,BMW,3-Series,3-Series (E90) Touring  2005 > 2011,2005,2011
+679,BMW,3-Series,3-Series (G20) Saloon  2011 > 2019,2011,2019
+680,BMW,3-Series,3-Series (G21) Touring  2011 > 2019,2011,2019
+681,BMW,5 Series,5-Series(E39)Touring,1995,2002
+682,BMW,5 Series,5-Series(E60) Saloon,2003,2010
+683,BMW,5-Series,"520, 523,530, 520d",2003,2009
+684,BMW,5-Series,"540i, 545i, 550i, 525d, 530d, 535d",2003,2009
+685,Chevrolet,Lacetti,Lacetti (J200) Hatchback  2003 > 2009,2003,2009
+686,Chevrolet,Lacetti,Lacetti (J200) Saloon  2003 > 2009,2003,2009
+687,Chevrolet,Nubira,Nubira (J200) Hatchback  2003 > 2009,2003,2009
+688,Chevrolet,Nubira,Nubira (J200) Saloon  2003 > 2009,2003,2009
+689,Chrysler,PT Crusier,PT Crusier (PG) Saloon  2000 > 2009,2000,2009
+690,Chrysler,PT Crusier,PT Crusier (PG) Cabriolet  2003 > 2008,2003,2008
+691,Citroen,C1,C1 (PM/PN) Hatchback  2005 > 2014,2005,2014
+692,Citroen,C1,C1 (AB40) Hatchback  2014 > 2022,2014,2022
+693,Citroen,C3 Pluriel,C3 Pluriel (H) Cabriolet  2003 > 2009,2003,2009
+694,Citroen,C4,C4 () Coupé  2004 > 2010,2004,2010
+695,Citroen,C4,C4 () Hatchback  2004 > 2010,2004,2010
+696,Citroen,Saxo,Saxo () Hatchback  1996 > 2004,1996,2004
+697,Fiat,124,124 () Spider  2016 > 2020,2016,2020
+698,Fiat,500,"500, 1.0i",2007,2023
+699,Fiat,Brava,Brava  Hatchback  1995 > 2003,1995,2003
+700,Fiat,Cinquecento,Cinquecento  Hatchback  1992 > 1998,1992,1998
+701,Fiat,Coupé Turbo,Coupé Turbo (175) Coupé  1995 > 2000,1995,2000
+702,Fiat,Croma,Croma  Saloon  2005 > 2010,2005,2010
+703,Fiat,Panda,Panda () Hatchback  2003 > 2011,2003,2011
+704,Fiat,Uno Turbo,Uno Turbo () Hatchback  1985 > 1993,1985,1993
+705,Ford,Escort,Escort (Mk3) Hatchback  1980 > 1985,1980,1985
+706,Ford,Escort,Escort (Mk4) Hatchback  1986 > 1990,1986,1990
+707,Ford,Escort,Escort (Mk5) Hatchback  1995 > 1999,1995,1999
+708,Ford,Fiesta,Fiesta (Mk4) Hatchback  1994 > 1999,1994,1999
+709,Ford,Fiesta,Fiesta (Mk4) Hatchback  1999 > 2001,1999,2001
+710,Ford,Fiesta,Fiesta (Mk7) Hatchback  2018 >,2018,
+711,Ford,Focus,Focus (Mk1) Hatchback  1998 > 2004,1998,2004
+712,Ford,Focus,Focus (DEH) Hatchback  2018 >,2018,
+713,Ford,Focus,Focus (DEH) Estate  2018 >,2018,
+714,Ford,Ka,Ka () Hatchback  2000 > 2008,2000,2008
+715,Ford,Mondeo,Mondeo (Mk2) Hatchback  1996 > 2001,1996,2001
+716,Ford,Mondeo,Mondeo (Mk3) Hatchback  2001 > 2007,2001,2007
+717,Ford,Puma,Puma () Hatchback  1997 > 2005,1997,2005
+718,Ford,Puma,Puma () Hatchback  2018 >,2018,
+719,Ford,Sierra,Sierra () Hatchback  1984 > 1992,1984,1992
+720,Honda,Accord,Accord (CM2/CM3) Touring  2003 > 2008,2003,2008
+721,Honda,Civic,Civic ()   1987 > 1991,1987,1991
+722,Honda,Civic,Civic (FN) Hatchback  2006 > 2012,2006,2012
+723,Honda,Civic Type 'R',Civic Type 'R' (FN2) Hatchback  2006 > 2012,2006,2012
+724,Honda,Jazz,Jazz,2003,2007
+725,Honda,S2000,S2000 () Roadster  1999 > 2008,1999,2008
+726,Kia,Cerato,Cerato,2004,2010
+727,Kia,Soul,Soul,2009,2014
+728,Lexus,Is,IS200D & IS220D,2005,2013
+729,Mazda,2,Mazda 2,2007,2015
+730,Mazda,MX5,,2005,2014
+731,Mazda,RX-8,RX-8 () Coupé  2003 > 2007,2003,2007
+732,Mazda,RX-8,RX-8 () Coupé  2008 > 2008,2008,2008
+733,Mazda,RX-8,RX-8 () Coupé  2009 > 2012,2009,2012
+734,Mercedes-Benz,E-Class,,2009,2016
+735,Mini,Mini,Mini Cooper (inc Convertible),2002,2007
+736,Mitsubishi,Colt,Colt,1992,1996
+737,Mitsubishi,Colt,Colt,2004,2010
+738,Mitsubishi,Lancer,Lancer EVO VII,2001,2003
+739,Mitsubishi,Lancer,Lancer Cedia,2002,2007
+740,Nissan,Micra,Micra,,
+741,Nissan,Micra,Micra,1992,2003
+742,Nissan,Z350,Z350 Coupe & Cabrio,2003,2009
+743,Opel,Ascona,Ascona,1975,1981
+744,Opel,Asconsa,Ascona,1975,1981
+745,Opel,Corsa,Corsa () Hatchback  2000 > 2006,2000,2006
+746,Opel,Corsa,Corsa () Hatchback  2006 > 2014,2006,2014
+747,Opel,Corsa,Corsa () Hatchback  2014 > 2019,2014,2019
+748,Opel,Tigra,Tigra () Coupé  2004 > 2009,2004,2009
+749,Peugeot,106,106 () Hatchback  1991 > 1996,1991,1996
+750,Peugeot,106,106 () Hatchback  1996 > 2006,1996,2006
+751,Peugeot,205,"205 all, excl. GTi , CTi and Diesel",1983,1987
+752,Peugeot,206,206 () Hatchback  1998 > 2006,1998,2006
+753,Peugeot,206,206 Hatchback,1999,2013
+754,Peugeot,207,207 Hatchback,2006,2012
+755,Peugeot,307,307 () Hatchback  2000 > 2007,2000,2007
+756,Peugeot,405,405 Saloon,1987,1995
+757,Peugeot,106 GTI,106 GTI () Hatchback  1996 > 2006,1996,2006
+758,Peugeot,205 GTI,205 GTI () Hatchback  1984 > 1994,1984,1994
+759,Peugeot,206 CC,206 CC () Cabriolet  1998 > 2006,1998,2006
+760,Peugeot,206 GTI,206 GTI () Hatchback  1998 > 2006,1998,2006
+761,Peugeot,206 RC,206 RC () Coupé  1998 > 2006,1998,2006
+762,Peugeot,206 SW,206 SW () Sportwagen  1998 > 2006,1998,2006
+763,Peugeot,206+,206+ () Hatchback  2006 > 2013,2006,2013
+764,Peugeot,307 CC,307 CC () Cabriolet  2003 > 2007,2003,2007
+765,Peugeot,307 GTI,307 GTI () Hatchback  2000 > 2007,2000,2007
+766,Peugeot,307 SW,307 SW () Sportwagen  2002 > 2007,2002,2007
+767,Peugeot,Saxo,Saxo 1.6-16V VTS,1996,2003
+768,Peugeot,nan,307 Hatchback,2001,2007
+769,Renault,Clio,Clio III,2005,2009
+770,Renault,Laguna,"Laguna I 3.0i, 2.2D",1993,2001
+771,Renault,Laguna,Laguna II Grand Tour,2000,2007
+772,Renault,Megane,Mï¿½gane II Hatchback,2002,2008
+773,Renault,R5,R5 GT Turbo,1987,1990
+774,Seat,Arosa,"Arosa, All",1997,2005
+775,Seat,Exeo,Exeo,2009,2013
+776,Seat,Leon,Leon 4wd,1999,2004
+777,Seat,Leon,Seat Leon (1M),1999,2005
+778,Seat,Leon,Leon,2005,2013
+779,Seat,Toledo,Toledo,1999,2004
+780,Skoda,Octavia,Skoda Octavia 1 RS Combi,2000,2004
+781,Skoda,Octavia,Skoda Octavia 1 RS Sedan,2000,2004
+782,Skoda,Octavia,"Octavia, Saloon & Estate",2013,2019
+783,Skoda,Toledo,Toledo,1998,2004
+784,Subaru,Impreza,Impreza Turbo,1992,2001
+785,Suzuki,Swift,Swift,1989,2005
+786,Suzuki,Swift,Swift,2005,2010
+787,Suzuki,Swift,Swift Excl Sport,2010,2017
+788,Suzuki,Swift,Swift Sport 2WD,2012,2017
+789,Toyota,Celica,"Celica (T18, T18C, T20)",1990,1999
+790,Toyota,Celica,Celica (ZZT230/231),1999,2005
+791,Toyota,Corolla,Corolla (EE120/130) Estate  2000 > 2006,2000,2006
+792,Toyota,Starlet,Starlet,1989,1996
+793,Toyota,Starlet,Starlet,1996,2000
+794,Toyota,Vios,"Vios, Soluna Vios",2005,2012
+795,Toyota,Yaris,Yaris () Hatchback  1998 > 2005,1998,2005
+796,Toyota,MR2,MR2 (Mk1) Roadster  1985 > 1985,1985,1985
+797,Toyota,MR2,MR2 (Mk1) Roadster  1986 > 1989,1986,1989
+798,Vauxhall,Astra,Astra Mk4 Estate,1998,2004
+799,Vauxhall,Astra,Astra (H) Estate  2004 > 2009,2004,2009
+800,Vauxhall,Insigsignia,Insignia Hatchback,2008,2017
+801,Vauxhall,Insigsignia,Insignia Sports Tourer,2008,2017
+802,Vauxhall,Tigra,Tigra (B) Roadster  2004 >,2004,
+803,Vauxhall,Vectra,Vectra (J96) Saloon  1995 > 2002,1995,2002
+804,Vauxhall,Vectra,Vectra (J96) Hatchback  1995 > 2002,1995,2002
+805,Vauxhall,Zafira,Zafira (B) MPV  2005 > 2014,2005,2014
+806,Vauxhall,Zafira,Zafira (A) MPV  1999 > 2004,1999,2004
+807,Volkswagen,Beetle,Beetle (9C) Saloon  1997 > 2005,1997,2005
+808,Volkswagen,Beetle,Beetle (9Y) Cabriolet  2003 > 2005,2003,2005
+809,Volkswagen,Bora,Bora (1J) Saloon  1998 > 2005,1998,2005
+810,Volkswagen,Bora,Bora (1J) Saloon 4-Motion 1998 > 2005,1998,2005
+811,Volkswagen,Bora,Bora (1J) Estate  2000 > 2005,2000,2005
+812,Volkswagen,Bora,Bora (1J) Estate 4-Motion 2000 > 2005,2000,2005
+813,Volkswagen,Corrado,Corrado () Coupé  1991 > 1995,1991,1995
+814,Volkswagen,Fox,Fox (9N) Hatchback  2005 > 2010,2005,2010
+815,Volkswagen,Fox,Fox () Hatchback  2005 > 2011,2005,2011
+816,Volkswagen,Golf III,Golf III (1HXO) Hatchback  1994 > 1997,1994,1997
+817,Volkswagen,Golf IV,Golf IV (1J) Hatchback  1997 > 2003,1997,2003
+818,Volkswagen,Golf IV,Golf IV (1J) Hatchback 4-Motion 1997 > 2003,1997,2003
+819,Volkswagen,Golf IV,Golf IV (1J) Variant  1999 > 2004,1999,2004
+820,Volkswagen,Golf IV,Golf IV (1J) Variant 4-Motion 2000 > 2003,2000,2003
+821,Volkswagen,Golf IV GTI,Golf IV GTI (1J) Hatchback  1997 > 2003,1997,2003
+822,Volkswagen,Golf lf,Golf Mk3,1994,1997
+823,Volkswagen,Golf V,Golf V (1K) Hatchback  2003 > 2008,2003,2008
+824,Volkswagen,Golf V,Golf V (1K) Variant  2003 > 2008,2003,2008
+825,Volkswagen,Golf V,Golf V (1K) Hatchback  2003 > 2009,2003,2009
+826,Volkswagen,Golf V,Golf V (1K) Estate  2003 > 2009,2003,2009
+827,Volkswagen,Golf V GTI,Golf V GTI (1K) Hatchback  2003 > 2008,2003,2008
+828,Volkswagen,Golf V Plus,Golf V Plus (1K) MPV  2003 > 2008,2003,2008
+829,Volkswagen,Golf V R32,Golf V R32 (1K) Hatchback 4-Motion 2003 > 2008,2003,2008
+830,Volkswagen,Golf VI,Golf VI (5K) Hatchback  2008 > 2012,2008,2012
+831,Volkswagen,Golf VI GTD,Golf VI GTD (5K) Hatchback  2008 > 2012,2008,2012
+832,Volkswagen,Golf VI GTI,Golf VI GTI (5K) Hatchback  2008 > 2012,2008,2012
+833,Volkswagen,Golf VI Plus,Golf VI Plus (5K) Hatchback  2009 > 2013,2009,2013
+834,Volkswagen,Golf VII,Golf VII (5G) Hatchback  2013 > 2019,2013,2019
+835,Volkswagen,Golf VII GTD,Golf VII GTD (5G) Hatchback  2013 > 2019,2013,2019
+836,Volkswagen,Golf VII GTI,Golf VII GTI (5G) Hatchback  2013 > 2019,2013,2019
+837,Volkswagen,Golf VIII,Golf VIII (CD1) Hatchback  2020 >,2020,
+838,Volkswagen,Jetta,nan,,
+839,Volkswagen,Lupo,Lupo () Hatchback  1998 > 2005,1998,2005
+840,Volkswagen,Passat,Passat 4-Motion Saloon,1997,2005
+841,Volkswagen,Passat,Passat (3B) Saloon 4-Motion 1997 > 2000,2000,2005
+842,Volkswagen,Passat,Passat (3B) Variant 4-Motion 1997 > 2000,2000,2005
+843,Volkswagen,Polo,nan,,
+844,Volkswagen,Sharan,nan,,
+845,Volkswagen,Touran,nan,,
+846,Volkswagen,Up,Up (AA) Hatchback  2011 >,2011,
+847,Volkswagen,Vento,Vento   (1HX0) Saloon  1994 > 1997,1994,1997
+848,Volvo,740,740 (744) Saloon  1998 > 1999,1998,1999
+849,Volvo,760,760 (744) Saloon  1999 > 1999,1999,1999
+850,Volvo,850,850 () Estate  1992 > 1997,1992,1997
+851,Volvo,850,850 () Saloon  1992 > 1997,1992,1997
+852,Volvo,940,940 (P90) Saloon  2000 > 1999,2000,1999
+853,Volvo,960,960 (P90) Saloon  2000 > 1999,2000,1999
+854,Volvo,C30,C30 () Hatchback  2007 > 2014,2007,2014
+855,Volvo,V50,V50 () Estate  2004 > 2012,2004,2012
+856,Volvo,V70,V70 () Estate  1997 > 1999,1997,1999
+857,Abarth,124,124  Spider,2016,2020
+858,Abarth,500,500 (312) Hatchback,2007,2023
+859,Abarth,595,595 (312) Hatchback,2007,2023
+860,Abarth,695,695 (312) Hatchback,2007,2023
+861,Abarth,500C,500C (312) Cabriolet,2007,2023
+862,Abarth,595C,595C (312) Cabriolet,2007,2023
+863,Abarth,695C,695C (312) Cabriolet,2007,2023
+864,Acura,CL,CL  Coupé,2001,2003
+865,Acura,Integra,Integra (DC2) Coupé,1994,1997
+866,Acura,Integra,Integra (DC4) Coupé,1994,2001
+867,Acura,Integra,Integra (DC4) Coupé,1997,2001
+868,Acura,RSX,RSX  Coupé,2002,2006
+869,Acura,TL,TL  Saloon,2000,2003
+870,Acura,TL,TL  Saloon,2004,2006
+871,Acura,TSX,TSX  Saloon,2004,2008
+872,Acura,TSX,TSX  Saloon,2009,2013
+873,Alfa Romeo,33,33  Saloon,1990,1994
+874,Alfa Romeo,75,75  Saloon,1985,1991
+875,Alfa Romeo,75,75  Saloon,1988,1991
+876,Alfa Romeo,90,90  Saloon,1985,1987
+877,Alfa Romeo,147,147  Hatchback,2000,2010
+878,Alfa Romeo,156,156  Saloon,1997,2006
+879,Alfa Romeo,156,156  Sportwagen,1997,2006
+880,Alfa Romeo,159,159  Saloon,2005,2012
+881,Alfa Romeo,159,159  Sportwagen,2005,2012
+882,Alfa Romeo,147 GTA,147 GTA  Hatchback,2003,2005
+883,Alfa Romeo,156 GTA,156 GTA  Saloon,2001,2006
+884,Alfa Romeo,Alfetta,Alfetta  Saloon,1972,1986
+885,Alfa Romeo,Alfetta GTV,Alfetta GTV  Coupé,1976,1984
+886,Alfa Romeo,Brera,Brera  Coupé,2005,2011
+887,Alfa Romeo,Giulia,Giulia  Spider,1962,1965
+888,Alfa Romeo,Giulia,Giulia () Saloon,1965,1978
+889,Alfa Romeo,Giulia Sprint,Giulia Sprint  Coupé,1962,1965
+890,Alfa Romeo,Giulia SS,Giulia SS  Coupé,1962,1965
+891,Alfa Romeo,Giulietta,Giulietta () Hatchback,2010,2019
+892,Alfa Romeo,Giulietta,Giulietta () Saloon,1955,1964
+893,Alfa Romeo,Giulietta,Giulietta (116) Saloon,1978,1987
+894,Alfa Romeo,GT,GT () Coupé,2004,2010
+895,Alfa Romeo,GTV,GTV  Coupé,1976,1984
+896,Alfa Romeo,GTV,GTV () Coupé,1995,1997
+897,Alfa Romeo,GTV,GTV () Coupé,1995,2003
+898,Alfa Romeo,GTV,GTV () Coupé,1995,2005
+899,Alfa Romeo,GTV,GTV () Coupé,1997,2005
+900,Alfa Romeo,MiTo,MiTo () Hatchback,2008,2018
+901,Alfa Romeo,Montreal,Montreal () Coupé,1974,1976
+902,Alfa Romeo,Spider,Spider () Convertible,1967,1993
+903,Alfa Romeo,Spider,Spider () Convertible,1999,2005
+904,Alfa Romeo,Spider,Spider () Convertible,2006,2011
+905,Alpine,A108,A108 () Coupé,1958,1963
+906,Alpine,A110,A110 () Coupé,1963,1975
+907,Audi,80,80 (B4) Cabriolet  Quattro,1991,2000
+908,Audi,80,80 (B4) Saloon,1991,1995
+909,Audi,80,80 (B4) Saloon,1992,1995
+910,Audi,80,80 (B4) Saloon,1994,1995
+911,Audi,100,100 (C3) Avant,1983,1994
+912,Audi,100,100 (C3) Avant  Quattro,1983,1994
+913,Audi,100,100 (C3) Saloon,1983,1994
+914,Audi,200,200 (C3) Avant,1983,1994
+915,Audi,200,200 (C3) Avant  Quattro,1983,1994
+916,Audi,200,200 (C3) Saloon,1983,1994
+917,Audi,200,200 (C3) Saloon  Quattro,1983,1994
+918,Audi,A1,"A1 (8XA,8XF) Hatchback",2010,2018
+919,Audi,A1,A1 (GBA) Hatchback,2018,
+920,Audi,A1 City Carver,A1 City Carver (GBH) Hatchback,2018,
+921,Audi,A2,A2 (8Z) Hatchback,2000,2005
+922,Audi,A3,A3 (8L) Hatchback,1996,2003
+923,Audi,A3,A3 (8L) Hatchback  Quattro,1998,1999
+924,Audi,A3,A3 (8L) Hatchback  Quattro,1999,2003
+925,Audi,A3,A3 (8P) Cabriolet,2003,2012
+926,Audi,A3,A3 (8P) Hatchback,2003,2012
+927,Audi,A3,A3 (8P) Hatchback  Quattro,2003,2012
+928,Audi,A3,A3 (8P) Sportback,2003,2012
+929,Audi,A3,A3 (8P) Sportback  Quattro,2003,2012
+930,Audi,A3,A3 (8V) Cabriolet,2014,2019
+931,Audi,A3,A3 (8V) Cabriolet  Quattro,2014,2019
+932,Audi,A3,A3 (8V) Hatchback,2012,2019
+933,Audi,A3,A3 (8V) Hatchback  Quattro,2012,2019
+934,Audi,A3,A3 (8V) Saloon,2012,2019
+935,Audi,A3,A3 (8V) Saloon  Quattro,2012,2019
+936,Audi,A3,A3 (8V) Sportback,2012,2019
+937,Audi,A3,A3 (8V) Sportback  Quattro,2012,2019
+938,Audi,A3,A3 (8Y) Hatchback,2020,
+939,Audi,A3,A3 (8Y) Hatchback  Quattro,2020,
+940,Audi,A3,A3 (8Y) Saloon,2020,
+941,Audi,A3,A3 (8Y) Saloon  Quattro,2020,
+942,Audi,A3 E-Tron,A3 E-Tron (8V) Sportback,2014,2019
+943,Audi,A3 G-Tron,A3 G-Tron (8V) Sportback,2014,2019
+944,Audi,A4,A4 (B5) Avant,1994,1998
+945,Audi,A4,A4 (B5) Avant,1998,2010
+946,Audi,A4,A4 (B5) Saloon,1994,1998
+947,Audi,A4,A4 (B5) Saloon,1998,2010
+948,Audi,A4,A4 (B6/B7) Avant,2001,2007
+949,Audi,A4,A4 (B6/B7) Avant  Quattro,2000,2007
+950,Audi,A4,A4 (B6/B7) Cabriolet,2000,2007
+951,Audi,A4,A4 (B6/B7) Saloon,2000,2007
+952,Audi,A4,A4 (B6/B7) Saloon  Quattro,2000,2007
+953,Audi,A4,A4 (B8) Avant,2008,2015
+954,Audi,A4,A4 (B8) Saloon,2008,2015
+955,Audi,A4,A4 (B8) Saloon  Quattro,2008,2015
+956,Audi,A4,A4 (B9) Avant,2015,2023
+957,Audi,A4,A4 (B9) Avant  Quattro,2015,2023
+958,Audi,A4,A4 (B9) Saloon,2015,2023
+959,Audi,A4,A4 (B9) Saloon  Quattro,2015,2023
+960,Audi,A5,A5 (8T) Cabriolet,2009,2015
+961,Audi,A5,A5 (8T) Cabriolet  Quattro,2009,2015
+962,Audi,A5,A5 (8T) Coupé,2007,2015
+963,Audi,A5,A5 (8T) Coupé  Quattro,2007,2015
+964,Audi,A5,A5 (8T) Sportback,2009,2015
+965,Audi,A5,A5 (8T) Sportback  Quattro,2009,2015
+966,Audi,A5,A5 (8W) Cabriolet,2016,2023
+967,Audi,A5,A5 (8W) Cabriolet  Quattro,2016,2023
+968,Audi,A5,A5 (8W) Coupé,2016,2023
+969,Audi,A5,A5 (8W) Coupé  Quattro,2016,2023
+970,Audi,A5,A5 (8W) Sportback,2016,2023
+971,Audi,A5,A5 (8W) Sportback  Quattro,2016,2023
+972,Audi,A6,A6 (C4) Avant,1994,1997
+973,Audi,A6,A6 (C4) Avant  Quattro,1994,1997
+974,Audi,A6,A6 (C4) Saloon,1994,1997
+975,Audi,A6,A6 (C4) Saloon  Quattro,1994,1997
+976,Audi,A6,A6 (C5) Avant,1998,2004
+977,Audi,A6,A6 (C5) Avant  Quattro,1997,2004
+978,Audi,A6,A6 (C5) Saloon,1997,2004
+979,Audi,A6,A6 (C5) Saloon  Quattro,1997,2004
+980,Audi,A6,A6 (C6) Avant,2005,2011
+981,Audi,A6,A6 (C6) Avant  Quattro,2005,2011
+982,Audi,A6,A6 (C6) Saloon,2004,2011
+983,Audi,A6,A6 (C6) Saloon  Quattro,2004,2011
+984,Audi,A6,A6 (C7) Avant,2011,2018
+985,Audi,A6,A6 (C7) Avant  Quattro,2011,2018
+986,Audi,A6,A6 (C7) Saloon,2011,2018
+987,Audi,A6,A6 (C7) Saloon  Quattro,2011,2018
+988,Audi,A6,A6 (C8) Avant,2018,2023
+989,Audi,A6,A6 (C8) Avant  Quattro,2018,2023
+990,Audi,A6,A6 (C8) Saloon,2018,2023
+991,Audi,A6,A6 (C8) Saloon  Quattro,2018,2023
+992,Audi,A7,A7 (4G) Sportback,2010,2018
+993,Audi,A7,A7 (4G) Sportback  Quattro,2010,2018
+994,Audi,A7,A7 (4KA) Sportback,2018,2023
+995,Audi,A7,A7 (4KA) Sportback  Quattro,2018,2023
+996,Audi,Coupé,Coupé (B2) Coupé,1980,1989
+997,Audi,Coupé,Coupé (B2) Coupé  Quattro,1980,1989
+998,Audi,Coupé,Coupé (B3) Coupé,1989,1995
+999,Audi,Coupé,Coupé (B3) Coupé  Quattro,1989,1991
+1000,Audi,Q2,Q2 (GAB) Hatchback,2016,2023
+1001,Audi,Q3,Q3 (8U) Hatchback,2011,2018
+1002,Audi,Q3,Q3 (8U) Hatchback  Quattro,2011,2018
+1003,Audi,Q3,Q3 (F38) Hatchback,2018,
+1004,Audi,Q3,Q3 (F38) Hatchback  Quattro,2018,
+1005,Audi,Q5,Q5 (8R) Hatchback,2008,2016
+1006,Audi,Q5,Q5 (8R) Hatchback  Quattro,2008,2016
+1007,Audi,RS2,RS2 (B3) Avant  Quattro,1994,1996
+1008,Audi,S2,S2 (B3) Avant  Quattro,1993,1995
+1009,Audi,S2,S2 (B3) Coupé  Quattro,1990,1995
+1010,Audi,S3,S3 (8L) Hatchback  Quattro,1999,2003
+1011,Audi,S3,S3 (8P) Hatchback  Quattro,2006,2012
+1012,Audi,S3,S3 (8P) Sportback  Quattro,2006,2012
+1013,Audi,S3,S3 (8Y) Hatchback  Quattro,2020,
+1014,Audi,S4,S4 (B4) Avant  Quattro,1991,1994
+1015,Audi,S4,S4 (B4) Saloon  Quattro,1991,1994
+1016,Audi,S4,S4 (B6/B7) Avant  Quattro,2003,2007
+1017,Audi,S4,S4 (B6/B7) Saloon  Quattro,2003,2007
+1018,Audi,S4,S4 (B8) Avant  Quattro,2008,2013
+1019,Audi,S4,S4 (B8) Saloon  Quattro,2008,2013
+1020,Audi,S4,S4 (B9) Saloon  Quattro,2015,2023
+1021,Audi,S5,S5 (8T) Coupé  Quattro,2007,2017
+1022,Audi,S5,S5 (8T) Sportback  Quattro,2007,2017
+1023,Audi,S5,S5 (F5) Coupé  Quattro,2017,
+1024,Audi,S5,S5 (F5) Sportback  Quattro,2017,
+1025,Audi,S6,S6 (C4) Avant  Quattro,1994,1997
+1026,Audi,S6,S6 (C4) Saloon  Quattro,1994,1997
+1027,Audi,S6,S6 (C5) Avant  Quattro,1999,2003
+1028,Audi,S6,S6 (C5) Saloon  Quattro,1999,2003
+1029,Audi,TT,TT (8J) Coupé,2006,2013
+1030,Audi,TT,TT (8J) Coupé  Quattro,2006,2013
+1031,Audi,TT,TT (8J) Roadster,2006,2013
+1032,Audi,TT,TT (8J) Roadster  Quattro,2006,2013
+1033,Audi,TT,TT (8N) Coupé,1998,2006
+1034,Audi,TT,TT (8N) Coupé  Quattro,1998,2006
+1035,Audi,TT,TT (8N) Roadster,1998,2006
+1036,Audi,TT,TT (8N) Roadster  Quattro,1998,2006
+1037,Audi,TT,TT (FV) Coupé,2014,2019
+1038,Audi,TT,TT (FV) Coupé  Quattro,2014,2019
+1039,Audi,TT,TT (FV) Roadster,2014,2019
+1040,Audi,TT,TT (FV) Roadster  Quattro,2014,2019
+1041,Audi,UR Quattro,UR Quattro (B2) Coupé  Quattro,1981,1989
+1042,Audi,V8,V8 (D11) Saloon  Quattro,1989,1994
+1043,Austin,Mini,Mini  Estate,1959,1986
+1044,Austin,Mini,Mini  Pick Up,1959,1986
+1045,Austin,Mini,Mini  Saloon,1959,1986
+1046,Austin,Mini,Mini  Van,1959,1986
+1047,BMW,02-Series,02-Series (E10/E20) Saloon,1966,1977
+1048,BMW,02-Series,02-Series (E10/E20) Touring,1971,1975
+1049,BMW,1-Series,1-Series (E81) Hatchback,2004,2011
+1050,BMW,1-Series,1-Series (E82) Coupé,2004,2011
+1051,BMW,1-Series,1-Series (E88) Cabriolet,2004,2011
+1052,BMW,1-Series,1-Series (F20) Hatchback,2011,2018
+1053,BMW,1-Series,1-Series (F20) Hatchback  xDrive,2011,2018
+1054,BMW,1-Series,1-Series (F20) Hatchback  xDrive,2012,2018
+1055,BMW,1-Series,1-Series (F21) Hatchback,2011,2018
+1056,BMW,1-Series,1-Series (F21) Hatchback  xDrive,2011,2018
+1057,BMW,1-Series,1-Series (F21) Hatchback  xDrive,2012,2018
+1058,BMW,1-Series,1-Series (F40) Hatchback,2019,
+1059,BMW,1-Series,1-Series (F52) Saloon,2019,
+1060,BMW,2-Series,2-Series (F22) Cabriolet  xDrive,2010,2021
+1061,BMW,2-Series,2-Series (F22) Cabriolet  xDrive,2014,2021
+1062,BMW,2-Series,2-Series (F22) Coupé,2010,2021
+1063,BMW,2-Series,2-Series (F22) Coupé  xDrive,2010,2021
+1064,BMW,2-Series,2-Series (F22) Coupé  xDrive,2014,2021
+1065,BMW,2-Series,2-Series (F23) Cabriolet,2010,2021
+1066,BMW,2-Series,2-Series (F44) Grand Coupe,2019,
+1067,BMW,2-Series,2-Series (F45) Active Tourer,2014,2019
+1068,BMW,2-Series,2-Series (F45) Active Tourer  xDrive,2014,2019
+1069,BMW,2-Series,2-Series (F46) Gran Tourer,2014,2019
+1070,BMW,2-Series,2-Series (F46) Gran Tourer  xDrive,2014,2019
+1071,BMW,2-Series,2-Series (G42) Coupé,2021,2025
+1072,BMW,2-Series,2-Series (G42) Coupé xDrive,2021,2025
+1073,BMW,3-Series,3-Series (E21) Saloon,1975,1982
+1074,BMW,3-Series,3-Series (E30) Cabriolet,1982,1991
+1075,BMW,3-Series,3-Series (E30) Saloon,1982,1991
+1076,BMW,3-Series,3-Series (E30) Saloon  xDrive,1982,1991
+1077,BMW,3-Series,3-Series (E30) Touring,1982,1991
+1078,BMW,3-Series,3-Series (E30) Touring  xDrive,1982,1991
+1079,BMW,3-Series,3-Series (E36) Cabriolet,1991,1999
+1080,BMW,3-Series,3-Series (E36) Cabriolet,1992,1999
+1081,BMW,3-Series,3-Series (E36) Compact,1994,2001
+1082,BMW,3-Series,3-Series (E36) Compact,1997,2001
+1083,BMW,3-Series,3-Series (E36) Coupé,1990,1991
+1084,BMW,3-Series,3-Series (E36) Coupé,1991,1992
+1085,BMW,3-Series,3-Series (E36) Coupé,1991,1998
+1086,BMW,3-Series,3-Series (E36) Coupé,1992,1999
+1087,BMW,3-Series,3-Series (E36) Saloon,1990,1991
+1088,BMW,3-Series,3-Series (E36) Saloon,1991,1992
+1089,BMW,3-Series,3-Series (E36) Saloon,1991,1998
+1090,BMW,3-Series,3-Series (E36) Saloon,1992,1999
+1091,BMW,3-Series,3-Series (E36) Touring,1994,1999
+1092,BMW,3-Series,3-Series (E46) Cabriolet,1998,2005
+1093,BMW,3-Series,3-Series (E46) Compact,2001,2005
+1094,BMW,3-Series,3-Series (E46) Coupé,1999,2005
+1095,BMW,3-Series,3-Series (E46) Saloon,1998,2005
+1096,BMW,3-Series,3-Series (E46) Saloon  xDrive,2000,2005
+1097,BMW,3-Series,3-Series (E46) Touring,1998,2005
+1098,BMW,3-Series,3-Series (E46) Touring  xDrive,2000,2005
+1099,BMW,3-Series,3-Series (E90) Saloon,2005,2011
+1100,BMW,3-Series,3-Series (E90X) Saloon  xDrive,2005,2011
+1101,BMW,3-Series,3-Series (E91) Touring,2005,2011
+1102,BMW,3-Series,3-Series (E91X) Touring  xDrive,2005,2011
+1103,BMW,3-Series,3-Series (E92) Coupé,2005,2011
+1104,BMW,3-Series,3-Series (E92X) Coupé  xDrive,2005,2011
+1105,BMW,3-Series,3-Series (E93) Cabriolet,2005,2011
+1106,BMW,3-Series,3-Series (E93X) Cabriolet  xDrive,2005,2011
+1107,BMW,3-Series,3-Series (F30) Saloon,2011,2019
+1108,BMW,3-Series,3-Series (F30) Saloon xDrive,2011,2019
+1109,BMW,3-Series,3-Series (F31) Touring,2012,2019
+1110,BMW,3-Series,3-Series (F31) Touring  xDrive,2012,2019
+1111,BMW,3-Series,3-Series (F34) GT,2012,2019
+1112,BMW,3-Series,3-Series (G20) Saloon,2019,
+1113,BMW,3-Series,3-Series (G20) Saloon xDrive,2019,
+1114,BMW,3-Series,3-Series (G21) Touring,2019,
+1115,BMW,3-Series,3-Series (G21) Touring xDrive,2019,
+1116,BMW,4-Series,4-Series (F32) Coupé,2012,2019
+1117,BMW,4-Series,4-Series (F32) Coupé  xDrive,2012,2019
+1118,BMW,4-Series,4-Series (F33) Cabriolet,2012,2019
+1119,BMW,4-Series,4-Series (F36) Cabriolet  xDrive,2012,2019
+1120,BMW,4-Series,4-Series (F36) Gran Coupé,2012,2019
+1121,BMW,4-Series,4-Series (F36) Gran Coupé  xDrive,2012,2019
+1122,BMW,4-Series,4-Series (G22) Coupé,2020,
+1123,BMW,4-Series,4-Series (G22) Coupé xDrive,2020,
+1124,BMW,4-Series,4-Series (G23) Cabriolet,2020,
+1125,BMW,4-Series,4-Series (G23) Cabriolet xDrive,2020,
+1126,BMW,4-Series,4-Series (G26) Cabriolet,2020,
+1127,BMW,4-Series,4-Series (G26) Cabriolet xDrive,2020,
+1128,BMW,5-Series,5-Series (E12) Saloon,1977,1981
+1129,BMW,5-Series,5-Series (E34) Saloon,1988,1996
+1130,BMW,5-Series,5-Series (E34) Touring,1988,1996
+1131,BMW,5-Series,5-Series (E39) Saloon,1995,2003
+1132,BMW,5-Series,5-Series (E39) Touring,1995,2003
+1133,BMW,5-Series,5-Series (E60) Saloon,2003,2009
+1134,BMW,5-Series,5-Series (E61) Touring,2003,2010
+1135,BMW,5-Series,5-Series (F10) Saloon,2009,2017
+1136,BMW,5-Series,5-Series (F11) Touring,2009,2017
+1137,BMW,5-Series,5-Series (F18) Saloon,2009,2017
+1138,BMW,5-Series,5-Series (G30) Saloon,2017,2023
+1139,BMW,5-Series,5-Series (G30) Saloon xDrive,2017,2023
+1140,BMW,5-Series,5-Series (G31) Touring,2017,2023
+1141,BMW,5-Series,5-Series (G31) Touring xDrive,2017,2023
+1142,BMW,6-Series,6-Series (E24) Coupé,1977,1981
+1143,BMW,6-Series,6-Series (G32) Saloon,2017,2023
+1144,BMW,6-Series,6-Series (G32) Saloon xDrive,2017,2023
+1145,BMW,7-Series E32,7-Series E32 (E32) Saloon,1990,1994
+1146,BMW,M3,M3 (E30) Saloon,1985,1991
+1147,BMW,M3,M3 (E36) Saloon,1993,1999
+1148,BMW,M3,M3 (E46) Saloon,2000,2006
+1149,BMW,M5,M5 (E39) Saloon,1998,2003
+1150,BMW,X1,X1 (F48) SUV,2014,2023
+1151,BMW,X1,X1 (F48) SUV  xDrive,2014,2023
+1152,BMW,X2,X2 (F39) SUV,2016,2023
+1153,BMW,X2,X2 (F39) SUV  xDrive,2016,2023
+1154,BMW,X3,X3 (E83) SUV  xDrive,2003,2010
+1155,BMW,X3,X3 (F25) SUV  xDrive,2010,2017
+1156,BMW,X3,X3 (F97) SUV  xDrive,2017,2023
+1157,BMW,X4,X4 (F26) SUV  xDrive,2014,2019
+1158,BMW,X5,X5 (E70) SUV  xDrive,2007,2013
+1159,BMW,X5,X5 (F15) SUV  xDrive,2013,2018
+1160,BMW,X6,X6 (E71) SUV  xDrive,2008,2014
+1161,BMW,X6,X6 (F16) SUV  xDrive,2014,2019
+1162,BMW,Z3,Z3 (E30) Roadster,1989,1991
+1163,BMW,Z3,Z3 (E36) Coupé,1997,2003
+1164,BMW,Z3,Z3 (E36) Roadster,1994,2003
+1165,BMW,Z3,Z3 (E36) Roadster,1996,2003
+1166,BMW,Z3M Coupe,Z3M Coupe (E36) Coupé,1997,2002
+1167,BMW,Z3M Roadster,Z3M Roadster (E36) Roadster,1996,2003
+1168,BMW,Z-Series,Z-Series (E85) Roadster,2002,2008
+1169,BMW,Z-Series,Z-Series (E86) Coupé,2006,2009
+1170,BMW,Z-Series,Z-Series (E89) Roadster,2008,2016
+1171,Buick,Century,Century  Estate,1973,1977
+1172,Buick,Century,Century  Saloon,1970,1977
+1173,Buick,Electra,Electra  Estate,1985,1990
+1174,Buick,Electra,Electra  Saloon,1971,1976
+1175,Buick,Electra,Electra  Saloon,1977,1985
+1176,Buick,Estate,Estate  Estate,1971,1976
+1177,Buick,Estate,Estate  Estate,1977,1985
+1178,Buick,Le Sabre,Le Sabre  Estate,1985,1990
+1179,Buick,Le Sabre,Le Sabre  Saloon,1971,1976
+1180,Buick,Le Sabre,Le Sabre  Saloon,1977,1985
+1181,Buick,Riviera,Riviera  Coupé,1971,1976
+1182,Buick,Riviera,Riviera  Coupé,1977,1978
+1183,Buick,Roadmaster,Roadmaster  Saloon,1992,1996
+1184,Buick,Skylark,Skylark  Saloon,1964,1967
+1185,Buick,Skylark,Skylark  Saloon,1968,1972
+1186,Buick,Skylark,Skylark  Saloon,1973,1979
+1187,Buick,Skylark,Skylark  Sportwagen,1970,1972
+1188,Cadillac,BLS,BLS  Saloon,2006,2009
+1189,Cadillac,BLS,BLS  Sportwagen,2006,2009
+1190,Cadillac,Calais,Calais  Saloon,1977,1984
+1191,Chevrolet,Avalanche,Avalanche  SUV,2000,2006
+1192,Chevrolet,Avalanche,Avalanche  SUV,2008,2013
+1193,Chevrolet,Bel Air,Bel Air  Saloon,1971,1976
+1194,Chevrolet,Camaro,Camaro  Convertible,1982,1992
+1195,Chevrolet,Camaro,Camaro  Coupé,1967,1969
+1196,Chevrolet,Camaro,Camaro  Coupé,1968,1969
+1197,Chevrolet,Camaro,Camaro  Coupé,1970,1981
+1198,Chevrolet,Camaro,Camaro  Coupé,1982,1992
+1199,Chevrolet,Camaro,Camaro  Coupé,1993,2002
+1200,Chevrolet,Camaro,Camaro  Coupé,2010,2015
+1201,Chevrolet,Camaro,Camaro  Coupé,2016,2023
+1202,Chevrolet,Caprice,Caprice  Saloon,1977,1996
+1203,Chevrolet,Chevelle,Chevelle  Coupé,1973,1977
+1204,Chevrolet,Chevelle,Chevelle  Saloon,1968,1973
+1205,Chevrolet,Chevelle,Chevelle  Saloon,1977,1977
+1206,Chevrolet,Chevy II,Chevy II  Saloon,1968,1974
+1207,Chevrolet,Chevy II,Chevy II  Saloon,1975,1979
+1208,Chevrolet,Corvette,Corvette  Convertible,1963,1967
+1209,Chevrolet,Corvette,Corvette  Convertible,1968,1983
+1210,Chevrolet,Corvette,Corvette  Coupé,1963,1967
+1211,Chevrolet,Corvette,Corvette  Coupé,1968,1983
+1212,Chevrolet,Corvette,Corvette  Coupé,1997,2004
+1213,Chevrolet,Corvette,Corvette  Coupé,2005,2013
+1214,Chevrolet,Cruze,Cruze (J300) Hatchback,2008,2016
+1215,Chevrolet,Cruze,Cruze (J300) Saloon,2008,2016
+1216,Chevrolet,Cruze,Cruze (J300) Sports Tourer,2008,2016
+1217,Chevrolet,El Camino,El Camino  Saloon,1968,1977
+1218,Chevrolet,Impala,Impala  Saloon,1965,1976
+1219,Chevrolet,Impala,Impala  Saloon,1977,1990
+1220,Chevrolet,LUV,LUV  Pick Up,1973,1981
+1221,Chevrolet,LUV,LUV  Pick Up 4X4,1973,1981
+1222,Chevrolet,Niva,Niva  SUV,2005,2011
+1223,Chevrolet,Silverado 1500,Silverado 1500  Pick Up  4x4,1999,2006
+1224,Chevrolet,Silverado 1500,Silverado 1500  Pick Up  4x4,2008,2013
+1225,Chevrolet,Silverado 1500,Silverado 1500  Pick Up  4x4,2014,2018
+1226,Chevrolet,Silverado 1500,Silverado 1500  Pick Up 2WD,1999,2006
+1227,Chevrolet,Silverado 1500,Silverado 1500  Pick Up 2WD,2005,2006
+1228,Chevrolet,Silverado 1500,Silverado 1500  Pick Up 2WD,2007,2013
+1229,Chevrolet,Silverado 1500,Silverado 1500  Pick Up 2WD,2014,2018
+1230,Chevrolet,Silverado 2500,Silverado 2500  Pick Up  4x4,1999,2010
+1231,Chevrolet,Silverado 2500,Silverado 2500  Pick Up 2WD,1999,2010
+1232,Chevrolet,Silverado 3500,Silverado 3500  Pick Up  4x4,1999,2010
+1233,Chevrolet,Silverado 3500,Silverado 3500  Pick Up 2WD,1999,2010
+1234,Chevrolet,Suburban,Suburban  SUV 2WD,2000,2006
+1235,Chevrolet,Suburban,Suburban  SUV 2WD,2015,2023
+1236,Chevrolet,Tahoe,Tahoe  SUV  4x4,2000,2006
+1237,Chevrolet,Tahoe,Tahoe  SUV  4x4,2008,2013
+1238,Chevrolet,Tahoe,Tahoe  SUV 2WD,2000,2006
+1239,Chevrolet,Tahoe,Tahoe  SUV 2WD,2008,2013
+1240,Chevrolet,Tahoe,Tahoe  SUV 2WD,2015,2023
+1241,Chrysler America,300 / 300c,300 / 300c  Saloon,2004,2010
+1242,Chrysler America,300 / 300c,300 / 300c  Saloon,2011,2022
+1243,Chrysler America,Crossfire,Crossfire  Cabriolet,2003,2006
+1244,Chrysler America,Crossfire,Crossfire  Coupé,2003,2006
+1245,Citroen,AX,AX  Hatchback,1986,1996
+1246,Citroen,AX,AX  Hatchback,1991,1996
+1247,Citroen,C2,C2  Hatchback,2006,2013
+1248,Citroen,C3,C3 (SC) Hatchback,2009,2016
+1249,Citroen,C3,C3 (SX/SY) Hatchback,2016,2024
+1250,Citroen,C3 Aircross,C3 Aircross (2R/2C) SUV,2017,2020
+1251,Citroen,C4,C4  Coupé,2004,2010
+1252,Citroen,C4,C4  Hatchback,2004,2010
+1253,Citroen,C4 Grand Picasso,C4 Grand Picasso  MPV,2013,2018
+1254,Citroen,C4 Grand Space Tourer,C4 Grand Space Tourer  MPV,2018,2022
+1255,Citroen,C4 Picasso,C4 Picasso  MPV,2013,2018
+1256,Citroen,C4 Space Tourer,C4 Space Tourer  MPV,2018,2022
+1257,Citroen,Dispatch,Dispatch  Van,2016,
+1258,Citroen,DS3,DS3  Cabriolet,2009,2016
+1259,Citroen,DS3,DS3  Hatchback,2009,2016
+1260,Citroen,Grand Space Tourer,Grand Space Tourer  Bus,2016,
+1261,Citroen,Jumpy,Jumpy  Van,2016,
+1262,Citroen,Relay,Relay (230) Camper,1994,2001
+1263,Citroen,Relay,Relay (230) MiniBus,1994,2001
+1264,Citroen,Relay,Relay (230) Van,1994,2001
+1265,Citroen,Relay,Relay (244) Camper,2001,2006
+1266,Citroen,Relay,Relay (244) MiniBus,2001,2006
+1267,Citroen,Relay,Relay (244) Van,2001,2006
+1268,Citroen,Relay,Relay (250) Camper,2006,2023
+1269,Citroen,Relay,Relay (250) MiniBus,2006,2023
+1270,Citroen,Relay,Relay (250) Motorhome,2006,2023
+1271,Citroen,Relay,Relay (250) Van,2006,2023
+1272,Citroen,Relay,Relay (290) Camper,2006,2023
+1273,Citroen,Relay,Relay (290) MiniBus,2006,2023
+1274,Citroen,Relay,Relay (290) Motorhome,2006,2023
+1275,Citroen,Relay,Relay (290) Van,2006,2023
+1276,Citroen,Saxo,Saxo  Hatchback,1996,2004
+1277,Citroen,Space Tourer,Space Tourer  Bus,2016,
+1278,Citroen,Xsara,Xsara  Coupé,1997,2004
+1279,Citroen,Xsara,Xsara  Coupé,1998,2004
+1280,Citroen,Xsara,Xsara  Hatchback,1997,2004
+1281,Citroen,Xsara,Xsara  Hatchback,1998,2004
+1282,Citroen,ZX,ZX  Hatchback,1991,1998
+1283,Cupra,Ateca,"Ateca (KH7, KHP) SUV",2018,2025
+1284,Cupra,Ateca,"Ateca (KH7, KHP) SUV AWD",2018,2025
+1285,Cupra,Formentor,Formentor (KM7) SUV,2020,
+1286,Cupra,Formentor,Formentor (KM7) SUV AWD,2020,
+1287,Cupra,Leon,Leon (KL1) Hatchback,2020,
+1288,Cupra,Leon,Leon (KL1) Hatchback AWD,2020,
+1289,Cupra,Leon,Leon (KL8) Sports Tourer,2020,
+1290,Cupra,Leon,Leon (KL8) Sports Tourer AWD,2020,
+1291,Dacia,Duster,Duster (HM) SUV,2018,2023
+1292,Dacia,Duster,Duster (HM) SUV 4x4,2018,2023
+1293,Dacia,Duster,Duster (HS) SUV,2010,2017
+1294,Dacia,Duster,Duster (HS) SUV 4x4,2010,2017
+1295,Daewoo,Espero,Espero  Saloon,1995,1999
+1296,Daewoo,Lanos,Lanos  Hatchback,1997,2003
+1297,Daewoo,Nexia,Nexia  Hatchback,1995,1999
+1298,Daihatsu,Charade,Charade (XP90) Saloon,2011,2013
+1299,Daihatsu,Charmant,Charmant  Saloon,1981,1983
+1300,Daihatsu,Charmant,Charmant  Saloon,1983,1988
+1301,Daimler,2.5,2.5  Saloon,1964,1969
+1302,Daimler,Double six,Double six  Saloon,1964,1969
+1303,Daimler,Double six,Double six  Saloon,1972,1993
+1304,Daimler,Six,Six  Saloon,1964,1969
+1305,Daimler,Sovereign,Sovereign  Saloon,1964,1969
+1306,Daimler,Sovereign,Sovereign  Saloon,1970,1986
+1307,Daimler,SP250 Dart,SP250 Dart  Roadster,1595,1964
+1308,Dodge,Challenger,Challenger  Coupé,1970,1974
+1309,Dodge,Challenger,Challenger  Coupé,2008,2010
+1310,Dodge,Challenger,Challenger  Coupé,2011,2022
+1311,Dodge,Charger,Charger  Coupé,1965,1972
+1312,Dodge,Charger,Charger  Coupé,1973,1976
+1313,Dodge,Charger,Charger  Saloon,2006,2010
+1314,Dodge,Charger,Charger  Saloon,2011,2022
+1315,Dodge,D50,D50  Pick Up,1979,1985
+1316,Dodge,Magnum,Magnum  Estate,2004,2008
+1317,Dodge,Ram 1500,Ram 1500   Pick Up,2002,2008
+1318,Dodge,Ram 1500,Ram 1500   Pick Up,2009,2010
+1319,Dodge,Ram 1500,Ram 1500   Pick Up 4X4,2002,2005
+1320,Dodge,Ram 1500,Ram 1500   Pick Up 4X4,2006,2008
+1321,Dodge,Ram 1500,Ram 1500   Pick Up 4X4,2009,2010
+1322,Dodge,Ram 2500,Ram 2500  Pick Up,2003,2010
+1323,Dodge,Ram 2500,Ram 2500  Pick Up 4X4,2003,2010
+1324,Dodge,Ram 3500,Ram 3500  Pick Up,2003,2010
+1325,Dodge,Ram 3500,Ram 3500  Pick Up 4X4,2003,2010
+1326,Ferrari,246GTB,246GTB  Coupé,1969,1974
+1327,Ferrari,246GTS,246GTS  Spider,1969,1974
+1328,Ferrari,250GT,250GT (508) Coupé,1962,1964
+1329,Ferrari,250GT 2+2,250GT 2+2 (508) Coupé,1961,1962
+1330,Ferrari,250GT 2+2,250GT 2+2 (508) Coupé,1962,1964
+1331,Ferrari,250GT 2+2,250GT 2+2 (508) Spider,1962,1964
+1332,Ferrari,250GT Berlinetta Lusso,250GT Berlinetta Lusso (539) Coupé,1962,1964
+1333,Ferrari,250GT Super America,250GT Super America (539) Coupé,1962,1964
+1334,Ferrari,308GT4,308GT4  Coupé,1973,1980
+1335,Ferrari,308GTB,308GTB  Coupé,1975,1985
+1336,Ferrari,308GTS,308GTS  Spider,1975,1985
+1337,Ferrari,328GTB,328GTB  Coupé,1985,1987
+1338,Ferrari,328GTB,328GTB  Coupé,1987,1989
+1339,Ferrari,328GTS,328GTS  Coupé,1985,1987
+1340,Ferrari,328GTS,328GTS  Coupé,1987,1989
+1341,Ferrari,348GTB,348GTB  Spider,1988,1995
+1342,Ferrari,348GTS,348GTS  Coupé,1988,1995
+1343,Ferrari,365GT4 2+2,365GT4 2+2  Coupé,1973,1975
+1344,Ferrari,365GT4 BB,365GT4 BB  Coupé,1973,1976
+1345,Ferrari,365GTB Daytona,365GTB Daytona  Coupé,1968,1973
+1346,Ferrari,365GTS Daytona,365GTS Daytona  Spider,1971,1973
+1347,Ferrari,400 Automatic,400 Automatic  Coupé,1977,1982
+1348,Ferrari,400GT,400GT  Coupé,1977,1982
+1349,Ferrari,412i,412i  Coupé,1977,1982
+1350,Ferrari,512BB,512BB  Coupé,1976,1984
+1351,Ferrari,512BBi,512BBi  Coupé,1976,1984
+1352,Ferrari,Dino,Dino  Coupé,1969,1974
+1353,Ferrari,Dino,Dino  Coupé,1973,1980
+1354,Ferrari,Dino,Dino  Spider,1969,1974
+1355,Ferrari,F40,F40  Coupé,1988,1991
+1356,Ferrari,GTO288,GTO288  Coupé,1985,1985
+1357,Ferrari,Mondial 8,Mondial 8  Coupé,1981,1985
+1358,Ferrari,Testarossa,Testarossa  Coupé,1985,1991
+1359,Fiat,124,124  Coupé,1966,1980
+1360,Fiat,124,124  Saloon,1966,1980
+1361,Fiat,124,124  Spider,1966,1980
+1362,Fiat,124,124  Spider,2016,2020
+1363,Fiat,500,500 (312) Cabriolet,2007,2023
+1364,Fiat,500,500 (312) Hatchback,1957,1975
+1365,Fiat,500,500 (312) Hatchback,2007,2023
+1366,Fiat,Barchetta,Barchetta  Spider,1995,2005
+1367,Fiat,City Cross,City Cross (319) Saloon,2011,
+1368,Fiat,Coupé Turbo,Coupé Turbo,1995,2000
+1369,Fiat,Croma,Croma  Saloon,2005,2009
+1370,Fiat,Dino,Dino  Coupé,1967,1969
+1371,Fiat,Dino,Dino   Spider,1969,1972
+1372,Fiat,Ducato,Ducato (230) Camper,1994,2001
+1373,Fiat,Ducato,Ducato (230) MiniBus,1994,2001
+1374,Fiat,Ducato,Ducato (230) Van,1994,2001
+1375,Fiat,Ducato,Ducato (244) Camper,2001,2006
+1376,Fiat,Ducato,Ducato (244) MiniBus,2001,2006
+1377,Fiat,Ducato,Ducato (244) Van,2001,2006
+1378,Fiat,Ducato,Ducato (250) Camper,2006,2023
+1379,Fiat,Ducato,Ducato (250) MiniBus,2006,2023
+1380,Fiat,Ducato,Ducato (250) Motorhome,2006,2023
+1381,Fiat,Ducato,Ducato (250) Van,2006,2023
+1382,Fiat,Ducato,Ducato (290) Camper,2006,2023
+1383,Fiat,Ducato,Ducato (290) MiniBus,2006,2023
+1384,Fiat,Ducato,Ducato (290) Motorhome,2006,2023
+1385,Fiat,Ducato,Ducato (290) Van,2006,2023
+1386,Fiat,Fullback,Fullback (KV1T) Pick Up 4X4,2015,2019
+1387,Fiat,Grande Punto,Grande Punto (199) Hatchback,2007,2018
+1388,Fiat,Panda,Panda (169) Hatchback,2003,2012
+1389,Fiat,Panda,Panda (319) Hatchback,2011,
+1390,Fiat,Punto,Punto (176) Cabriolet,1993,1999
+1391,Fiat,Punto,Punto (176) Hatchback,1993,1999
+1392,Fiat,Punto,Punto (188) Hatchback,1999,2009
+1393,Fiat,Scudo,Scudo  Van,2022,
+1394,Fiat,Talento,Talento  Van,2016,2023
+1395,Fiat,Ulysse,Ulysse  MPV,2022,
+1396,Ford,Fiesta,Fiesta (MK VII) Hatchback,2017,2024
+1397,Ford,Fiesta MK VII,Fiesta MK VII (HJ/HF) Hatchback,2017,2024
+1398,Ford,Fiesta MK VII ST,Fiesta MK VII ST (HJ/HF) Hatchback,2017,2024
+1399,Ford,Fiesta ST,Fiesta ST (MK VII) Hatchback,2017,2024
+1400,Ford,Focus,Focus Mk IV Estate,2018,2025
+1401,Ford,Focus MK IV,Focus MK IV () Estate,2018,
+1402,Ford,Focus MK IV,Focus MK IV () Hatchback,2018,
+1403,Ford,Focus MK IV,Focus MK IV () Saloon,2018,
+1404,Ford,Focus MK IV ST,Focus MK IV ST () Estate,2018,
+1405,Ford,Focus MK IV ST,Focus MK IV ST () Hatchback,2018,
+1406,Ford,Bronco,Bronco  SUV 4X4,1967,1977
+1407,Ford,Capri Mk3,Capri Mk3  Coupé,1973,1985
+1408,Ford,C-Max,C-Max  MPV,2003,2010
+1409,Ford,Econoline E250,Econoline E250  Van,1975,1991
+1410,Ford,Econoline E350,Econoline E350  Van,1975,1991
+1411,Ford,Escort Cosworth,Escort Cosworth  Saloon 4X4,1992,1994
+1412,Ford,Escort RS 2000,Escort RS 2000  Saloon,1975,1975
+1413,Ford,Everest,Everest  SUV 4X4,2015,2018
+1414,Ford,Everest,Everest  SUV 4X4,2018,2023
+1415,Ford,F100,F100  Pick Up,1965,1969
+1416,Ford,F150,F150  Pick Up,1970,1980
+1417,Ford,F150,F150  Pick Up,2004,2008
+1418,Ford,F150,F150  Pick Up,2009,2014
+1419,Ford,F150,F150  Pick Up,2015,2023
+1420,Ford,F150,F150  Pick Up 4X4,2004,2008
+1421,Ford,F150,F150  Pick Up 4X4,2009,2014
+1422,Ford,F150,F150  Pick Up 4X4,2015,2023
+1423,Ford,F250,F250  Pick Up,1965,1969
+1424,Ford,F250,F250  Pick Up,1970,1979
+1425,Ford,F250,F250  Pick Up,1999,2004
+1426,Ford,F250,F250  Pick Up 4X4,2005,2016
+1427,Ford,F350,F350  Pick Up,1967,1969
+1428,Ford,F350,F350  Pick Up,1974,1979
+1429,Ford,F350,F350  Pick Up,1999,2004
+1430,Ford,F350,F350  Pick Up 4X4,1999,2004
+1431,Ford,F350,F350  Pick Up 4X4,2005,2016
+1432,Ford,Fiesta,Fiesta (Mk V) Hatchback,2002,2008
+1433,Ford,Fiesta,Fiesta (Mk VI) Hatchback,2008,2016
+1434,Ford,Fiesta ST,Fiesta ST (Mk V) Hatchback,2002,2008
+1435,Ford,Fiesta ST,Fiesta ST (Mk VI) Hatchback,2013,2016
+1436,Ford,Focus,Focus (Mk II) Cabriolet,2007,2010
+1437,Ford,Focus,Focus (Mk II) Estate,2004,2011
+1438,Ford,Focus,Focus (Mk II) Hatchback,2004,2011
+1439,Ford,Focus,Focus (Mk III) Estate,2011,2014
+1440,Ford,Focus,Focus (Mk III) Hatchback,2011,2014
+1441,Ford,Focus,Focus (Mk III) Hatchback,2015,2018
+1442,Ford,Focus,Focus (Mk IV) Hatchback,2018,2025
+1443,Ford,Focus,Focus (Mk IV) Saloon,2018,2025
+1444,Ford,Focus ST,Focus ST (Mk II) Hatchback,2004,2011
+1445,Ford,Focus ST,Focus ST (Mk III) Hatchback,2012,2015
+1446,Ford,Focus ST,Focus ST (Mk III) Hatchback,2015,2018
+1447,Ford,Ka,Ka  Hatchback,2008,2015
+1448,Ford,Maverick,Maverick  SUV 4x4,1993,2000
+1449,Ford,Mondeo,Mondeo (Mk 5) Hatchback,2015,2020
+1450,Ford,Mondeo,Mondeo (Mk IV) Hatchback,2007,2014
+1451,Ford,Mondeo,Mondeo (Mk IV) Saloon,2007,2014
+1452,Ford,Mustang,Mustang  Cabriolet,2004,2010
+1453,Ford,Mustang,Mustang  Cabriolet,2010,2014
+1454,Ford,Mustang,Mustang  Cabriolet,2015,2018
+1455,Ford,Mustang,Mustang  Coupé,1964,1970
+1456,Ford,Mustang,Mustang  Coupé,1971,1973
+1457,Ford,Mustang,Mustang  Coupé,1987,1993
+1458,Ford,Mustang,Mustang  Coupé,1994,2004
+1459,Ford,Mustang,Mustang  Coupé,2004,2010
+1460,Ford,Mustang,Mustang  Coupé,2010,2014
+1461,Ford,Mustang,Mustang  Coupé,2015,2018
+1462,Ford,Mustang,Mustang (S550) Cabriolet,2015,2023
+1463,Ford,Mustang,Mustang (S550) Coupé,2015,2023
+1464,Ford,Mustang,Mustang (S650) Cabriolet,2024,
+1465,Ford,Mustang,Mustang (S650) Coupé,2024,
+1466,Ford,Mustang Shelby GT500,Mustang Shelby GT500  Coupé,2004,2010
+1467,Ford,Mustang Shelby GT500,Mustang Shelby GT500  Coupé,2010,2014
+1468,Ford,Pinto,Pinto  Coupé,1970,1980
+1469,Ford,Ranger,Ranger  Pick Up 4X4,2011,2018
+1470,Ford,Ranger,Ranger  Pick Up 4X4,2018,2016
+1471,Ford,Sierra Cosworth,Sierra Cosworth  Saloon,1986,1986
+1472,Ford,Sierra Cosworth,Sierra Cosworth  Saloon,1987,1989
+1473,Ford,Sierra Cosworth,Sierra Cosworth  Saloon 4X4,1990,1992
+1474,Ford,Sierra XR,Sierra XR  Saloon 4X4,1985,1992
+1475,Ford,Transit,Transit (V363) Camper,2013,2023
+1476,Ford,Transit,Transit (V363) Combi,2013,2023
+1477,Ford,Transit,Transit (V363) Van,2013,2023
+1478,Ford,Transit,Transit (V363) Van 4X4,2013,2023
+1479,GMC,Sierra 1500,Sierra 1500  Pick Up 4X4,1999,2007
+1480,GMC,Sierra 1500,Sierra 1500  Pick Up 4X4,2005,2006
+1481,GMC,Sierra 1500,Sierra 1500  Pick Up 4X4,2008,2013
+1482,GMC,Sierra 1500,Sierra 1500  Pick Up 4X4,2014,2018
+1483,GMC,Sierra 1500,Sierra 1500 () Pick Up,2008,2013
+1484,GMC,Sierra 1500,Sierra 1500 () Pick Up,2014,2018
+1485,GMC,Sierra 2500,Sierra 2500  Pick Up 4X4,1999,2010
+1486,GMC,Sierra 2500,Sierra 2500 () Pick Up,1999,2010
+1487,GMC,Sierra 3500,Sierra 3500  Pick Up 4X4,1999,2010
+1488,GMC,Sierra 3500,Sierra 3500 () Pick Up,1999,2010
+1489,GMC,Yukon,Yukon  SUV 4X4,2000,2006
+1490,GMC,Yukon,Yukon  SUV 4X4,2008,2013
+1491,GMC,Yukon,Yukon  SUV 4X4,2015,2018
+1492,GMC,Yukon,Yukon () SUV,2000,2006
+1493,GMC,Yukon,Yukon () SUV,2008,2013
+1494,GMC,Yukon,Yukon () SUV,2015,2018
+1495,Honda,Accord,Accord  Coupé,1990,1997
+1496,Honda,Accord,Accord  Coupé,1998,2003
+1497,Honda,Accord,Accord  Saloon,1990,1997
+1498,Honda,Accord,Accord  Saloon,1998,2003
+1499,Honda,Accord,Accord () Saloon,2008,2014
+1500,Honda,Accord,Accord () Tourer,2008,2014
+1501,Honda,Accord,Accord (CL7/9) Saloon,2003,2008
+1502,Honda,Accord,Accord (CL7/9) Tourer,2003,2008
+1503,Honda,Civic MK IV,Civic MK IV (EF) Hatchback,1988,1988
+1504,Honda,Civic MK IV,Civic MK IV (EF) Hatchback,1989,1991
+1505,Honda,Civic MK IX,Civic MK IX (FK/FB) Coupé,2012,2016
+1506,Honda,Civic MK IX,Civic MK IX (FK/FB) Hatchback,2012,2016
+1507,Honda,Civic MK IX,Civic MK IX (FK/FB) Saloon,2012,2016
+1508,Honda,Civic MK V,Civic MK V (EG) Hatchback,1992,1995
+1509,Honda,Civic MK V,Civic MK V (EG) Saloon,1992,1995
+1510,Honda,Civic MK V,"Civic MK V (EG, EH) Coupé",1993,1995
+1511,Honda,Civic MK VI,"Civic MK VI (EJ, EK) Coupé",1995,2000
+1512,Honda,Civic MK VI,"Civic MK VI (EJ, EK) Hatchback",1995,2000
+1513,Honda,Civic MK VI,"Civic MK VI (EJ, EK) Saloon",1995,2000
+1514,Honda,Civic MK VIII,Civic MK VIII (FB) Saloon,2012,2016
+1515,Honda,Civic MK VIII,Civic MK VIII (FG ) Coupé,2012,2016
+1516,Honda,Civic MK VIII,Civic MK VIII (FN) Hatchback,2012,2016
+1517,Honda,Civic MK VIII Hybrid,Civic MK VIII Hybrid (FK) Saloon,2006,2012
+1518,Honda,Civic Mk X,Civic Mk X (FC) Coupé,2016,2023
+1519,Honda,Civic Mk X,Civic Mk X (FC) Saloon,2016,2023
+1520,Honda,Civic Mk X,Civic Mk X (FK) Hatchback,2016,2023
+1521,Honda,Civic MK XI,Civic MK XI (FE) Saloon,2021,
+1522,Honda,Civic MK XI,Civic MK XI (FL) Hatchback,2021,
+1523,Honda,Civic MKVII,Civic MKVII (EM2) Coupé,2001,2005
+1524,Honda,Civic MKVII,Civic MKVII (EP1/2) Hatchback,2000,2002
+1525,Honda,Civic MKVII,Civic MKVII (EP1/2) Hatchback,2003,2005
+1526,Honda,Civic MKVII,Civic MKVII (EP4) Hatchback,2000,2002
+1527,Honda,Civic MKVII,Civic MKVII (EP4) Hatchback,2003,2005
+1528,Honda,Civic MKVII,Civic MKVII (ES4-7) Saloon,2001,2005
+1529,Honda,Civic MKVII,Civic MKVII (EU5-9) Hatchback,2000,2002
+1530,Honda,Civic MKVII,Civic MKVII (EU5-9) Hatchback,2003,2005
+1531,Honda,Civic MKVIII,Civic MKVIII (FD) Hatchback,2006,2012
+1532,Honda,Civic MKVIII,Civic MKVIII (FD) Saloon,2006,2012
+1533,Honda,Civic MKVIII,Civic MKVIII (FG2) Coupé,2006,2012
+1534,Honda,Civic MKVIII,Civic MKVIII (FK) Hatchback,2006,2012
+1535,Honda,Civic MKVIII,Civic MKVIII (FK) Saloon,2006,2012
+1536,Honda,Civic MKVIII,Civic MKVIII (FN) Hatchback,2006,2012
+1537,Honda,Civic MKVIII,Civic MKVIII (FN) Saloon,2006,2012
+1538,Honda,Civic Type 'R',Civic Type 'R' (EP3) Hatchback,2001,2005
+1539,Honda,CRV,CRV (RM) SUV,2012,2018
+1540,Honda,CRV,CRV (RM) SUV AWD,2012,2018
+1541,Honda,CR-V,CR-V (RM) SUV,2012,2016
+1542,Honda,CR-V,CR-V (RM) SUV 4X4,2012,2016
+1543,Honda,CRX,"CRX (EG, EH) Coupé",1992,2000
+1544,Honda,CRX,"CRX (EJ, EK) Coupé",1995,2000
+1545,Honda,CR-Z,CR-Z () Coupé,2011,2016
+1546,Honda,Fit,Fit (GE/GG) Hatchback,2007,2014
+1547,Honda,Integra,"Integra (DC2, DC4) Coupé",1994,1998
+1548,Honda,Integra Type 'R',Integra Type 'R' (DC2) Coupé,1998,2001
+1549,Honda,Jazz,Jazz (GE/GG) Hatchback,2007,2014
+1550,Honda,Passport,Passport  SUV 4x4,1995,1998
+1551,Honda,Prelude,Prelude () Coupé,1992,1996
+1552,Honda,Prelude,Prelude () Coupé,1997,2000
+1553,Honda,S2000,S2000 () Roadster,1999,2008
+1554,Hyundai,Grand Santa Fe,Grand Santa Fe (DM) SUV 4x4,2012,2018
+1555,Hyundai,Santa Fe,Santa Fe (CM) SUV,2009,2012
+1556,Hyundai,Santa Fe,Santa Fe (CM) SUV 4x4,2009,2012
+1557,Hyundai,Santa Fe,Santa Fe (DM) SUV 4x4,2012,2018
+1558,Hyundai,Sonata,Sonata () Saloon,1998,2000
+1559,Hyundai,Sonata,Sonata () Saloon,2001,2004
+1560,Hyundai,Veloster,Veloster () Coupé,2011,2015
+1561,Ineos,Grenadier,Grenadier  Pick Up 4x4,2021,
+1562,Ineos,Grenadier,Grenadier  SUV 4x4,2021,
+1563,Ineos,Quartermaster,Quartermaster  Pick Up 4x4,2023,
+1564,Innocenti,Mini 120L,Mini 120L () Hatchback,1974,1982
+1565,Innocenti,Mini 90L,Mini 90L () Hatchback,1974,1982
+1566,Isuzu,D-Max,D-Max  Pick Up 4x4,2003,2011
+1567,Isuzu,D-Max,D-Max (RG) Pick Up 4x4,2020,
+1568,Isuzu,D-Max,"D-Max (TFR, TFS) Pick Up",2012,2020
+1569,Isuzu,D-Max,"D-Max (TFR, TFS) Pick Up 4x4",2012,2020
+1570,Isuzu,Trooper,Trooper (UBS69) SUV 4x4,1992,2002
+1571,Isuzu,Trooper,Trooper (USB13/UBS52) SUV 4x4,1984,1986
+1572,Isuzu,Trooper,Trooper (USB16/UBS52) SUV 4x4,1987,1991
+1573,Isuzu,Trooper,Trooper (USB17/UBS55) SUV 4x4,1988,1991
+1574,Iveco,Daily Bus,Daily Bus (II) Minibus,1988,1999
+1575,Iveco,Daily Bus,Daily Bus (III) Minibus,1998,2006
+1576,Iveco,Daily Bus,Daily Bus (IV) Minibus,2006,2011
+1577,Iveco,Daily Bus,Daily Bus (IV) Minibus 4X4,2006,2011
+1578,Iveco,Daily Bus,Daily Bus (V) Minibus,2011,2014
+1579,Iveco,Daily Bus,Daily Bus (V) Minibus 4X4,2011,2014
+1580,Iveco,Daily Bus,Daily Bus (VI) Van,2014,2025
+1581,Iveco,Daily Van,Daily Van (II) Van,1988,1999
+1582,Iveco,Daily Van,Daily Van (III) Van,1998,2006
+1583,Iveco,Daily Van,Daily Van (IV) Van,2006,2011
+1584,Iveco,Daily Van,Daily Van (IV) Van 4X4,2006,2011
+1585,Iveco,Daily Van,Daily Van (V) Van,2011,2014
+1586,Iveco,Daily Van,Daily Van (V) Van 4X4,2011,2014
+1587,Iveco,Daily Van,Daily Van (VI) Van,2014,2026
+1588,Jaguar,420,420  Saloon,1966,1969
+1589,Jaguar,420G,420G  Saloon,1966,1970
+1590,Jaguar,E-type,"E-type (Mk I, 1½, 2) Coupé",1961,1971
+1591,Jaguar,E-type,"E-type (Mk I, 1½, 2) Roadster",1961,1971
+1592,Jaguar,E-type,E-type (Mk III) Coupé,1971,1975
+1593,Jaguar,E-type,E-type (Mk III) Roadster,1971,1975
+1594,Jaguar,Mk II,Mk II  Saloon,1956,1967
+1595,Jaguar,Mk IX,Mk IX  Saloon,1958,1961
+1596,Jaguar,Mk VII,Mk VII  Saloon,1951,1956
+1597,Jaguar,Mk VIII,Mk VIII  Saloon,1956,1958
+1598,Jaguar,Mk X,Mk X  Saloon,1960,1966
+1599,Jaguar,S Type,S Type  Saloon,1964,1966
+1600,Jaguar,XJ12,XJ12  Saloon,1972,1993
+1601,Jaguar,XJ6,XJ6  Saloon,1969,1986
+1602,Jaguar,XJ-S,XJ-S  Coupé,1975,1996
+1603,Jaguar,XJ-S,XJ-S  Roadster,1975,1996
+1604,Jaguar,XK120,XK120  Roadster,1948,1954
+1605,Jaguar,XK140,XK140  Roadster,1954,1957
+1606,Jaguar,XK150,XK150  Roadster,1957,1961
+1607,Jeep,Cherokee,Cherokee (KJ) SUV 4X4,2001,2007
+1608,Jeep,Cherokee,Cherokee (KK) SUV 4X4,2007,2013
+1609,Jeep,Cherokee,Cherokee (XJ) SUV 4X4,1984,2001
+1610,Jeep,Commander,Commander (XH/XK) SUV 4X4,2005,2010
+1611,Jeep,Grand Cherokee,Grand Cherokee (WH) SUV 4X4,2005,2011
+1612,Jeep,Grand Cherokee,Grand Cherokee (WJ) SUV 4X4,1999,2004
+1613,Jeep,Liberty,Liberty (KJ) SUV 4X4,2001,2007
+1614,Jeep,Liberty,Liberty (KK) SUV 4X4,2007,2013
+1615,Jeep,Wagoneer,Wagoneer (XJ) SUV 4X4,1984,2000
+1616,Jeep,Wrangler,Wrangler (JK) SUV 4X4,2006,2017
+1617,Jeep,Wrangler,Wrangler (JL) SUV 4X4,2017,2025
+1618,Jeep,Wrangler,Wrangler (TJ) SUV 4X4,1996,2005
+1619,Jenson,Interceptor,Interceptor  Hatchback,1963,1975
+1620,Kia,Cee'd,Cee'd (J5) Hatchback,2012,2018
+1621,Kia,Cee'd,Cee'd (J5) Sportwagen,2012,2018
+1622,Kia,Magentis,Magentis (K5) Saloon,2000,2005
+1623,Kia,Optima,Optima (K5) Saloon,2000,2005
+1624,Kia,Pro Cee'd,Pro Cee'd (J5) Hatchback,2012,2018
+1625,Kia,Sorento,Sorento (BL) SUV 4x4,2006,2009
+1626,Kia,Sorento,Sorento (XM) SUV 4x4,2009,2012
+1627,Kia,Sorento,Sorento (XM) SUV 4x4,2012,2014
+1628,Kia,Sportage,Sportage (SL) SUV 4x4,2010,2016
+1629,Lada,Niva,Niva (2121) SUV 4x4,1978,2009
+1630,Lada,Niva,Niva (2123) SUV 4x4,2005,2014
+1631,Lancia,Flaminia,Flaminia () Cabriolet,1958,1971
+1632,Lancia,Flaminia,Flaminia () Coupé,1958,1971
+1633,Lancia,Flaminia,Flaminia () Saloon,1958,1971
+1634,Lancia,Flavia,Flavia () Saloon,1962,1967
+1635,Lancia,Flavia,Flavia () Saloon,1967,1972
+1636,Lancia,Flavia Zagato Sport,Flavia Zagato Sport () Coupé,1964,1966
+1637,Lancia,Fulvia,Fulvia () Coupé,1963,1976
+1638,Lancia,Ypsilon,Ypsilon (319) Hatchback,2011,
+1639,Lancia,Ypsilon,Ypsilon (840) Hatchback,1996,2003
+1640,Land Rover,Defender 110,Defender 110  SUV 4x4,1983,1999
+1641,Land Rover,Defender 110,Defender 110  SUV 4x4,1999,2016
+1642,Land Rover,Defender 130,Defender 130  SUV 4x4,1999,2016
+1643,Land Rover,Defender 90,Defender 90  SUV 4x4,1984,1999
+1644,Land Rover,Defender 90,Defender 90  SUV 4x4,1984,2016
+1645,Land Rover,Defender 90,Defender 90  SUV 4x4,1999,2016
+1646,Land Rover,Discovery I,Discovery I  SUV 4x4,1989,1994
+1647,Land Rover,Discovery I,Discovery I  SUV 4x4,1994,1998
+1648,Land Rover,Discovery II,Discovery II  SUV 4x4,1999,2004
+1649,Land Rover,Discovery III,Discovery III  SUV 4x4,2004,2009
+1650,Land Rover,Discovery IV,Discovery IV  SUV 4x4,2009,2016
+1651,Land Rover,Range Rover,Range Rover  SUV 4x4,1971,1994
+1652,Land Rover,Range Rover,Range Rover  SUV 4x4,1994,1996
+1653,Lexus,IS200,IS200 (XE10) Saloon,1998,2005
+1654,Lexus,IS200,IS200 (XE10) SportCross,1998,2005
+1655,Lexus,IS300,IS300 (XE10) Saloon,1998,2005
+1656,Lexus,IS300,IS300 (XE10) SportCross,1998,2005
+1657,Lexus,LX450,LX450 (J80) SUV 4x4,1996,1998
+1658,Man,TGE,TGE () Van,2017,
+1659,Mazda,2,2 (DY) Hatchback,2004,2007
+1660,Mazda,3,3 (BK) Hatchback,2003,2008
+1661,Mazda,3,3 (BK) Saloon,2003,2008
+1662,Mazda,3,3 (BL) Hatchback,2009,2013
+1663,Mazda,3,3 (BL) Saloon,2009,2013
+1664,Mazda,3,3 (BM/BN) Hatchback,2013,2018
+1665,Mazda,3,3 (BM/BN) Saloon,2013,2018
+1666,Mazda,5,5 (CR) MPV,2005,2010
+1667,Mazda,5,5 (CW) MPV,2010,2017
+1668,Mazda,6,6 (GJ/GL) Saloon,2013,2020
+1669,Mazda,6,6 (GJ/GL) SportBreak,2012,2020
+1670,Mazda,3 MPS,3 MPS (BK) Hatchback,2003,2008
+1671,Mazda,3 MPS,3 MPS (BL) Hatchback,2009,2013
+1672,Mazda,BT-50,BT-50 (UP/UR) Pick Up,2011,2017
+1673,Mazda,BT-50,BT-50 (UP/UR) Pick Up 4x4,2011,2017
+1674,Mazda,CX-3,CX-3 (DK) SUV,2014,2025
+1675,Mazda,CX-3,CX-3 (DK) SUV AWD,2014,2025
+1676,Mazda,CX-5,CX-5 (KE) SUV,2012,2017
+1677,Mazda,CX-5,CX-5 (KF) SUV,2017,2025
+1678,Mazda,CX-5,CX-5 (KF) SUV AWD,2017,2025
+1679,Mazda,CX-60,CX-60  SUV,2022,
+1680,Mazda,CX-60 Hybrid,CX-60 Hybrid  SUV AWD,2022,
+1681,Mazda,MX-5,MX-5 (NA) Roadster,1989,1997
+1682,Mazda,MX-5,MX-5 (NB) Roadster,1998,2005
+1683,Mazda,MX-5,MX-5 (NC) Roadster,2005,2013
+1684,Mazda,MX-5,MX-5 (ND) Roadster,2015,
+1685,Mazda,RX-8,RX-8 () Coupé,2003,2007
+1686,Mazda,RX-8,RX-8 () Coupé,2008,2008
+1687,Mazda,RX-8,RX-8 () Coupé,2009,2012
+1688,Mazda,CX-3,CX-3 (DK) SUV,2015,
+1689,Mazda,CX-3,CX-3 (DK) SUV AWD,2015,
+1690,Mazda,CX-5,CX-5 () SUV AWD,2016,
+1691,Mazda,CX-5 MK II,CX-5 MK II () SUV,2016,
+1692,Mercedes,C-Class,C-Class (S212) Estate,2009,2016
+1693,Mercedes,C-Class,C-Class (W212) Saloon,2009,2016
+1694,Mercedes-Benz,180,180 (W120) Saloon,1956,1962
+1695,Mercedes-Benz,190,190 (W121) Saloon,1956,1962
+1696,Mercedes-Benz,219,219 (W105) Saloon,1955,1959
+1697,Mercedes-Benz,220,220 (W180) Saloon,1955,1959
+1698,Mercedes-Benz,190-series,190-series (W201) Saloon,1983,1993
+1699,Mercedes-Benz,190-series,190-series (W201) Saloon,1984,1990
+1700,Mercedes-Benz,A-Class,A-Class (W176) Hatchback,2013,2018
+1701,Mercedes-Benz,B-Class,B-Class (W246) Hatchback,2013,2018
+1702,Mercedes-Benz,C-Class,C-Class (A205) Cabriolet,2013,2020
+1703,Mercedes-Benz,C-Class,C-Class (C204) Sport Coupé,2007,2014
+1704,Mercedes-Benz,C-Class,C-Class (C205) Sport Coupé,2013,2020
+1705,Mercedes-Benz,C-Class,C-Class (S204) Combi,2007,2014
+1706,Mercedes-Benz,C-Class,C-Class (S205) Combi,2013,2020
+1707,Mercedes-Benz,C-Class,C-Class (W202) Combi,1996,2000
+1708,Mercedes-Benz,C-Class,C-Class (W202) Saloon,1993,2000
+1709,Mercedes-Benz,C-Class,C-Class (W203) Combi,2000,2008
+1710,Mercedes-Benz,C-Class,C-Class (W203) Saloon,2000,2008
+1711,Mercedes-Benz,C-Class,C-Class (W203) Sport Coupé,2000,2008
+1712,Mercedes-Benz,C-Class,C-Class (W204) Saloon,2007,2014
+1713,Mercedes-Benz,C-Class,C-Class (W205) Saloon,2013,2020
+1714,Mercedes-Benz,C-Class,C-Class (W206) Saloon,2021,
+1715,Mercedes-Benz,C-Class AMG,C-Class AMG (W202) Saloon,1997,2001
+1716,Mercedes-Benz,CLA-Class,CLA-Class (C117) Saloon,2015,2018
+1717,Mercedes-Benz,CLA-Class,CLA-Class (X117) Shooting Brake,2015,2018
+1718,Mercedes-Benz,CLC-Class,CLC-Class (CL203) Coupé,2008,2011
+1719,Mercedes-Benz,CLK-Class,CLK-Class (A209) Cabriolet,2002,2009
+1720,Mercedes-Benz,CLK-Class,CLK-Class (C209) Coupé,2002,2009
+1721,Mercedes-Benz,CLK-Class,CLK-Class (W208) Cabriolet,1996,2002
+1722,Mercedes-Benz,CLK-Class,CLK-Class (W208) Coupé,1996,2002
+1723,Mercedes-Benz,CLS-Class,CLS-Class (C218) Saloon,2011,2016
+1724,Mercedes-Benz,CLS-Class,CLS-Class (C219) Saloon,2000,2010
+1725,Mercedes-Benz,CLS-Class,CLS-Class (C257) Saloon,2016,2023
+1726,Mercedes-Benz,E-Class,E-Class (C124) Coupé,1985,1995
+1727,Mercedes-Benz,E-Class,E-Class (S123) Combi,1977,1985
+1728,Mercedes-Benz,E-Class,E-Class (S210) Combi,1997,2002
+1729,Mercedes-Benz,E-Class,E-Class (S212) Combi,2009,2016
+1730,Mercedes-Benz,E-Class,E-Class (S213) Combi,2016,2023
+1731,Mercedes-Benz,E-Class,E-Class (W114) Coupé,1968,1976
+1732,Mercedes-Benz,E-Class,E-Class (W114) Saloon,1968,1976
+1733,Mercedes-Benz,E-Class,E-Class (W115) Coupé,1968,1976
+1734,Mercedes-Benz,E-Class,E-Class (W115) Saloon,1968,1976
+1735,Mercedes-Benz,E-Class,E-Class (W123) Coupé,1976,1985
+1736,Mercedes-Benz,E-Class,E-Class (W123) Saloon,1976,1985
+1737,Mercedes-Benz,E-Class,E-Class (W124) Saloon,1985,1995
+1738,Mercedes-Benz,E-Class,E-Class (W210) Saloon,1995,2002
+1739,Mercedes-Benz,E-Class,E-Class (W211) Saloon,2002,2009
+1740,Mercedes-Benz,E-Class,E-Class (W212) Saloon,2009,2016
+1741,Mercedes-Benz,E-Class,E-Class (W213) Saloon,2016,2023
+1742,Mercedes-Benz,G-Class,G-Class  (W460) SUV 4X4,1979,1990
+1743,Mercedes-Benz,G-Class,G-Class  (W461) SUV 4X4,1990,2018
+1744,Mercedes-Benz,G-Class,G-Class  (W463) SUV 4X4,1990,2018
+1745,Mercedes-Benz,S-Class,S-Class (C126) Coupé,1980,1991
+1746,Mercedes-Benz,S-Class,S-Class (W108) Saloon,1966,1972
+1747,Mercedes-Benz,S-Class,S-Class (W109) Coupé,1966,1972
+1748,Mercedes-Benz,S-Class,S-Class (W111) Cabriolet,1959,1971
+1749,Mercedes-Benz,S-Class,S-Class (W111) Combi,1962,1967
+1750,Mercedes-Benz,S-Class,S-Class (W111) Coupé,1959,1971
+1751,Mercedes-Benz,S-Class,S-Class (W111) Saloon,1959,1971
+1752,Mercedes-Benz,S-Class,S-Class (W116) Saloon,1973,1980
+1753,Mercedes-Benz,S-Class,S-Class (W126) Saloon,1980,1991
+1754,Mercedes-Benz,SL-Class,SL-Class (C107) Coupé,1971,1991
+1755,Mercedes-Benz,SL-Class,SL-Class (R107) Roadster,1971,1991
+1756,Mercedes-Benz,SL-Class,SL-Class (W113) Roadster,1963,1971
+1757,Mercedes-Benz,SLK-Class,SLK-Class (R170) Roadster,1997,2004
+1758,Mercedes-Benz,Sprinter 1,Sprinter 1 (W901) Van,1995,2006
+1759,Mercedes-Benz,Sprinter 1,Sprinter 1 (W902) Van,1995,2006
+1760,Mercedes-Benz,Sprinter 1,Sprinter 1 (W903) Van,1995,2006
+1761,Mercedes-Benz,Sprinter 1,Sprinter 1 (W904) Van,1995,2006
+1762,Mercedes-Benz,Sprinter 2,Sprinter 2 (W906) Van,2006,2018
+1763,Mercedes-Benz,Sprinter 2,Sprinter 2 (W906) Van 4X4,2006,2018
+1764,Mercedes-Benz,Sprinter 3,Sprinter 3 (W907) Van,2018,2023
+1765,Mercedes-Benz,Sprinter 3,Sprinter 3 (W907) Van 4X4,2018,2023
+1766,Mercedes-Benz,Sprinter 3,Sprinter 3 (W910) Van,2018,2023
+1767,Mercedes-Benz,Sprinter Camper,Sprinter Camper (W906) Motorhome,2006,2018
+1768,Mercedes-Benz,Sprinter Camper,Sprinter Camper (W907) Motorhome,2018,2023
+1769,Mercedes-Benz,Sprinter Camper,Sprinter Camper (W910) Motorhome,2018,2023
+1770,Mercedes-Benz,V-Class Viano,V-Class Viano (W447) Minibus,2014,2023
+1771,Mercedes-Benz,V-Class Viano,V-Class Viano (W447) Minibus 4X4,2014,2023
+1772,Mercedes-Benz,V-Class Viano,V-Class Viano (W639) Minibus,2003,2013
+1773,Mercedes-Benz,V-Class Viano,V-Class Viano (W639) Minibus 4X4,2003,2013
+1774,Mercedes-Benz,V-Class Vito,V-Class Vito (W447) Van,2014,2023
+1775,Mercedes-Benz,V-Class Vito,V-Class Vito (W447) Van 4X4,2014,2023
+1776,Mercedes-Benz,V-Class Vito,V-Class Vito (W639) Van,2003,2013
+1777,Mercedes-Benz,V-Class Vito,V-Class Vito (W639) Van 4X4,2003,2013
+1778,Mercedes-Benz,X-Class (W470),X-Class (W470) (W470) Pick up,2017,2023
+1779,Mercedes-Benz,X-Class (W470),X-Class (W470) (W470) Pick up 4X4,2017,2023
+1780,Mercury,Cougar,Cougar  Roadster,1967,1970
+1781,MG,MG-B,MG-B  Roadster,1967,1975
+1782,MG,MG-B,MG-B  Roadster,1975,1982
+1783,MG,MG-B GT,MG-B GT  Coupé,1965,1975
+1784,MG,MG-B GT,MG-B GT  Coupé,1975,1982
+1785,MG,MG-C,MG-C  Roadster,1967,1969
+1786,MG,MG-C GT,MG-C GT  Coupé,1967,1969
+1787,Mini,Clubman Cooper,Clubman Cooper (F54) Estate,2014,2025
+1788,Mini,Clubman Cooper,Clubman Cooper (F60) Estate,2016,2025
+1789,Mini,Clubman Cooper,Clubman Cooper (R55) Estate,2006,2014
+1790,Mini,Clubman Cooper 'S',Clubman Cooper 'S' (F54) Estate,2014,2025
+1791,Mini,Clubman Cooper 'S',Clubman Cooper 'S' (F54) Estate ALL4,2014,2025
+1792,Mini,Clubman Cooper 'S',Clubman Cooper 'S' (R55) Estate,2006,2014
+1793,Mini,Clubman One,Clubman One (F54) Estate,2014,2025
+1794,Mini,Clubman One,Clubman One (R55) Estate,2006,2014
+1795,Mini,Cooper,Cooper (F55) Hatchback,2013,2025
+1796,Mini,Cooper,Cooper (F56) Hatchback,2013,2025
+1797,Mini,Cooper,Cooper (F57) Cabriolet,2014,2025
+1798,Mini,Cooper,Cooper (R50) Hatchback,2001,2002
+1799,Mini,Cooper,Cooper (R52) Cabriolet,2002,2006
+1800,Mini,Cooper,Cooper (R53) Cabriolet,2002,2006
+1801,Mini,Cooper,Cooper (R53) Hatchback,2002,2006
+1802,Mini,Cooper,Cooper (R56) Hatchback,2005,2013
+1803,Mini,Cooper,Cooper (R57) Cabriolet,2005,2013
+1804,Mini,Cooper 'S',Cooper 'S' (F55) Hatchback,2013,2025
+1805,Mini,Cooper 'S',Cooper 'S' (F56) Hatchback,2013,2025
+1806,Mini,Cooper 'S',Cooper 'S' (F57) Cabriolet,2014,2025
+1807,Mini,Cooper 'S',Cooper 'S' (R52) Cabriolet,2002,2006
+1808,Mini,Cooper 'S',Cooper 'S' (R53) Cabriolet,2002,2006
+1809,Mini,Cooper 'S',Cooper 'S' (R53) Hatchback,2002,2006
+1810,Mini,Cooper 'S',Cooper 'S' (R56) Hatchback,2005,2013
+1811,Mini,Cooper 'S',Cooper 'S' (R57) Cabriolet,2005,2013
+1812,Mini,Cooper 'S',Cooper 'S' (R58) Coupé,2010,2015
+1813,Mini,Cooper 'S',Cooper 'S' (R59) Roadster,2010,2015
+1814,Mini,Countryman Cooper,Countryman Cooper (F60) Estate,2016,2025
+1815,Mini,Countryman Cooper,Countryman Cooper (F60) Estate ALL4,2016,2025
+1816,Mini,Countryman Cooper,Countryman Cooper (R60) Hatchback,2010,2016
+1817,Mini,Countryman Cooper,Countryman Cooper (R60) Hatchback ALL4,2010,2016
+1818,Mini,Countryman Cooper 'S',Countryman Cooper 'S' (F60) Estate,2016,2025
+1819,Mini,Countryman Cooper 'S',Countryman Cooper 'S' (F60) Estate ALL4,2016,2025
+1820,Mini,Countryman Cooper 'S',Countryman Cooper 'S' (R60) Hatchback,2010,2016
+1821,Mini,Countryman Cooper 'S',Countryman Cooper 'S' (R60) Hatchback ALL4,2010,2016
+1822,Mini,Countryman One,Countryman One (F60) Estate,2016,2025
+1823,Mini,Countryman One,Countryman One (R60) Hatchback,2010,2016
+1824,Mini,One,One (F55) Hatchback,2013,2025
+1825,Mini,One,One (F56) Hatchback,2013,2025
+1826,Mini,One,One (F57) Cabriolet,2014,2025
+1827,Mini,One,One (R50) Hatchback,2001,2002
+1828,Mini,One,One (R53) Hatchback,2002,2006
+1829,Mini,One,One (R56) Hatchback,2005,2013
+1830,Mini,One,One (R57) Cabriolet,2005,2013
+1831,Mini,Paceman Cooper,Paceman Cooper (R61) Coupé,2012,2016
+1832,Mitsubishi,Challenger,Challenger  SUV 4x4,1997,2000
+1833,Mitsubishi,Challenger,Challenger  SUV 4x4,2000,2007
+1834,Mitsubishi,Challenger,Challenger  SUV 4x4,2008,2014
+1835,Mitsubishi,Express,Express (X82) Van,2020,
+1836,Mitsubishi,L200,L200 (K22/K24) Pick up 4x4,1986,2003
+1837,Mitsubishi,L200,L200 (K32/K33/K34) Pick up 4x4,1986,2003
+1838,Mitsubishi,L200,L200 (K74/K75) Pick up 4x4,1996,2005
+1839,Mitsubishi,L200,L200 (KA/KB) Pick up 4x4,2006,2015
+1840,Mitsubishi,L200,L200 (KL) Pick up 4x4,2015,2019
+1841,Mitsubishi,L200,L200 (L021) Pick up 4x4,1979,1996
+1842,Mitsubishi,Montero,Montero (L04) SUV 4x4,1983,1991
+1843,Mitsubishi,Montero,Montero (L14) SUV 4x4,1989,1991
+1844,Mitsubishi,Montero,Montero (V21/V23/V24) SUV 4x4,1991,1999
+1845,Mitsubishi,Montero,"Montero (V41/V43, V44) SUV 4x4",1991,1999
+1846,Mitsubishi,Montero,Montero (V60) SUV 4x4,1999,2008
+1847,Mitsubishi,Montero,Montero (V70) SUV 4x4,1999,2008
+1848,Mitsubishi,Montero,Montero (V80) SUV 4x4,2007,2016
+1849,Mitsubishi,Montero,Montero (V90) SUV 4x4,2007,2016
+1850,Mitsubishi,Montero Sport,Montero Sport  SUV 4x4,1999,2007
+1851,Mitsubishi,Montero Sport,Montero Sport  SUV 4x4,2008,2014
+1852,Mitsubishi,Pajero,Pajero (L04) SUV 4x4,1983,1991
+1853,Mitsubishi,Pajero,Pajero (L14) SUV 4x4,1989,1991
+1854,Mitsubishi,Pajero,Pajero (V21/V23/V24) SUV 4x4,1991,1999
+1855,Mitsubishi,Pajero,"Pajero (V41/V43, V44) SUV 4x4",1991,1999
+1856,Mitsubishi,Pajero,Pajero (V60) SUV 4x4,1999,2008
+1857,Mitsubishi,Pajero,Pajero (V70) SUV 4x4,1999,2008
+1858,Mitsubishi,Pajero,Pajero (V80) SUV 4x4,2007,2016
+1859,Mitsubishi,Pajero,Pajero (V90) SUV 4x4,2007,2016
+1860,Mitsubishi,Pajero Sport,Pajero Sport  SUV 4x4,1999,2007
+1861,Mitsubishi,Pajero Sport,Pajero Sport  SUV 4x4,2008,2014
+1862,Mitsubishi,Shogun,Shogun (L04) SUV 4x4,1983,1991
+1863,Mitsubishi,Shogun,Shogun (L14) SUV 4x4,1989,1991
+1864,Mitsubishi,Shogun,Shogun (V21/V23/V24) SUV 4x4,1991,1999
+1865,Mitsubishi,Shogun,"Shogun (V41/V43, V44) SUV 4x4",1991,1999
+1866,Mitsubishi,Shogun,Shogun (V60) SUV 4x4,1999,2008
+1867,Mitsubishi,Shogun,Shogun (V70) SUV 4x4,1999,2008
+1868,Mitsubishi,Shogun,Shogun (V80) SUV 4x4,2007,2016
+1869,Mitsubishi,Shogun,Shogun (V90) SUV 4x4,2007,2016
+1870,Mitsubishi,Shogun Sport,Shogun Sport  SUV 4x4,1999,2007
+1871,Mitsubishi,Shogun Sport,Shogun Sport  SUV 4x4,2008,2014
+1872,Mitsubishi,Triton,Triton (K74/K75) Pick up 4x4,1996,2005
+1873,Mitsubishi,Triton,Triton (KA/KB) Pick up 4x4,2006,2015
+1874,Mitsubishi,Triton,Triton (KL) Pick up 4x4,2010,2015
+1875,Morgan,4/4,4/4  Roadster,1961,1991
+1876,Morgan,4/4,4/4  Roadster,1991,2018
+1877,Morgan,Plus 4,Plus 4 () Roadster,1961,1991
+1878,Morgan,Plus 4,Plus 4 () Roadster,1991,2018
+1879,Morgan,V8,V8 () Roadster,1968,2004
+1880,Morgan,V8,V8 () Roadster,2012,2018
+1881,Morris,Mini,Mini  Estate,1959,1986
+1882,Morris,Mini,Mini  Pick Up,1959,1986
+1883,Morris,Mini,Mini  Saloon,1959,1986
+1884,Morris,Mini,Mini  Van,1959,1986
+1885,Nissan,300ZX,300ZX (Z31) Coupé,1984,1989
+1886,Nissan,300ZX,300ZX (Z32) Coupé,1989,1996
+1887,Nissan,350Z,350Z (Z33) Cabriolet,2003,2009
+1888,Nissan,350Z,350Z (Z33) Coupé,2003,2009
+1889,Nissan,Almera,Almera (N16) Hatchback,2000,2006
+1890,Nissan,Almera,Almera (N16) Saloon,2000,2001
+1891,Nissan,King Cab,King Cab (GD21) Pick up 4x4,1986,2004
+1892,Nissan,King Cab,King Cab (MD21) Pick up 4x4,1986,2004
+1893,Nissan,Micra,Micra (K21) Hatchback,2003,2010
+1894,Nissan,Navara,Navara (D21) Pick up 4x4,1986,1997
+1895,Nissan,Navara,Navara (D22) Pick up 4x4,1997,2004
+1896,Nissan,Navara,Navara (D23) Pick up,2015,2020
+1897,Nissan,Navara,Navara (D23) Pick up 4x4,2015,2020
+1898,Nissan,Navara,Navara (D40) Pick up 4x4,2005,2015
+1899,Nissan,Navara,Navara  (D23) Pick up,2015,2020
+1900,Nissan,Note,Note () Hatchback,2006,2013
+1901,Nissan,NV300,NV300  Minibus,2014,2023
+1902,Nissan,NV300,NV300  Van,2014,2023
+1903,Nissan,Pathfinder,Pathfinder (R51) SUV,2005,2014
+1904,Nissan,Pathfinder,Pathfinder (R51) SUV 4x4,2005,2014
+1905,Nissan,Pathfinder,Pathfinder (WD21) SUV,1986,1995
+1906,Nissan,Pathfinder,Pathfinder (WD21) SUV 4x4,1986,1995
+1907,Nissan,Patrol,Patrol (260) SUV 4x4,1989,2002
+1908,Nissan,Patrol,Patrol (Y60) SUV 4x4,1987,1997
+1909,Nissan,Patrol,Patrol (Y61) SUV 4x4,1997,2013
+1910,Nissan,Primastar,Primastar  Minibus,2022,
+1911,Nissan,Primastar,Primastar  Van,2022,
+1912,Nissan,Qashqai,Qashqai (J10) SUV,2007,2013
+1913,Nissan,Qashqai,Qashqai (J10) SUV 4x4,2007,2013
+1914,Nissan,Qashqai,Qashqai (J11) SUV,2014,2019
+1915,Nissan,Qashqai,Qashqai (J11) SUV 4x4,2014,2019
+1916,Nissan,Terrano,Terrano (R20) SUV 4x4,1993,2004
+1917,Nissan,Terrano,Terrano (WD21) SUV 4x4,1987,1993
+1918,Nissan,X-Trail,X-Trail (T31) SUV,2007,2013
+1919,Nissan,X-Trail,X-Trail (T31) SUV 4x4,2007,2013
+1920,Nissan,X-Trail,X-Trail (T32) SUV,2013,2019
+1921,Nissan,X-Trail,X-Trail (T32) SUV 4x4,2013,2019
+1922,Oldsmobile,442,442 () Cabriolet,1964,1967
+1923,Oldsmobile,442,442 () Coupé,1964,1967
+1924,Oldsmobile,88 Delta Royale,88 Delta Royale () Coupé,1977,1985
+1925,Oldsmobile,98 Regency,98 Regency () Saloon,1977,1985
+1926,Oldsmobile,Custom Cruiser,Custom Cruiser () Station Wagon,1977,1993
+1927,Oldsmobile,Cutlass Supreme,Cutlass Supreme () Coupé,1964,1967
+1928,Oldsmobile,F 85,F 85 () Saloon,1968,1977
+1929,Opel,Agila,Agila () Hatchback,2007,2014
+1930,Opel,Ascona A,Ascona A () Saloon,1970,1975
+1931,Opel,Ascona B,Ascona B () Saloon,1976,1981
+1932,Opel,Astra,Astra (G) Hatchback,1991,1997
+1933,Opel,Astra,Astra (G) Hatchback,1998,2004
+1934,Opel,Astra,Astra (H) Hatchback,2004,2009
+1935,Opel,Astra,Astra (H) Hatchback,2004,2010
+1936,Opel,Astra,Astra (J) Hatchback,2009,2015
+1937,Opel,Astra,Astra (J) Saloon,2009,2015
+1938,Opel,Astra,Astra (J) Sports Tourer,2009,2015
+1939,Opel,Astra,Astra (K) Hatchback,2009,2015
+1940,Opel,Astra,Astra (K) Sports Tourer,2009,2015
+1941,Opel,Calibra,Calibra (J) Coupé,1990,1998
+1942,Opel,Combo,Combo () van,2001,2012
+1943,Opel,Commodore,Commodore (A) Saloon,1967,1971
+1944,Opel,Commodore,Commodore (B) Saloon,1971,1977
+1945,Opel,Corsa,Corsa () Hatchback,1983,1993
+1946,Opel,Corsa,Corsa () Hatchback,1993,2000
+1947,Opel,Corsa,Corsa () Hatchback,2000,2006
+1948,Opel,Corsa,Corsa () Hatchback,2006,2014
+1949,Opel,Corsa,Corsa () Hatchback,2014,2019
+1950,Opel,Crossland,Crossland (P17) SUV,2021,2024
+1951,Opel,Crossland X,Crossland X (P17) SUV,2017,2020
+1952,Opel,Frontera,Frontera  SUV 4x4,1991,1995
+1953,Opel,Frontera,Frontera  SUV 4x4,1995,1998
+1954,Opel,Grandland,Grandland  (P18) SUV,2021,2024
+1955,Opel,Grandland X,Grandland X (P18) SUV,2017,2021
+1956,Opel,GT,GT () Coupé,1969,1972
+1957,Opel,Kadett B,Kadett B () Coupé,1967,1973
+1958,Opel,Kadett B,Kadett B () Estate,1967,1973
+1959,Opel,Kadett B,Kadett B () Saloon,1967,1973
+1960,Opel,Kadett C,Kadett C () Coupé,1974,1979
+1961,Opel,Kadett C,Kadett C () Estate,1974,1979
+1962,Opel,Kadett C,Kadett C () Hatchback,1975,1979
+1963,Opel,Kadett C,Kadett C () Saloon,1974,1979
+1964,Opel,Manta A,Manta A () Coupé,1970,1975
+1965,Opel,Manta B,Manta B () Coupé,1976,1988
+1966,Opel,Monterey,Monterey  SUV 4X4,1992,1998
+1967,Opel,Omega,Omega () Saloon,1994,2003
+1968,Opel,Signum,Signum () Hatchback,2003,2005
+1969,Opel,Signum,Signum () Hatchback,2005,2009
+1970,Opel,Tigra,Tigra () Coupé,1995,2000
+1971,Opel,Tigra,Tigra () Coupé,2004,2009
+1972,Opel,Vectra A,Vectra A (J89) Hatchback,1988,1995
+1973,Opel,Vectra A,Vectra A (J89) Hatchback 4X4,1989,1995
+1974,Opel,Vectra B,Vectra B (J96) Estate,1996,2002
+1975,Opel,Vectra B,Vectra B (J96) Hatchback,1996,2002
+1976,Opel,Vectra C,Vectra C (Z02) Estate,2002,2005
+1977,Opel,Vectra C,Vectra C (Z02) Estate,2005,2009
+1978,Opel,Vectra C,Vectra C (Z02) Hatchback,2002,2005
+1979,Opel,Vectra C,Vectra C (Z02) Hatchback,2005,2009
+1980,Opel,Vectra C,Vectra C (Z02) Saloon,2002,2005
+1981,Opel,Vectra C,Vectra C (Z02) Saloon,2005,2009
+1982,Opel,Vivaro,Vivaro  Camper,2001,2014
+1983,Opel,Vivaro,Vivaro  Camper,2015,2018
+1984,Opel,Vivaro,Vivaro  Minibus,2001,2014
+1985,Opel,Vivaro,Vivaro  Minibus,2015,2018
+1986,Opel,Vivaro,Vivaro  Van,2001,2014
+1987,Opel,Vivaro,Vivaro  Van,2015,2018
+1988,Opel,Vivaro,Vivaro  Van,2019,
+1989,Opel,Zafira,Zafira () MPV,1999,2005
+1990,Opel,Zafira Life,Zafira Life  MPV,2016,
+1991,Peugeot,106,106 () Hatchback,1991,1996
+1992,Peugeot,106,106 () Hatchback,1996,2006
+1993,Peugeot,205,205 () Cabriolet,1983,1998
+1994,Peugeot,205,205 () Hatchback,1983,1998
+1995,Peugeot,206,206 () Hatchback,1998,2006
+1996,Peugeot,208,208 (MkI) Hatchback,2012,2020
+1997,Peugeot,306,306 () Cabriolet,1993,2002
+1998,Peugeot,306,306 () Estate,1993,2002
+1999,Peugeot,306,306 () Hatchback,1993,2002
+2000,Peugeot,307,307 () Hatchback,2000,2007
+2001,Peugeot,308,308 (II) Hatchback,2013,2023
+2002,Peugeot,308,308 (MkI) Estate,2007,2016
+2003,Peugeot,308,308 (MkI) Hatchback,2007,2016
+2004,Peugeot,309,309 () Hatchback,1989,1993
+2005,Peugeot,406,406  Coupé,1997,2004
+2006,Peugeot,406,406  Estate,1997,2004
+2007,Peugeot,406,406  Saloon,1995,2004
+2008,Peugeot,3008,3008  SUV,2016,2025
+2009,Peugeot,3008,3008  SUV AWD,2016,2025
+2010,Peugeot,4008,4008  SUV,2012,2025
+2011,Peugeot,4008,4008  SUV AWD,2012,2025
+2012,Peugeot,5008,5008  SUV,2016,2025
+2013,Peugeot,106 GTI,106 GTI () Hatchback,1996,2006
+2014,Peugeot,205 GTI,205 GTI () Hatchback,1984,1994
+2015,Peugeot,206 CC,206 CC () Cabriolet,1998,2006
+2016,Peugeot,206 GTI,206 GTI () Hatchback,1998,2006
+2017,Peugeot,206 RC,206 RC () Coupé,1998,2006
+2018,Peugeot,206 SW,206 SW () Sportwagen,1998,2006
+2019,Peugeot,206+,206+ () Hatchback,2006,2013
+2020,Peugeot,306 GTI,306 GTI () Hatchback,1993,2002
+2021,Peugeot,307 CC,307 CC () Cabriolet,2003,2007
+2022,Peugeot,307 SW,307 SW () Sportwagen,2002,2007
+2023,Peugeot,309 GTI,309 GTI () Hatchback,1987,1993
+2024,Peugeot,Boxer,Boxer (230) Camper,1994,2001
+2025,Peugeot,Boxer,Boxer (230) MiniBus,1994,2001
+2026,Peugeot,Boxer,Boxer (230) Van,1994,2001
+2027,Peugeot,Boxer,Boxer (244) Camper,2001,2006
+2028,Peugeot,Boxer,Boxer (244) MiniBus,2001,2006
+2029,Peugeot,Boxer,Boxer (244) Van,2001,2006
+2030,Peugeot,Boxer,Boxer (250) Camper,2006,2014
+2031,Peugeot,Boxer,Boxer (250) MiniBus,2006,2014
+2032,Peugeot,Boxer,Boxer (250) Motorhome,2006,2014
+2033,Peugeot,Boxer,Boxer (250) Van,2006,2014
+2034,Peugeot,Boxer,Boxer (290) Camper,2014,2023
+2035,Peugeot,Boxer,Boxer (290) MiniBus,2014,2023
+2036,Peugeot,Boxer,Boxer (290) Motorhome,2014,2023
+2037,Peugeot,Boxer,Boxer (290) Van,2014,2023
+2038,Peugeot,Expert,Expert  Van,2016,
+2039,Peugeot,Traveller,Traveller  MPV,2016,
+2040,Plymouth,Barracuda,Barracuda () Saloon,1970,1974
+2041,Plymouth,Belvedere,Belvedere () Saloon,1962,1972
+2042,Plymouth,Road Runner,Road Runner () Saloon,1968,1972
+2043,Pontiac,Bonneville,Bonneville () Saloon,1977,1981
+2044,Pontiac,Can-Am,Can-Am () Coupé,1977,1977
+2045,Pontiac,Catalina,Catalina () Saloon,1977,1981
+2046,Pontiac,Firebird,Firebird () Coupé,1967,1967
+2047,Pontiac,Firebird,Firebird () Coupé,1968,1968
+2048,Pontiac,Firebird,Firebird () Coupé,1969,1969
+2049,Pontiac,Firebird,Firebird () Coupé,1970,1981
+2050,Pontiac,Firebird,Firebird () Coupé,1982,1992
+2051,Pontiac,Firebird,Firebird () Coupé,1993,2002
+2052,Pontiac,Grand Prix,Grand Prix () Coupé,1969,1970
+2053,Pontiac,Grand Prix,Grand Prix () Coupé,1973,1977
+2054,Pontiac,Grand Prix,Grand Prix () Coupé,1977,1977
+2055,Pontiac,GTO,GTO () Coupé,1968,1974
+2056,Pontiac,GTO,GTO () Coupé,2004,2006
+2057,Pontiac,Le Mans,Le Mans () Coupé,1968,1972
+2058,Pontiac,Le Mans,Le Mans () Coupé,1968,1977
+2059,Pontiac,Le Mans,Le Mans () Saloon,1968,1977
+2060,Pontiac,Ventura,Ventura () Coupé,1971,1974
+2061,Porsche,356,356 () Coupé,1949,1950
+2062,Porsche,356,356 () Coupé,1951,1955
+2063,Porsche,356,356 () Coupé,1955,1966
+2064,Porsche,356,356 () Roadster,1949,1950
+2065,Porsche,356,356 () Roadster,1951,1955
+2066,Porsche,356,356 () Roadster,1955,1966
+2067,Porsche,356,356 (A) Coupé,1955,1959
+2068,Porsche,356,356 (A) Roadster,1955,1959
+2069,Porsche,356,356 (B) Coupé,1960,1963
+2070,Porsche,356,356 (B) Roadster,1960,1963
+2071,Porsche,356,356 (C) Coupé,1964,1966
+2072,Porsche,356,356 (C) Roadster,1964,1966
+2073,Porsche,911,911 (930) Coupé,1975,1989
+2074,Porsche,911,911 (A Series) Coupé,1965,1968
+2075,Porsche,911,911 (B Series) Coupé,1968,1969
+2076,Porsche,911,911 (C Series) Coupé,1970,1971
+2077,Porsche,911,911 (D Series) Coupé,1970,1971
+2078,Porsche,911,911 (E Series) Coupé,1971,1972
+2079,Porsche,911,911 (F Series) Coupé,1972,1974
+2080,Porsche,912,912 (A Series) Coupé,1965,1968
+2081,Porsche,912,912 (B Series) Coupé,1968,1969
+2082,Porsche,914,914 () Coupé,1970,1976
+2083,Porsche,924,924 () Coupé,1975,1984
+2084,Porsche,928,928 () Coupé,1979,1993
+2085,Porsche,944,944 () Coupé,1981,1991
+2086,Porsche,968,968 () Coupé,1992,1996
+2087,Porsche,911 Carrera,911 Carrera (964) Convertible,1988,1990
+2088,Porsche,911 Carrera,911 Carrera (964) Convertible,1991,1993
+2089,Porsche,911 Carrera,911 Carrera (964) Coupé,1988,1990
+2090,Porsche,911 Carrera,911 Carrera (964) Coupé,1991,1993
+2091,Porsche,911 Carrera,911 Carrera (964) Targa,1988,1990
+2092,Porsche,911 Carrera,911 Carrera (964) Targa,1991,1993
+2093,Porsche,911 Carrera,911 Carrera (993) Convertible,1993,1997
+2094,Porsche,911 Carrera,911 Carrera (993) Coupé,1993,1997
+2095,Porsche,911 Carrera,911 Carrera (993) Targa,1993,1997
+2096,Porsche,911 Carrera,911 Carrera (996) Convertible,1997,2005
+2097,Porsche,911 Carrera,911 Carrera (996) Coupé,1997,2005
+2098,Porsche,911 Carrera,911 Carrera (996) Targa,1997,2005
+2099,Porsche,911 Carrera 4,911 Carrera 4 (996) Convertible 4WD,1997,2005
+2100,Porsche,911 Carrera 4,911 Carrera 4 (996) Coupé 4WD,1997,2005
+2101,Porsche,911 Carrera 4,911 Carrera 4 (996) Targa 4WD,1997,2005
+2102,Porsche,911 Turbo,911 Turbo (930) Coupé,1975,1989
+2103,Porsche,911 Turbo,911 Turbo (964) Convertible,1990,1993
+2104,Porsche,911 Turbo,911 Turbo (964) Coupé,1990,1993
+2105,Porsche,911 Turbo,911 Turbo (964) Targa,1990,1993
+2106,Porsche,911 Turbo,911 Turbo (993) Convertible,1993,1997
+2107,Porsche,911 Turbo,911 Turbo (993) Coupé,1993,1997
+2108,Porsche,911 Turbo,911 Turbo (993) Targa,1993,1997
+2109,Porsche,911 Turbo,911 Turbo (996) Convertible,1997,2005
+2110,Porsche,911 Turbo,911 Turbo (996) Coupé,1997,2005
+2111,Porsche,911 Turbo,911 Turbo (996) Targa,1997,2005
+2112,Porsche,924 GT,924 GT () Coupé,1981,1982
+2113,Porsche,924 S,924 S () Coupé,1984,1987
+2114,Porsche,924 Turbo,924 Turbo () Coupé,1975,1984
+2115,Porsche,944 S2,944 S2 () Cabriolet,1981,1991
+2116,Porsche,944 S2,944 S2 () Coupé,1981,1991
+2117,Porsche,944 Turbo,944 Turbo () Coupé,1981,1991
+2118,Porsche,Boxster,Boxster (986) Roadster,1996,2004
+2119,Porsche,Boxster,Boxster (987) Roadster,2004,2012
+2120,Porsche,Cayman,Cayman (987) Coupé,2005,2013
+2121,Porsche,Macan,Macan (95B) SUV 4WD,2014,2023
+2122,Ram Truck,RAM 1500,RAM 1500  Pick up 4X4,2011,2018
+2123,Ram Truck,RAM 2500,RAM 2500  Pick up 4X4,2011,2013
+2124,Ram Truck,RAM 2500,RAM 2500  Pick up 4X4,2014,2018
+2125,Ram Truck,RAM 3500,RAM 3500  Pick up 4X4,2011,2013
+2126,Ram Truck,RAM 3500,RAM 3500  Pick up 4X4,2013,2018
+2127,Renault,Alaskan,Alaskan  Pick up 4X4,2017,2023
+2128,Renault,Alpine,Alpine () Coupé,1958,1965
+2129,Renault,Alpine,Alpine () Coupé,1965,1975
+2130,Renault,Clio,Clio (Mk II) Hatchback,1998,2005
+2131,Renault,Clio,Clio (Mk III) Estate,2005,2012
+2132,Renault,Clio,Clio (Mk III) Hatchback,2005,2012
+2133,Renault,Clio,Clio (Mk IV) Hatchback,2013,2018
+2134,Renault,Clio 172,Clio 172 (Mk II) Hatchback,1999,2006
+2135,Renault,Clio 182,Clio 182 (Mk II) Hatchback,1999,2006
+2136,Renault,Clio GT,Clio GT (Mk III) Hatchback,2005,2012
+2137,Renault,Clio RS,Clio RS (Mk III) Hatchback,2005,2012
+2138,Renault,Duster,Duster (HM) SUV 4x4,2010,2017
+2139,Renault,Duster,Duster (HS) SUV,2010,2017
+2140,Renault,Duster II,Duster II (HM) SUV 4x4,2018,2023
+2141,Renault,Duster II,Duster II (HS) SUV,2018,2023
+2142,Renault,Mégane,Mégane (II) Cabriolet,2002,2009
+2143,Renault,Mégane,Mégane (II) Estate,2002,2009
+2144,Renault,Mégane,Mégane (II) Hatchback,2002,2009
+2145,Renault,Mégane,Mégane (III) Cabriolet,2008,2016
+2146,Renault,Mégane,Mégane (III) Coupé,2008,2016
+2147,Renault,Mégane,Mégane (III) Hatchback,2008,2016
+2148,Renault,Mégane,Mégane (III) Sports Tourer,2008,2016
+2149,Renault,Mégane,Mégane (IV) Hatchback,2016,
+2150,Renault,Mégane,Mégane (IV) Saloon,2016,
+2151,Renault,Mégane,Mégane (IV) Sports Tourer,2016,
+2152,Renault,Mégane RS,Mégane RS (II) Hatchback,2002,2009
+2153,Renault,Modus,Modus () Hatchback,2004,2013
+2154,Renault,R5 GT Turbo,R5 GT Turbo (Phase I) Hatchback,1985,1987
+2155,Renault,R5 GT Turbo,R5 GT Turbo (Phase II) Hatchback,1987,1990
+2156,Renault,R8,R8 () Saloon,1964,1969
+2157,Renault,Scenic,Scenic  MPV,2016,2022
+2158,Renault,Traffic,Traffic (X82) Camper,2014,2023
+2159,Renault,Traffic,Traffic (X82) Minibus,2014,2023
+2160,Renault,Traffic,Traffic (X82) Van,2014,2023
+2161,Renault,Traffic,Traffic (X83) Camper,2001,2013
+2162,Renault,Traffic,Traffic (X83) Minibus,2001,2013
+2163,Renault,Traffic,Traffic (X83) Van,2001,2013
+2164,Riley,Elf,Elf  Saloon,1961,1969
+2165,Rover,2000,2000 (P6) Saloon,1963,1977
+2166,Rover,2200,2200 (P6) Saloon,1963,1977
+2167,Rover,3500,3500 (P6) Saloon,1963,1977
+2168,Rover,Mini,Mini  Saloon,1986,2000
+2169,Saab,90,90 () Coupé,1985,1987
+2170,Saab,99,99 () Hatchback,1979,1984
+2171,Saab,900,900  Hatchback,1978,1993
+2172,Saab,900,900  Hatchback,1993,1998
+2173,Saab,9000,9000 () Hatchback,1985,1998
+2174,Saab,9000,9000 () Saloon,1985,1998
+2175,Saab,9-3,9-3 (YS3D) Cabriolet,1998,2002
+2176,Saab,9-3,9-3 (YS3D) Hatchback,1998,2002
+2177,Saab,9-3,9-3 (YS3F) Cabriolet,2003,2007
+2178,Saab,9-3,9-3 (YS3F) Cabriolet,2008,2011
+2179,Saab,9-3,9-3 (YS3F) Estate,2003,2007
+2180,Saab,9-3,9-3 (YS3F) Estate,2008,2011
+2181,Saab,9-3,9-3 (YS3F) Saloon,2002,2007
+2182,Saab,9-3,9-3 (YS3F) Saloon,2008,2011
+2183,Saab,9-5,9-5 (YS3E) Estate,1997,2001
+2184,Saab,9-5,9-5 (YS3E) Estate,2001,2010
+2185,Saab,9-5,9-5 (YS3E) Saloon,1997,2001
+2186,Saab,9-5,9-5 (YS3E) Saloon,2001,2010
+2187,Scion,FR-S,FR-S () Coupé,2012,2020
+2188,Seat,124,124 () Coupé,1968,1980
+2189,Seat,124,124 () Saloon,1968,1980
+2190,Seat,Alhambra,Alhambra (7N) MPV,2010,2020
+2191,Seat,Alhambra,Alhambra (7N) MPV 4Motion,2010,2020
+2192,Seat,Altea,Altea (5P) MPV,2004,2015
+2193,Seat,Arona,Arona (KJ7) SUV,2017,2023
+2194,Seat,Arosa,Arosa () Hatchback,1997,2005
+2195,Seat,Ateca,Ateca (KH7) SUV,2016,2023
+2196,Seat,Ateca,Ateca (KH7) SUV 4Motion,2016,2023
+2197,Seat,Cordoba,Cordoba (6K) Coupé,1993,2002
+2198,Seat,Cordoba,Cordoba (6K) Estate,1993,2002
+2199,Seat,Cordoba,Cordoba (6K) Saloon,1993,2002
+2200,Seat,Cordoba,Cordoba (6L) Saloon,2002,2008
+2201,Seat,Cordoba Sport,Cordoba Sport (6L) Saloon,2002,2008
+2202,Seat,Exeo,Exeo (3R) Saloon,2009,2013
+2203,Seat,Exeo ST,Exeo ST (3R) Estate,2009,2013
+2204,Seat,Ibiza,Ibiza (6F) Hatchback,2017,2023
+2205,Seat,Ibiza,Ibiza (6J/6P) Hatchback,2008,2015
+2206,Seat,Ibiza,Ibiza (6J/6P) Hatchback,2008,2017
+2207,Seat,Ibiza,Ibiza (6K) Hatchback,1993,1999
+2208,Seat,Ibiza,Ibiza (6L) Hatchback,2002,2008
+2209,Seat,Ibiza Cupra,Ibiza Cupra (6J/6P) Hatchback,2008,2015
+2210,Seat,Ibiza Cupra,Ibiza Cupra (6J/6P) Hatchback,2008,2017
+2211,Seat,Ibiza Cupra,Ibiza Cupra (6K) Hatchback,1993,2002
+2212,Seat,Ibiza Cupra,Ibiza Cupra (6L) Hatchback,2004,2008
+2213,Seat,Ibiza Evo FR,Ibiza Evo FR (6F) Hatchback,2017,2023
+2214,Seat,Ibiza FR,Ibiza FR (6J/6P) Hatchback,2008,2015
+2215,Seat,Ibiza FR,Ibiza FR (6J/6P) Hatchback,2008,2017
+2216,Seat,Ibiza FR,Ibiza FR (6L) Hatchback,2004,2008
+2217,Seat,Ibiza Sport,Ibiza Sport (6K) Hatchback,1993,2002
+2218,Seat,Ibiza Sport,Ibiza Sport (6L) Hatchback,2002,2008
+2219,Seat,Ibiza ST,Ibiza ST (6J/6P) Estate,2010,2017
+2220,Seat,Inca,Inca () van,1996,2004
+2221,Seat,Leon,Leon (1M) Hatchback,1999,2005
+2222,Seat,Leon,Leon (5F) Hatchback,2013,2019
+2223,Seat,Leon,Leon (KL1) Hatchback,2020,
+2224,Seat,Leon,Leon (KL1) Hatchback 4Motion,2020,
+2225,Seat,Leon,Leon (KL8) Sports Tourer,2020,
+2226,Seat,Leon,Leon (KL8) Sports Tourer 4Motion,2020,
+2227,Seat,Leon 4,Leon 4 (1M) Hatchback 4Motion,1999,2005
+2228,Seat,Leon Cupra,Leon Cupra (1M) Hatchback,1999,2005
+2229,Seat,Leon Cupra,Leon Cupra (1P) Hatchback,2005,2012
+2230,Seat,Leon Cupra 'R',Leon Cupra 'R' (1M) Hatchback,2002,2005
+2231,Seat,Leon FR,Leon FR (1P) Hatchback,2005,2012
+2232,Seat,Leon II,Leon II (1P) Hatchback,2005,2012
+2233,Seat,Leon ST,Leon ST (5F) Estate,2013,2019
+2234,Seat,Leon ST,Leon ST (5F) Hatchback,2013,2019
+2235,Seat,Toledo,Toledo (1L) Saloon,1991,1998
+2236,Seat,Toledo,Toledo (1M) Saloon,1999,2004
+2237,Seat,Toledo,Toledo (5P) MPV,2004,2009
+2238,Seat,Toledo,Toledo (NH) Hatchback,2013,2018
+2239,Skoda,Fabia,Fabia (5J) Combi,2006,2014
+2240,Skoda,Fabia,Fabia (5J) Hatchback,2006,2014
+2241,Skoda,Fabia,Fabia (6Y) Combi,2000,2007
+2242,Skoda,Fabia,Fabia (6Y) Hatchback,2000,2007
+2243,Skoda,Fabia,Fabia (NJ) Combi,2015,2020
+2244,Skoda,Fabia,Fabia (NJ) Hatchback,2015,2020
+2245,Skoda,Fabia,Fabia (PJ) Combi,2021,
+2246,Skoda,Fabia,Fabia (PJ) Hatchback,2021,
+2247,Skoda,Fabia VRS,Fabia VRS (5J) Combi,2010,2014
+2248,Skoda,Fabia VRS,Fabia VRS (5J) Hatchback,2010,2014
+2249,Skoda,Fabia VRS,Fabia VRS (6Y) Hatchback,2000,2007
+2250,Skoda,Kamiq,Kamiq  SUV,2019,
+2251,Skoda,Karoq,Karoq (NU7) SUV,2017,2023
+2252,Skoda,Kodiaq,Kodiaq (NS7) SUV,2016,2023
+2253,Skoda,Kodiaq,Kodiaq (NS7) SUV 4Motion,2016,2023
+2254,Skoda,Octavia 3,Octavia 3 (5E) Combi,2013,2019
+2255,Skoda,Octavia 3,Octavia 3 (5E) Hatchback,2013,2019
+2256,Skoda,Octavia 3 VRS,Octavia 3 VRS (5E) Combi,2013,2019
+2257,Skoda,Octavia 3 VRS,Octavia 3 VRS (5E) Saloon,2013,2019
+2258,Skoda,Octavia 4,Octavia 4 (NX) Combi,2020,
+2259,Skoda,Octavia 4,Octavia 4 (NX) Combi 4Motion,2020,
+2260,Skoda,Octavia 4,Octavia 4 (NX) Hatchback,2020,
+2261,Skoda,Octavia 4,Octavia 4 (NX) Hatchback 4Motion,2020,
+2262,Skoda,Octavia 4 VRS,Octavia 4 VRS (NX) Combi 4Motion,2020,
+2263,Skoda,Octavia 4 VRS,Octavia 4 VRS (NX) Hatchback 4Motion,2020,
+2264,Skoda,Octavia Mk I,Octavia Mk I (1U) Combi,1997,2004
+2265,Skoda,Octavia Mk I,Octavia Mk I (1U) Hatchback,1997,2004
+2266,Skoda,Octavia Mk I VRS,Octavia Mk I VRS (1U) Combi,1997,2004
+2267,Skoda,Octavia Mk I VRS,Octavia Mk I VRS (1U) Hatchback,1997,2004
+2268,Skoda,Octavia Mk II,Octavia Mk II (1Z) Combi,2005,2012
+2269,Skoda,Octavia Mk II,Octavia Mk II (1Z) Hatchback,2005,2012
+2270,Skoda,Octavia Mk II VRS,Octavia Mk II VRS (1Z) Combi,2005,2012
+2271,Skoda,Octavia Mk II VRS,Octavia Mk II VRS (1Z) Saloon,2005,2012
+2272,Skoda,Rapid,Rapid (NH1) Hatchback,2012,2018
+2273,Skoda,Roomster,Roomster (5J) MPV,2006,2014
+2274,Skoda,Scala,Scala  SUV,2019,
+2275,Skoda,Superb,Superb (3U) Saloon,2002,2008
+2276,Skoda,Superb 2,Superb 2 (3T) Combi,2008,2015
+2277,Skoda,Superb 2,Superb 2 (3T) Combi 4Motion,2008,2015
+2278,Skoda,Superb 2,Superb 2 (3T) Saloon,2008,2015
+2279,Skoda,Superb 2,Superb 2 (3T) Saloon 4Motion,2008,2015
+2280,Skoda,Superb 3,Superb 3 (B8) Combi,2015,2023
+2281,Skoda,Superb 3,Superb 3 (B8) Combi 4Motion,2015,2023
+2282,Skoda,Superb 3,Superb 3 (B8) Saloon,2015,2023
+2283,Skoda,Superb 3,Superb 3 (B8) Saloon 4Motion,2015,2023
+2284,Skoda,Yeti,Yeti (5L) SUV,2009,2017
+2285,Skoda,Yeti,Yeti (5L) SUV 4Motion,2009,2017
+2286,Ssang Yong,Actyon,Actyon  SUV 4x4,2007,2012
+2287,Ssang Yong,Kyron,Kyron  SUV 4x4,2005,2007
+2288,Ssang Yong,Musso,Musso  Pick Up,2019,
+2289,Ssang Yong,Musso,Musso  Pick Up 4X4,2019,
+2290,Ssang Yong,Rexton,Rexton  SUV,2019,
+2291,Ssang Yong,Rexton,Rexton  SUV 4X4,2019,
+2292,Ssang Yong,Rexton,Rexton (Y200) SUV 4x4,2002,2005
+2293,Ssang Yong,Rexton,Rexton (Y250) SUV 4x4,2006,2017
+2294,Subaru,BRZ,BRZ () Coupé,2012,2020
+2295,Subaru,BRZ,BRZ () Coupé,2020,
+2296,Subaru,Impreza,Impreza (GC) Saloon 4x4,1994,2000
+2297,Subaru,Impreza,Impreza (GD) Saloon,2000,2002
+2298,Subaru,Impreza,Impreza (GD) Saloon,2002,2005
+2299,Subaru,Impreza,Impreza (GD) Saloon,2005,2007
+2300,Subaru,Impreza,Impreza (GE) Saloon,2007,2011
+2301,Subaru,Impreza,Impreza (GF) Estate 4x4,1994,2000
+2302,Subaru,Impreza,Impreza (GG) Estate,2000,2002
+2303,Subaru,Impreza,Impreza (GG) Estate,2002,2005
+2304,Subaru,Impreza,Impreza (GG) Estate,2005,2007
+2305,Subaru,Impreza,Impreza (GH) Hatchback 4x4,2007,2011
+2306,Subaru,Impreza WRX,Impreza WRX (GD) Saloon 4x4,2000,2002
+2307,Subaru,Impreza WRX,Impreza WRX (GD) Saloon 4x4,2002,2005
+2308,Subaru,Impreza WRX,Impreza WRX (GD) Saloon 4x4,2005,2007
+2309,Subaru,Impreza WRX,Impreza WRX (GG) Estate 4x4,2000,2002
+2310,Subaru,Impreza WRX,Impreza WRX (GG) Estate 4x4,2002,2005
+2311,Subaru,Impreza WRX,Impreza WRX (GG) Estate 4x4,2005,2007
+2312,Subaru,Impreza WRX,Impreza WRX (GR) Hatchback 4x4,2007,2011
+2313,Subaru,Impreza WRX,Impreza WRX (GV) Saloon 4x4,2007,2011
+2314,Subaru,Legacy,Legacy (BL) Saloon,2003,2015
+2315,Subaru,Legacy,Legacy (BL) Saloon 4x4,2003,2015
+2316,Subaru,Legacy,Legacy (BP) Estate 4x4,2003,2009
+2317,Subaru,WRX,WRX  Saloon 4x4,2015,2023
+2318,Suzuki,Across,Across  SUV AWD,,
+2319,Suzuki,Jimny,Jimny (JB33/JB43) SUV 4X4,1998,2018
+2320,Suzuki,Jimny,Jimny (JB64/67) SUV 4X4,2018,2023
+2321,Suzuki,Splash,Splash () Hatchback,2007,2015
+2322,Suzuki,Swift,Swift (EA) Hatchback,1989,1996
+2323,Suzuki,Swift,Swift (EA) Saloon,1989,1996
+2324,Suzuki,Swift,Swift (MZ/EZ) Hatchback,2005,2010
+2325,Suzuki,Swift,Swift (Series M) Hatchback,1997,2002
+2326,Suzuki,Swift GTI,Swift GTI (EA) Hatchback,1989,1996
+2327,Suzuki,Swift Sport,Swift Sport (MZ/EZ) Hatchback,2005,2010
+2328,Suzuki,Vitara,Vitara (JT) SUV 4X4,2005,2016
+2329,Tesla,Model 3,Model 3 (5Y3) Saloon,2017,
+2330,Tesla,Model 3,Model 3 (5Y3) Saloon AWD,2017,
+2331,Tesla,Model Y,Model Y (5Y3) Saloon AWD,2020,
+2332,Toyota,Auris,Auris (E150) Hatchback,2006,2013
+2333,Toyota,Auris,Auris (E180) Estate,2013,2019
+2334,Toyota,Auris,Auris (E180) Hatchback,2013,2019
+2335,Toyota,Celica,Celica () Coupé,1978,1981
+2336,Toyota,Celica,Celica () Coupé,1981,1985
+2337,Toyota,Corolla,Corolla (E140/150) Hatchback,2006,2013
+2338,Toyota,Corolla,Corolla (E140/150) Saloon,2006,2013
+2339,Toyota,Corolla,Corolla (E160/180) Hatchback,2013,2019
+2340,Toyota,Corolla,Corolla (E160/180) Saloon,2013,2019
+2341,Toyota,Corolla,Corolla (E210) Estate,2019,
+2342,Toyota,Corolla,Corolla (E210) Hatchback,2019,
+2343,Toyota,Corolla,Corolla (E210) Saloon,2019,
+2344,Toyota,Corolla,Corolla (E70) Coupé,1980,1983
+2345,Toyota,Corolla,Corolla (E70) Saloon,1980,1983
+2346,Toyota,Corolla,Corolla (EE110/111) Hatchback,1995,2000
+2347,Toyota,Corolla,Corolla (EE110/111) Saloon,1995,2000
+2348,Toyota,Corolla,Corolla (EE120/130) Hatchback,2000,2006
+2349,Toyota,Corolla,Corolla (EE120/130) Saloon,2000,2006
+2350,Toyota,Corolla GT,Corolla GT (AE86) Coupé,1983,1987
+2351,Toyota,Corolla Verso,Corolla Verso (E140/150) Estate,2006,2013
+2352,Toyota,FJ Cruiser,FJ Cruiser  SUV 4x4,2006,2016
+2353,Toyota,GR86,GR86 () Coupé,2020,
+2354,Toyota,GT86,GT86 () Coupé,2012,2020
+2355,Toyota,Hi-Ace,Hi-Ace () Van,1990,1995
+2356,Toyota,Hi-Ace,Hi-Ace (H100) Van,1996,2004
+2357,Toyota,Hi-Ace,Hi-Ace (H200) Van,2005,2013
+2358,Toyota,Hi-Ace,Hi-Ace (LH) Van 4x4,1987,1995
+2359,Toyota,Hi-Ace,Hi-Ace (RZH) Van,1990,1995
+2360,Toyota,Hi-Lux,Hi-Lux (AN10) Pick Up 4x4,2005,2014
+2361,Toyota,Hi-Lux,Hi-Lux (AN120) Pick Up 4x4,2015,2023
+2362,Toyota,Hi-Lux,Hi-Lux (RN/LN) Pick Up 4x4,1979,1983
+2363,Toyota,Landcruiser,Landcruiser (J100) SUV 4x4,1998,2007
+2364,Toyota,Landcruiser,Landcruiser (J105) SUV 4x4,1998,2002
+2365,Toyota,Landcruiser,Landcruiser (J40) SUV 4x4,1960,1979
+2366,Toyota,Landcruiser,Landcruiser (J40) SUV 4x4,1974,1984
+2367,Toyota,Landcruiser,Landcruiser (J40) SUV 4x4,1980,1984
+2368,Toyota,Landcruiser,Landcruiser (J40) SUV 4x4,1980,1986
+2369,Toyota,Landcruiser,Landcruiser (J60) SUV 4x4,1981,1985
+2370,Toyota,Landcruiser,Landcruiser (J60) SUV 4x4,1985,1989
+2371,Toyota,Landcruiser,Landcruiser (J70) SUV 4x4,1984,1990
+2372,Toyota,Landcruiser,Landcruiser (J70) SUV 4x4,1990,1994
+2373,Toyota,Landcruiser,Landcruiser (J70) SUV 4x4,1990,1995
+2374,Toyota,Landcruiser,Landcruiser (J70) SUV 4x4,1999,2018
+2375,Toyota,Landcruiser,Landcruiser (J80) SUV 4x4,1990,1998
+2376,Toyota,Landcruiser 200,Landcruiser 200 (J200) SUV 4x4,2008,2020
+2377,Toyota,Landcruiser 300,Landcruiser 300 (LC300) SUV 4x4,2022,
+2378,Toyota,Landcruiser Prado 120,Landcruiser Prado 120 (J120) SUV 4x4,2003,2009
+2379,Toyota,Landcruiser Prado 125,Landcruiser Prado 125 (J125) SUV 4x4,2003,2009
+2380,Toyota,Landcruiser Prado 150,Landcruiser Prado 150 (J150) SUV 4x4,2009,2020
+2381,Toyota,Landcruiser Prado 90,Landcruiser Prado 90 (J90) SUV 4x4,1996,2002
+2382,Toyota,MR2,MR2 (AW11) Coupé,1985,1986
+2383,Toyota,MR2,MR2 (AW11) Coupé,1986,1989
+2384,Toyota,MR2,MR2 (SW20) Coupé,1990,1996
+2385,Toyota,MR2,MR2 (ZZW30) Spider,2000,2004
+2386,Toyota,Prius,Prius () Hatchback,2009,2015
+2387,Toyota,ProAce,ProAce  Van,2016,
+2388,Toyota,RAV4,RAV4 (XA10) SUV,1994,2000
+2389,Toyota,RAV4,RAV4 (XA20) SUV,2000,2005
+2390,Toyota,RAV4,RAV4 (XA30) SUV,2006,2012
+2391,Toyota,RAV4,RAV4 (XA40) SUV,2012,2018
+2392,Toyota,RAV4,RAV4 (XA50) SUV,2018,
+2393,Toyota,Supra,Supra (MA70) Coupé,1986,1993
+2394,Toyota,Yaris,Yaris (XP10) Hatchback,1998,2005
+2395,Toyota,Yaris,Yaris (XP10) Verso,1998,2005
+2396,Toyota,Yaris II,Yaris II (XP90) Hatchback,2005,2011
+2397,Toyota,Yaris III,Yaris III (XP150) Hatchback,2012,2020
+2398,Toyota,Yaris T-Sport,Yaris T-Sport (XP10) Hatchback,1998,2005
+2399,Triumph,2.5PI,2.5PI  Saloon,1969,1977
+2400,Triumph,2500TC,2500TC  Estate,1969,1977
+2401,Triumph,2500TC,2500TC  Saloon,1969,1977
+2402,Triumph,Dolomite,Dolomite  Saloon,1972,1980
+2403,Triumph,Dolomite Sprint,Dolomite Sprint  Saloon,1972,1980
+2404,Triumph,GT6,GT6 (MkI) Coupé,1966,1968
+2405,Triumph,GT6,GT6 (MkII) Coupé,1968,1970
+2406,Triumph,GT6,GT6 (MKIII) Coupé,1971,1973
+2407,Triumph,GT6,GT6 (MKIII) Coupé,1974,1974
+2408,Triumph,Herald,Herald  Convertible,1959,1971
+2409,Triumph,Herald,Herald  Estate,1959,1971
+2410,Triumph,Herald,Herald  Saloon,1959,1971
+2411,Triumph,Spitfire,Spitfire (1500) Convertible,1975,1980
+2412,Triumph,Spitfire,Spitfire (MkI) Convertible,1962,1965
+2413,Triumph,Spitfire,Spitfire (MkII) Convertible,1966,1967
+2414,Triumph,Spitfire,Spitfire (MKIII) Convertible,1968,1970
+2415,Triumph,Spitfire,Spitfire (MKIV) Convertible,1971,1974
+2416,Triumph,Stag,Stag  Convertible,1970,1977
+2417,Triumph,TR 2,TR 2  Roadster,1953,1955
+2418,Triumph,TR 250,TR 250  Roadster,1968,1969
+2419,Triumph,TR 3,TR 3  Roadster,1955,1962
+2420,Triumph,TR 4,TR 4  Roadster,1961,1965
+2421,Triumph,TR 4A,TR 4A  Roadster,1965,1967
+2422,Triumph,TR 5,TR 5  Roadster,1967,1969
+2423,Triumph,TR 6,TR 6  Roadster,1969,1976
+2424,Triumph,TR 7,TR 7  Coupé,1975,1981
+2425,Triumph,TR 7,TR 7  Roadster,1975,1981
+2426,Triumph,Vitesse,Vitesse  Convertible,1962,1971
+2427,Triumph,Vitesse,Vitesse  Saloon,1962,1971
+2428,Vauxhall,Vivaro,Vivaro  Van,2016,
+2429,Vauxhall,Agila,Agila  Hatchback,2007,2014
+2430,Vauxhall,Astra,Astra (H) Estate,2004,2010
+2431,Vauxhall,Astra,Astra (H) Hatchback,2004,2009
+2432,Vauxhall,Astra,Astra (H) Saloon,2004,2009
+2433,Vauxhall,Astra,Astra (J) Hatchback,2009,2015
+2434,Vauxhall,Astra,Astra (J) Saloon,2009,2015
+2435,Vauxhall,Astra,Astra (J) Sports Tourer,2009,2015
+2436,Vauxhall,Astra,Astra (Mk II) Hatchback,1985,1988
+2437,Vauxhall,Astra,Astra (Mk II) Hatchback,1988,1990
+2438,Vauxhall,Astra,Astra (Mk III) Hatchback,1991,1997
+2439,Vauxhall,Astra,Astra (Mk IV) Cabriolet,1998,2004
+2440,Vauxhall,Astra,Astra (Mk IV) Coupé,1998,2004
+2441,Vauxhall,Astra,Astra (Mk IV) Estate,1998,2004
+2442,Vauxhall,Astra,Astra (Mk IV) Hatchback,1998,2004
+2443,Vauxhall,Astra GTC,Astra GTC (H) Hatchback,2004,2009
+2444,Vauxhall,Astra GTE,Astra GTE (Mk II) Hatchback,1988,1991
+2445,Vauxhall,Astra Twin Top,Astra Twin Top (H) Cabriolet,2004,2009
+2446,Vauxhall,Astra VXR,Astra VXR (Mk IV) Hatchback,1998,2004
+2447,Vauxhall,Calibra,Calibra  Coupé,1990,1998
+2448,Vauxhall,Calibra,Calibra  Coupé 4WD,1990,1998
+2449,Vauxhall,Cavalier,Cavalier (Mk I) Hatchback,1976,1981
+2450,Vauxhall,Cavalier,Cavalier (Mk I) Saloon,1976,1981
+2451,Vauxhall,Cavalier,Cavalier (Mk III) Hatchback,1988,1995
+2452,Vauxhall,Cavalier,Cavalier (Mk III) Hatchback 4WD,1991,1995
+2453,Vauxhall,Cavalier,Cavalier (Mk III) Saloon,1988,1995
+2454,Vauxhall,Cavalier,Cavalier (Mk III) Saloon 4WD,1989,1995
+2455,Vauxhall,Chevette,Chevette  Hatchback,1975,1984
+2456,Vauxhall,Combo,Combo  Van,1993,2001
+2457,Vauxhall,Corsa,Corsa (B) Hatchback,1993,2000
+2458,Vauxhall,Corsa,Corsa (C) Hatchback,2000,2006
+2459,Vauxhall,Corsa,Corsa (D) Hatchback,2006,2014
+2460,Vauxhall,Corsa,Corsa (E) Hatchback,2014,2019
+2461,Vauxhall,Corsa GSi,Corsa GSi (B) Hatchback,1993,2000
+2462,Vauxhall,Corsa Gsi,Corsa Gsi (C) Hatchback,2000,2006
+2463,Vauxhall,Corsa VXR,Corsa VXR (D) Hatchback,2006,2014
+2464,Vauxhall,Corsa VXR,Corsa VXR (E) Hatchback,2014,2019
+2465,Vauxhall,Crossland,Crossland (P17) SUV,2021,2024
+2466,Vauxhall,Crossland X,Crossland X (P17) SUV,2017,2020
+2467,Vauxhall,Frontera,Frontera  SUV 4x4,1991,1995
+2468,Vauxhall,Frontera,Frontera  SUV 4x4,1995,1998
+2469,Vauxhall,Grandland,Grandland  (P18) SUV,2021,2024
+2470,Vauxhall,Grandland X,Grandland X (P18) SUV,2017,2021
+2471,Vauxhall,Monterey,Monterey  SUV 4x4,1992,1995
+2472,Vauxhall,Monterey,Monterey  SUV 4x4,1995,1998
+2473,Vauxhall,Nova,Nova  Hatchback,1983,1991
+2474,Vauxhall,Nova GTE,Nova GTE  Hatchback,1992,1993
+2475,Vauxhall,Omega,Omega  Estate,1994,2003
+2476,Vauxhall,Omega,Omega  Saloon,1994,1999
+2477,Vauxhall,Tigra,Tigra  Cabriolet,1995,1999
+2478,Vauxhall,Tigra Twin Top,Tigra Twin Top  Cabriolet,2004,2009
+2479,Vauxhall,Vectra C,Vectra C (Z02) Estate,2002,2005
+2480,Vauxhall,Vectra C,Vectra C (Z02) Estate,2005,2009
+2481,Vauxhall,Vectra C,Vectra C (Z02) Hatchback,2002,2005
+2482,Vauxhall,Vectra C,Vectra C (Z02) Hatchback,2005,2009
+2483,Vauxhall,Vectra C,Vectra C (Z02) Saloon,2002,2005
+2484,Vauxhall,Vectra C,Vectra C (Z02) Saloon,2005,2009
+2485,Vauxhall,Vivaro,Vivaro  Camper,2001,2014
+2486,Vauxhall,Vivaro,Vivaro  Camper,2015,2018
+2487,Vauxhall,Vivaro,Vivaro  Minibus,2001,2014
+2488,Vauxhall,Vivaro,Vivaro  Minibus,2015,2018
+2489,Vauxhall,Vivaro,Vivaro  Van,2001,2014
+2490,Vauxhall,Vivaro,Vivaro  Van,2015,2018
+2491,Vauxhall,Zafira,Zafira (A) MPV,1999,2004
+2492,Volkswagen,Amarok,Amarok  Pick Up,2009,2020
+2493,Volkswagen,Amarok,Amarok  Pick Up 4X4,2009,2020
+2494,Volkswagen,Arteon,Arteon (3H7) Hatchback,2017,2023
+2495,Volkswagen,Beetle,Beetle  Cabriolet,1998,2011
+2496,Volkswagen,Beetle,Beetle  Saloon,1953,1959
+2497,Volkswagen,Beetle,Beetle  Saloon,1960,1965
+2498,Volkswagen,Beetle,Beetle  Saloon,1965,1970
+2499,Volkswagen,Beetle,Beetle  Saloon,1968,1970
+2500,Volkswagen,Beetle,Beetle  Saloon,1969,1977
+2501,Volkswagen,Beetle,Beetle  Saloon,1970,1973
+2502,Volkswagen,Beetle,Beetle  Saloon,1971,1973
+2503,Volkswagen,Beetle,Beetle  Saloon,1974,1974
+2504,Volkswagen,Beetle,Beetle  Saloon,1998,2011
+2505,Volkswagen,Beetle,Beetle  Saloon,2011,2018
+2506,Volkswagen,Bora,Bora  Saloon,1998,2005
+2507,Volkswagen,Bora,Bora  Saloon 4-Motion,1999,2000
+2508,Volkswagen,Bora,Bora  Saloon 4-Motion,2000,2002
+2509,Volkswagen,Bora,Bora  Variant 4-Motion,1999,2005
+2510,Volkswagen,Bora,Bora  Variant 4-Motion,2000,2004
+2511,Volkswagen,Caddy,Caddy (Mk I) Pick Up,1983,1992
+2512,Volkswagen,Caddy,Caddy (Mk II) Van,1996,2004
+2513,Volkswagen,Caddy,Caddy (Mk III) Van,2004,2015
+2514,Volkswagen,Caddy,Caddy (Mk IV) Van,2015,2020
+2515,Volkswagen,Caddy,Caddy (Mk V) Van,2020,
+2516,Volkswagen,Caddy Maxi,Caddy Maxi (Mk III) Van,2004,2015
+2517,Volkswagen,Caddy Maxi,Caddy Maxi (Mk IV) Van,2015,2020
+2518,Volkswagen,California,California  (T5/T6) Camper,2003,2019
+2519,Volkswagen,California,California  (T6.1) Camper,2020,
+2520,Volkswagen,California,California  (T7) Camper,2022,
+2521,Volkswagen,Corrado,Corrado  Coupé,1988,1995
+2522,Volkswagen,Corrado,Corrado  Coupé,1991,1995
+2523,Volkswagen,Crafter,Crafter  Camper,2017,
+2524,Volkswagen,Crafter,Crafter  Van,2006,2016
+2525,Volkswagen,Crafter,Crafter  Van,2017,
+2526,Volkswagen,Fox,Fox  Hatchback,2005,2011
+2527,Volkswagen,Golf 1,Golf 1 (Mk I) Cabriolet,1979,1993
+2528,Volkswagen,Golf 1,Golf 1 (Mk I) Hatchback,1974,1983
+2529,Volkswagen,Golf 1 GTI,Golf 1 GTI (Mk I) Hatchback,1976,1983
+2530,Volkswagen,Golf II,Golf II (Mk II) Hatchback,1983,1991
+2531,Volkswagen,Golf II G60,Golf II G60 (Mk II) Hatchback,1983,1991
+2532,Volkswagen,Golf II G60 Syncro,Golf II G60 Syncro (Mk II) Hatchback,1983,1991
+2533,Volkswagen,Golf II GTI,Golf II GTI (Mk II) Hatchback,1983,1991
+2534,Volkswagen,Golf II Syncro,Golf II Syncro (Mk II) Hatchback,1983,1991
+2535,Volkswagen,Golf III,Golf III (Mk III) Cabriolet,1991,1997
+2536,Volkswagen,Golf III,Golf III (Mk III) Hatchback,1991,1994
+2537,Volkswagen,Golf III,Golf III (Mk III) Hatchback,1994,1997
+2538,Volkswagen,Golf III,Golf III (Mk III) Variant,1991,1997
+2539,Volkswagen,Golf III GTI,Golf III GTI (Mk III) Hatchback,1991,1994
+2540,Volkswagen,Golf III GTI,Golf III GTI (Mk III) Hatchback,1994,1997
+2541,Volkswagen,Golf III VR6,Golf III VR6 (Mk III) Hatchback,1991,1994
+2542,Volkswagen,Golf III VR6,Golf III VR6 (Mk III) Hatchback,1994,1997
+2543,Volkswagen,Golf IV,Golf IV (Mk IV) Hatchback,1997,2003
+2544,Volkswagen,Golf IV,Golf IV (Mk IV) Hatchback 4-Motion,1998,1999
+2545,Volkswagen,Golf IV,Golf IV (Mk IV) Hatchback 4-Motion,1999,2003
+2546,Volkswagen,Golf IV,Golf IV (Mk IV) Hatchback 4-Motion,2000,2003
+2547,Volkswagen,Golf IV,Golf IV (Mk IV) Variant,1999,2004
+2548,Volkswagen,Golf IV,Golf IV (Mk IV) Variant 4-Motion,1999,2004
+2549,Volkswagen,Golf IV GTI,Golf IV GTI (Mk IV) Hatchback,1997,2003
+2550,Volkswagen,Golf V,Golf V (Mk V) Hatchback,2003,2008
+2551,Volkswagen,Golf V,Golf V (Mk V) Hatchback 4-Motion,2003,2008
+2552,Volkswagen,Golf V,Golf V (Mk V) Variant,2003,2008
+2553,Volkswagen,Golf V GTI,Golf V GTI (Mk V) Hatchback,2003,2008
+2554,Volkswagen,Golf V Plus,Golf V Plus (Mk V) MPV,2003,2008
+2555,Volkswagen,Golf V R32,Golf V R32 (Mk V) Hatchback 4-Motion,2003,2008
+2556,Volkswagen,Golf VI,Golf VI (Mk VI) Cabriolet,2011,2013
+2557,Volkswagen,Golf VI,Golf VI (Mk VI) Hatchback,2008,2012
+2558,Volkswagen,Golf VI,Golf VI (Mk VI) Variant,2009,2013
+2559,Volkswagen,Golf VI GTD,Golf VI GTD (Mk VI) Hatchback,2008,2012
+2560,Volkswagen,Golf VI GTI,Golf VI GTI (Mk VI) Hatchback,2008,2012
+2561,Volkswagen,Golf VI Plus,Golf VI Plus (Mk VI) Hatchback,2009,2013
+2562,Volkswagen,Golf VI Plus,Golf VI Plus (Mk VI) MPV,2009,2013
+2563,Volkswagen,Golf VI R,Golf VI R (Mk VI) Hatchback 4-Motion,2008,2012
+2564,Volkswagen,Golf VII,Golf VII (MK7) Hatchback,2013,2019
+2565,Volkswagen,Golf VII,Golf VII (MK7) Hatchback 4-Motion,2013,2019
+2566,Volkswagen,Golf VII,Golf VII (MK7) Variant,2013,2019
+2567,Volkswagen,Golf VII,Golf VII (MK7) Variant 4-Motion,2013,2019
+2568,Volkswagen,Golf VII GTD,Golf VII GTD (MK7) Hatchback,2013,2019
+2569,Volkswagen,Golf VII GTE,Golf VII GTE (MK7) Hatchback,2013,2019
+2570,Volkswagen,Golf VII GTI,Golf VII GTI (MK7) Hatchback,2013,2019
+2571,Volkswagen,Golf VII R,Golf VII R (MK7) Hatchback 4-Motion,2013,2019
+2572,Volkswagen,Golf VII R,Golf VII R (MK7) Variant 4-Motion,2013,2019
+2573,Volkswagen,Golf VII Sportsvan,Golf VII Sportsvan (MK7) MPV,2013,2019
+2574,Volkswagen,Golf VIII,Golf VIII (MK8) Hatchback,2020,
+2575,Volkswagen,Golf VIII,Golf VIII (MK8) Variant,2020,
+2576,Volkswagen,Golf VIII,Golf VIII (MK8) Variant 4-Motion,2020,
+2577,Volkswagen,Golf VIII GTD,Golf VIII GTD (MK8) Hatchback,2020,
+2578,Volkswagen,Golf VIII GTD,Golf VIII GTD (MK8) Variant,2020,
+2579,Volkswagen,Golf VIII GTE,Golf VIII GTE (MK8) Hatchback,2020,
+2580,Volkswagen,Golf VIII GTI,Golf VIII GTI (MK8) Hatchback,2020,
+2581,Volkswagen,Golf VIII R,Golf VIII R (MK8) Hatchback 4-Motion,2020,
+2582,Volkswagen,Golf VIII R,Golf VIII R (MK8) Variant 4-Motion,2020,
+2583,Volkswagen,Jetta 1,Jetta 1 (Mk I) Saloon,1979,1984
+2584,Volkswagen,Jetta 2,Jetta 2 (Mk II) Saloon,1984,1992
+2585,Volkswagen,Jetta 2 GTI,Jetta 2 GTI (Mk II) Saloon,1984,1992
+2586,Volkswagen,Jetta 5,Jetta 5 (Mk V) Saloon,2005,2010
+2587,Volkswagen,Jetta 6,Jetta 6 (Mk VI) Saloon,2010,2017
+2588,Volkswagen,Karmann Ghia,Karmann Ghia (Type 14) Cabriolet,1960,1965
+2589,Volkswagen,Karmann Ghia,Karmann Ghia (Type 14) Cabriolet,1965,1970
+2590,Volkswagen,Karmann Ghia,Karmann Ghia (Type 14) Cabriolet,1969,1977
+2591,Volkswagen,Karmann Ghia,Karmann Ghia (Type 14) Cabriolet,1971,1977
+2592,Volkswagen,Karmann Ghia,Karmann Ghia (Type 14) Coupé,1960,1965
+2593,Volkswagen,Karmann Ghia,Karmann Ghia (Type 14) Coupé,1965,1970
+2594,Volkswagen,Karmann Ghia,Karmann Ghia (Type 14) Coupé,1969,1977
+2595,Volkswagen,Karmann Ghia,Karmann Ghia (Type 14) Coupé,1971,1977
+2596,Volkswagen,LT28,LT28 (2D) VAN,1996,2006
+2597,Volkswagen,LT35,LT35 (2D) VAN,1996,2006
+2598,Volkswagen,LT46,LT46 (2D) VAN,1996,2006
+2599,Volkswagen,Lupo,Lupo  Hatchback,1998,2005
+2600,Volkswagen,Magotan,Magotan  Coupé,2010,2013
+2601,Volkswagen,Magotan,Magotan  Saloon,2007,2013
+2602,Volkswagen,Magotan,Magotan  Variant,2010,2013
+2603,Volkswagen,Multivan,Multivan (T5/T6) MPV,2003,2019
+2604,Volkswagen,Multivan,Multivan (T6.1) MPV,2020,
+2605,Volkswagen,Multivan,Multivan (T7) MPV,2022,
+2606,Volkswagen,Passat,Passat (32B) Saloon,1981,1988
+2607,Volkswagen,Passat,Passat (32B) Variant,1981,1988
+2608,Volkswagen,Passat,Passat (35i) Saloon,1988,1996
+2609,Volkswagen,Passat,Passat (35i) Variant,1988,1996
+2610,Volkswagen,Passat,Passat (3B) Saloon,1996,2000
+2611,Volkswagen,Passat,Passat (3B) Saloon 4-Motion,1997,2000
+2612,Volkswagen,Passat,Passat (3B) Variant,1996,2000
+2613,Volkswagen,Passat,Passat (3B) Variant 4-Motion,1997,2000
+2614,Volkswagen,Passat,Passat (3BG) Saloon,2000,2005
+2615,Volkswagen,Passat,Passat (3BG) Saloon 4-Motion,2000,2005
+2616,Volkswagen,Passat,Passat (3BG) Variant,2000,2005
+2617,Volkswagen,Passat,Passat (3BG) Variant 4-Motion,2000,2005
+2618,Volkswagen,Passat,Passat (3C) Coupé,2008,2017
+2619,Volkswagen,Passat,Passat (3C) Coupé 4-Motion,2008,2017
+2620,Volkswagen,Passat,Passat (3C) Saloon,2005,2014
+2621,Volkswagen,Passat,Passat (3C) Saloon 4-Motion,2005,2014
+2622,Volkswagen,Passat,Passat (3C) Variant,2005,2014
+2623,Volkswagen,Passat,Passat (3C) Variant 4-Motion,2005,2014
+2624,Volkswagen,Passat,Passat (B8) Saloon,2015,2023
+2625,Volkswagen,Passat,Passat (B8) Saloon 4-Motion,2015,2023
+2626,Volkswagen,Passat,Passat (B8) Variant,2015,2023
+2627,Volkswagen,Passat,Passat (B8) Variant 4-Motion,2015,2023
+2628,Volkswagen,Passat G60,Passat G60 (35i) Saloon Syncro,1988,1996
+2629,Volkswagen,Passat GTE,Passat GTE (B8) Saloon,2015,2023
+2630,Volkswagen,Passat GTE,Passat GTE (B8) Variant,2015,2023
+2631,Volkswagen,Passat R36,Passat R36 (3C) Saloon 4-Motion,2005,2014
+2632,Volkswagen,Passat R36,Passat R36 (3C) Variant 4-Motion,2005,2014
+2633,Volkswagen,Polo,"Polo (2G, AW1, BZ1) Hatchback",2017,2023
+2634,Volkswagen,Polo,Polo (6C) Hatchback,2014,2017
+2635,Volkswagen,Polo,Polo (6C) Saloon,2014,2017
+2636,Volkswagen,Polo,Polo (6N) Hatchback,1994,1999
+2637,Volkswagen,Polo,Polo (6N) Saloon,1996,2002
+2638,Volkswagen,Polo,Polo (6N) Variant,1996,2002
+2639,Volkswagen,Polo,Polo (6N2) Hatchback,1999,2001
+2640,Volkswagen,Polo,Polo (6R) Hatchback,2009,2014
+2641,Volkswagen,Polo,Polo (6R) Saloon,2009,2014
+2642,Volkswagen,Polo,Polo (9N) Hatchback,2001,2009
+2643,Volkswagen,Polo,Polo (Mk II) Coupé,1975,1994
+2644,Volkswagen,Polo,Polo (Mk II) Hatchback,1975,1994
+2645,Volkswagen,Polo,Polo (Mk II) Saloon,1975,1994
+2646,Volkswagen,Polo G40,Polo G40 (Mk II) Coupé,1988,1994
+2647,Volkswagen,Polo GTI,"Polo GTI (2G, AW1, BZ1) Hatchback",2017,2023
+2648,Volkswagen,Polo GTI,Polo GTI (6C) Hatchback,2014,2017
+2649,Volkswagen,Polo GTI,Polo GTI (6N) Hatchback,1994,1999
+2650,Volkswagen,Polo GTI,Polo GTI (6R) Hatchback,2009,2014
+2651,Volkswagen,Polo GTI,Polo GTI (9N) Hatchback,2001,2009
+2652,Volkswagen,Sagitar,Sagitar  Saloon,2006,2010
+2653,Volkswagen,Santana,Santana (32B) Coupé,1981,1985
+2654,Volkswagen,Scirocco,Scirocco (Mk I) Coupé,1974,1981
+2655,Volkswagen,Scirocco,Scirocco (Mk II) Coupé,1982,1992
+2656,Volkswagen,Scirocco,Scirocco (Mk III) Coupé,2008,2017
+2657,Volkswagen,Scirocco GTI,Scirocco GTI (Mk II) Coupé,1982,1992
+2658,Volkswagen,Sharan,Sharan (7N) MPV,2010,2020
+2659,Volkswagen,Sharan,Sharan (7N) MPV 4-Motion,2010,2020
+2660,Volkswagen,Super Beetle 1303,Super Beetle 1303  Saloon,1975,1980
+2661,Volkswagen,Tiguan,Tiguan (5N) Hatchback,2007,2016
+2662,Volkswagen,Tiguan,Tiguan (5N) Hatchback 4-Motion,2007,2016
+2663,Volkswagen,Tiguan,Tiguan (AD1) Hatchback,2016,2020
+2664,Volkswagen,Tiguan,Tiguan (AD1) Hatchback 4-Motion,2016,2020
+2665,Volkswagen,Touran,Touran (1T) MPV,2003,2010
+2666,Volkswagen,Touran,Touran (1T) MPV,2010,2015
+2667,Volkswagen,Touran,Touran (5T) MPV,2015,
+2668,Volkswagen,Transporter,Transporter (T1) Van,1955,1967
+2669,Volkswagen,Transporter,Transporter (T2A) Camper,1970,1971
+2670,Volkswagen,Transporter,Transporter (T2A) Van,1970,1971
+2671,Volkswagen,Transporter,Transporter (T2B) Camper,1972,1979
+2672,Volkswagen,Transporter,Transporter (T2B) Van,1972,1979
+2673,Volkswagen,Transporter,Transporter (T3/T25) Van,1980,1990
+2674,Volkswagen,Transporter,Transporter (T4) Bus,1990,2003
+2675,Volkswagen,Transporter,Transporter (T4) Bus Syncro,1990,2003
+2676,Volkswagen,Transporter,Transporter (T4) Multivan,1990,2003
+2677,Volkswagen,Transporter,Transporter (T4) Multivan Syncro,1990,2003
+2678,Volkswagen,Transporter,Transporter (T4) Van,1990,2003
+2679,Volkswagen,Transporter,Transporter (T4) Van Syncro,1990,2003
+2680,Volkswagen,Transporter,Transporter (T5) Van,2003,2015
+2681,Volkswagen,Transporter,Transporter (T5) Van 4-Motion,2003,2015
+2682,Volkswagen,Transporter,Transporter (T6) Van,2015,2020
+2683,Volkswagen,Transporter,Transporter (T6) Van 4-Motion,2015,2020
+2684,Volkswagen,Transporter,Transporter (T6.1) Van,2020,
+2685,Volkswagen,Transporter,Transporter (T6.1) Van 4-Motion,2020,2023
+2686,Volkswagen,Transporter,Transporter (T7) Van,2022,
+2687,Volkswagen,T-Roc,T-Roc (A11) SUV,2017,2023
+2688,Volkswagen,Vento,Vento (A3) Saloon,1991,1997
+2689,Volkswagen,Vento VR6,Vento VR6 (A3) Saloon,1991,1997
+2690,Volvo,740,740  Estate,1984,1988
+2691,Volvo,740,740  Estate,1988,1992
+2692,Volvo,740,740  Saloon,1984,1988
+2693,Volvo,740,740  Saloon,1988,1992
+2694,Volvo,760,760  Estate,1984,1987
+2695,Volvo,760,760  Estate,1985,1988
+2696,Volvo,760,760  Estate,1988,1990
+2697,Volvo,760,760  Saloon,1984,1987
+2698,Volvo,760,760  Saloon,1985,1988
+2699,Volvo,760,760  Saloon,1988,1990
+2700,Volvo,780,780  Coupé,1984,1987
+2701,Volvo,780,780  Coupé,1988,1990
+2702,Volvo,850,850  Estate,1992,1997
+2703,Volvo,850,850  Saloon,1992,1997
+2704,Volvo,940,940  Estate,1990,1997
+2705,Volvo,940,940  Saloon,1990,1997
+2706,Volvo,960,960  Estate,1990,1998
+2707,Volvo,240-series,240-series  Estate,1978,1993
+2708,Volvo,240-series,240-series  Saloon,1978,1993
+2709,Volvo,260-series,260-series  Estate,1978,1993
+2710,Volvo,260-series,260-series  Saloon,1978,1993
+2711,Volvo,Amazon,Amazon  Estate,1962,1969
+2712,Volvo,Amazon,Amazon  Saloon,1957,1969
+2713,Volvo,C30,C30  Hatchback,2007,2014
+2714,Volvo,C70,C70 (Mk I) Convertible,1997,2005
+2715,Volvo,C70,C70 (Mk I) Coupé,1997,2005
+2716,Volvo,C70,C70 (Mk II) Convertible,2006,2013
+2717,Volvo,C70,C70 (Mk II) Coupé,2006,2013
+2718,Volvo,S40,S40 (S2) Saloon,2004,2012
+2719,Volvo,S60,S60 (I) Saloon,2000,2010
+2720,Volvo,S60,S60 (II) Saloon,2010,2019
+2721,Volvo,S70,S70 (I) Saloon,1997,1999
+2722,Volvo,S80,S80 (I) Saloon,1998,2006
+2723,Volvo,S80,S80 (II) Saloon,2006,2016
+2724,Volvo,S80,S80 (II) Saloon AWD,2006,2016
+2725,Volvo,V40,V40  Hatchback,2012,2019
+2726,Volvo,V50,V50 (I) Estate,2004,2012
+2727,Volvo,V60,V60 (II) Estate,2010,2019
+2728,Volvo,V60,V60 (II) Estate AWD,2010,2019
+2729,Volvo,V70,V70 (I) Estate,1997,1999
+2730,Volvo,V70,V70 (II) Estate,2000,2006
+2731,Volvo,V70,V70 (III) Estate,2007,2016
+2732,Volvo,XC60,XC60 (156) SUV,2008,2017
+2733,Volvo,XC60,XC60 (156) SUV AWD,2008,2017
+2734,Volvo,XC60,XC60 (SPA) SUV,2017,
+2735,Volvo,XC60,XC60 (SPA) SUV AWD,2017,
+2736,Volvo,XC70,XC70  SUV,2007,2016
+2737,Volvo,XC70,XC70  SUV AWD,2007,2016
+2738,Volvo,XC90,XC90  SUV,2002,2014
+2739,Volvo,XC90,XC90  SUV AWD,2002,2014
+2740,Wolsley,Hornet,Hornet  Saloon,1961,1969
+2741,,,,,
