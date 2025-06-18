@@ -16,32 +16,7 @@ jQuery(document).ready(function($) {
         localStorage.setItem('vehicleFilter', JSON.stringify(formData));
     }
 
-    // Helper: Add vehicle_id to URL and reload
-    function applyVehicleFilter(vehicle_id) {
-        const currentUrl = new URL(window.location.href);
-        if (currentUrl.searchParams.get('vehicle_id') !== String(vehicle_id)) {
-            currentUrl.searchParams.set('vehicle_id', vehicle_id);
-            window.location.href = currentUrl.toString();
-        } else {
-            // Force reload even if the URL is the same
-            window.location.reload();
-        }
-    }
-
-    // On page load: sync vehicle_id between URL and localStorage
-    const urlParams = new URLSearchParams(window.location.search);
-    const urlVehicleId = urlParams.get('vehicle_id');
-    const storedVehicleId = localStorage.getItem('vehicle_id');
-    // debugLog('Initial vehicle IDs:', { urlVehicleId, storedVehicleId });
-
-    if (urlVehicleId) {
-        localStorage.setItem('vehicle_id', urlVehicleId);
-        // debugLog('Using vehicle_id from URL:', urlVehicleId);
-    } else if (storedVehicleId) {
-        // debugLog('Applying stored vehicle_id:', storedVehicleId);
-        applyVehicleFilter(storedVehicleId);
-        return; // Stop further execution, page will reload
-    }
+    // On page load: do NOT sync vehicle_id between URL and localStorage
 
     // Only proceed with form handling if we're on a page with the form
     const makeSelect = document.getElementById('make');
@@ -330,9 +305,8 @@ jQuery(document).ready(function($) {
 
                         // Store vehicle_id in localStorage
                         localStorage.setItem('vehicle_id', response.data.vehicle_id);
-                        applyVehicleFilter(response.data.vehicle_id); // Reload with vehicle_id in URL
-                        // Also redirect to shop page with vehicle_id
-                        window.location.href = vehicleFilterAjax.shop_url + '?vehicle_id=' + response.data.vehicle_id;
+                        setVehicleIdCookie(response.data.vehicle_id);
+                        window.location.href = vehicleFilterAjax.shop_url;
                     } else {
                         showFormMessage('No vehicle found for the selected criteria. Please try different options.');
                         // Reset button state
@@ -788,9 +762,8 @@ jQuery(document).ready(function($) {
                                 };
                                 localStorage.setItem('vehicleFilter', JSON.stringify(vehicleData));
                                 localStorage.setItem('vehicle_id', vehicleResponse.data.vehicle_id);
-
-                                // Redirect to shop page with vehicle_id
-                                window.location.href = vehicleFilterAjax.shop_url + '?vehicle_id=' + vehicleResponse.data.vehicle_id;
+                                setVehicleIdCookie(vehicleResponse.data.vehicle_id);
+                                window.location.href = vehicleFilterAjax.shop_url;
                             } else {
                                 showErrorMessage('No matching vehicle found in our database for this registration number');
                             }
@@ -813,4 +786,12 @@ jQuery(document).ready(function($) {
             }
         });
     });
+
+    // Set vehicle_id in cookie (expires in 7 days)
+    function setVehicleIdCookie(vehicle_id) {
+        var d = new Date();
+        d.setTime(d.getTime() + (7*24*60*60*1000)); // 7 days
+        var expires = "expires="+ d.toUTCString();
+        document.cookie = "vehicle_id=" + vehicle_id + ";" + expires + ";path=/";
+    }
 });
