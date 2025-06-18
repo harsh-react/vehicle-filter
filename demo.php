@@ -1,6 +1,6 @@
 <?php
 
-$apiKey = '4aa9e04e-038e-4613-a396-9afc471c216d';
+$apiKey = '*********************';
 $packageName = 'VehicleDetails';
 $vrm = 'MR09RAJ';
 
@@ -27,14 +27,14 @@ $response = curl_exec($ch);
 $status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
 // Check for CURL errors
-if(curl_errno($ch)){
+if (curl_errno($ch)) {
     echo 'Curl Error: ' . curl_error($ch);
     curl_close($ch);
     exit;
 }
 
 // Check the HTTP response status
-if($status_code !== 200) {
+if ($status_code !== 200) {
     echo "API responded with HTTP status code: {$status_code}\n";
     echo "Response: {$response}";
     curl_close($ch);
