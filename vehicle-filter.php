@@ -2223,7 +2223,7 @@ function lookup_vehicle_by_reg()
         return;
     }
 
-    $api_key = '4aa9e04e-038e-4613-a396-9afc471c216d';
+    $api_key = '**************************';
     $package_name = 'VehicleDetails';
 
     $url = 'https://uk.api.vehicledataglobal.com/r2/lookup?' . http_build_query([
