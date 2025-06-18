@@ -223,7 +223,7 @@ vehicle_id,make,model,listing,year_from,year_to
 222,Lexus,IS200,IS200 (XE10) SportCross  1998 > 2005,1998,2005
 223,Lexus,IS300,IS300 (XE10) Saloon  1998 > 2005,1998,2005
 224,Lexus,IS300,IS300 (XE10) SportCross  1998 > 2005,1998,2005
-225,Mazda,MX5,,,
+225,Mazda,MX5,MX5,2004,2008
 226,Mazda,2,2 (DY) Hatchback  2004 > 2007,2004,2007
 227,Mazda,3,3 (BK) Hatchback  2003 > 2008,2003,2008
 228,Mazda,3,3 (BK) Saloon  2003 > 2008,2003,2008
@@ -586,7 +586,7 @@ vehicle_id,make,model,listing,year_from,year_to
 585,Volkswagen,Transporter,Transporter (T6) Van 4-Motion 2015 > 2020,2015,2020
 586,Volkswagen,Transporter,Transporter (T6.1) Van  2020 > 2023,2020,2023
 587,Volkswagen,Vento VR6,Vento VR6 (A3) Saloon  1991 > 1997,1991,1997
-588,Volvo,V50 Estate,,,
+588,Volvo,V50 Estate,V50 Estate,1992,1997
 589,Volvo,850,850  Estate  1992 > 1997,1992,1997
 590,Volvo,850,850  Saloon  1992 > 1997,1992,1997
 591,Volvo,V70 Estate,"850 Wagon, incl. T-5, T5-R",,
@@ -836,7 +836,7 @@ vehicle_id,make,model,listing,year_from,year_to
 835,Volkswagen,Golf VII GTD,Golf VII GTD (5G) Hatchback  2013 > 2019,2013,2019
 836,Volkswagen,Golf VII GTI,Golf VII GTI (5G) Hatchback  2013 > 2019,2013,2019
 837,Volkswagen,Golf VIII,Golf VIII (CD1) Hatchback  2020 >,2020,
-838,Volkswagen,Jetta,nan,,
+838,Volkswagen,Jetta,Jetta,2020,2025
 839,Volkswagen,Lupo,Lupo () Hatchback  1998 > 2005,1998,2005
 840,Volkswagen,Passat,Passat 4-Motion Saloon,1997,2005
 841,Volkswagen,Passat,Passat (3B) Saloon 4-Motion 1997 > 2000,2000,2005
