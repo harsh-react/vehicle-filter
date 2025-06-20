@@ -12,6 +12,14 @@ use PhpOffice\PhpSpreadsheet\Calculation\TextData\Trim;
 // Add admin menu
 add_action('admin_menu', 'vehicle_filter_admin_menu');
 
+// Register settings for admin messages
+add_action('admin_init', 'vehicle_filter_admin_init');
+
+function vehicle_filter_admin_init() {
+    // Register settings for admin messages
+    register_setting('vehicle_filter', 'vehicle_filter_messages');
+}
+
 // Enqueue custom admin CSS for the vehicle filter page
 add_action('admin_head', function () {
     global $pagenow;
@@ -187,24 +195,42 @@ function vehicle_filter_admin_page()
         return;
     }
 
-    // Display admin notices
-    settings_errors('vehicle_filter');
+    // Handle form submissions first
+    $message = '';
+    $message_type = '';
 
     // Save form data if submitted
     if (isset($_POST['vehicle_filter_submit'])) {
         check_admin_referer('vehicle_filter_nonce');
-        handle_vehicle_form_submission();
+        $result = handle_vehicle_form_submission();
+        if (isset($result['message'])) {
+            $message = $result['message'];
+            $message_type = $result['type'];
+        }
     }
 
     // Handle CSV imports if submitted
     if (isset($_POST['vehicle_filter_csv_import'])) {
         check_admin_referer('vehicle_filter_nonce');
-        handle_csv_import();
+        $result = handle_csv_import();
+        if (isset($result['message'])) {
+            $message = $result['message'];
+            $message_type = $result['type'];
+        }
     }
+
+    // Display admin notices
+    settings_errors('vehicle_filter');
 
 ?>
     <div class="wrap">
         <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
+
+        <?php if (!empty($message)): ?>
+            <div class="vehicle-filter-feedback vehicle-filter-feedback-<?php echo esc_attr($message_type); ?>">
+                <?php echo esc_html($message); ?>
+            </div>
+        <?php endif; ?>
 
         <div class="vehicle-filter-flex-row">
             <!-- CSV Import Section -->
@@ -290,8 +316,10 @@ function handle_vehicle_form_submission()
 
     // Validate required fields
     if (empty($make) || empty($model) || empty($listing) || empty($year_from) || empty($engines)) {
-        add_settings_error('vehicle_filter', 'validation_error', 'Please fill in all required fields.', 'error');
-        return;
+        return array(
+            'message' => 'Please fill in all required fields.',
+            'type' => 'error'
+        );
     }
 
     // Start transaction
@@ -366,10 +394,17 @@ function handle_vehicle_form_submission()
             $new_vehicle_id,
             count($engine_ids)
         );
-        add_settings_error('vehicle_filter', 'vehicle_added', $message, 'success');
+        
+        return array(
+            'message' => $message,
+            'type' => 'success'
+        );
     } catch (Exception $e) {
         $wpdb->query('ROLLBACK');
-        add_settings_error('vehicle_filter', 'vehicle_error', 'Error adding vehicle: ' . $e->getMessage(), 'error');
+        return array(
+            'message' => 'Error adding vehicle: ' . $e->getMessage(),
+            'type' => 'error'
+        );
     }
 }
 
@@ -388,8 +423,10 @@ function handle_csv_import()
     ) {
         $error_message = 'Please upload all three required CSV files.';
         vehicle_filter_log('Missing required CSV files');
-        add_settings_error('vehicle_filter', 'import_error', $error_message, 'error');
-        return;
+        return array(
+            'message' => $error_message,
+            'type' => 'error'
+        );
     }
 
     // Start transaction
@@ -571,7 +608,11 @@ function handle_csv_import()
             $imported_count['vehicle_engine']
         );
         vehicle_filter_log($success_message);
-        add_settings_error('vehicle_filter', 'import_success', $success_message, 'success');
+        
+        return array(
+            'message' => $success_message,
+            'type' => 'success'
+        );
     } catch (Exception $e) {
         $wpdb->query('ROLLBACK');
         // Re-enable foreign key checks in case of error
@@ -579,7 +620,11 @@ function handle_csv_import()
 
         $error_message = 'Error during import: ' . $e->getMessage();
         vehicle_filter_log($error_message);
-        add_settings_error('vehicle_filter', 'import_error', $error_message, 'error');
+        
+        return array(
+            'message' => $error_message,
+            'type' => 'error'
+        );
     }
 }
 
@@ -691,23 +736,6 @@ function vehicle_filter_form_shortcode()
     ob_start();
 ?>
     <div class="find_car_parts" id="find_car_parts">
-        <div class="fcp1">
-            <h2>Find Car Parts</h2>
-            <p>ENTER YOUR NUMBER PLATE BELOW</p>
-            <div id="reg-search-error" class="error-message"
-                style="display: none; color: #dc3232; margin: 10px 0; padding: 10px; background: #f8f8f8; border-left: 4px solid #dc3232;">
-            </div>
-            <form id="reg-search-form" onsubmit="return false;">
-                <div class="label_search_number">Search by number plate</div>
-                <div class="fcp1_content">
-                    <span class="enter_reg_input"><input type="text" id="enter_reg" name="enter_reg" placeholder="Enter REG"
-                            class="form-input" /></span>
-                    <button type="submit" class="button reg-search-button btn-black">Go</button>
-                </div>
-            </form>
-        </div>
-
-
         <div class="find_car_parts_form">
             <form id="vehicle-filter-form">
                 <div class="fcp2" id="fcp2"><span>Search your vehicle</span></div>
@@ -788,7 +816,7 @@ add_action('wp_ajax_nopriv_get_vehicle_id', 'get_vehicle_id');
 // Add logging function
 // Enable or disable logging
 global $enable_log;
-$enable_log = true; // Set to true to enable logging
+$enable_log = false; // Set to true to enable logging
 
 function vehicle_filter_log($message, $data = null)
 {
@@ -1643,45 +1671,3 @@ add_action('wp_footer', function () {
         </script>
 <?php }
 });
-
-// Add new AJAX action for vehicle lookup
-add_action('wp_ajax_lookup_vehicle_by_reg', 'lookup_vehicle_by_reg');
-add_action('wp_ajax_nopriv_lookup_vehicle_by_reg', 'lookup_vehicle_by_reg');
-
-function lookup_vehicle_by_reg()
-{
-    check_ajax_referer('vehicle_filter_nonce', 'nonce');
-
-    $reg_number = isset($_POST['reg_number']) ? sanitize_text_field($_POST['reg_number']) : '';
-
-    if (empty($reg_number)) {
-        wp_send_json_error('Registration number is required');
-        return;
-    }
-
-    $api_key = '*********************************';
-    $package_name = 'VehicleDetails';
-
-    $url = 'https://uk.api.vehicledataglobal.com/r2/lookup?' . http_build_query([
-        'packageName' => $package_name,
-        'apikey' => $api_key,
-        'vrm' => $reg_number
-    ]);
-
-    $response = wp_remote_get($url);
-
-    if (is_wp_error($response)) {
-        wp_send_json_error('Error making API request: ' . $response->get_error_message());
-        return;
-    }
-
-    $body = wp_remote_retrieve_body($response);
-    $data = json_decode($body, true);
-
-    if (!$data || !isset($data['Results']) || !isset($data['Results']['VehicleDetails']) || !isset($data['Results']['ModelDetails'])) {
-        wp_send_json_error('Invalid response from vehicle lookup service');
-        return;
-    }
-
-    wp_send_json_success($data);
-}

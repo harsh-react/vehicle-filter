@@ -680,6 +680,7 @@ jQuery(document).ready(function($) {
             e.preventDefault();
             localStorage.removeItem('vehicle_id');
             localStorage.removeItem('vehicleFilter');
+            clearVehicleIdCookie();
             window.location.href = '/shop';
         });
     }
@@ -693,105 +694,16 @@ jQuery(document).ready(function($) {
     // If you want to show summary without reloading, call showVehicleSummary() after storing in localStorage and before reload
     // ... existing code ...
 
-    // Function to show error message
-    function showErrorMessage(message) {
-        const errorDiv = $('#reg-search-error');
-        errorDiv.text(message).show();
-        // Hide error after 5 seconds
-        setTimeout(() => {
-            errorDiv.fadeOut();
-        }, 5000);
-    }
-
-    // Handle registration number form submission
-    $('#reg-search-form').on('submit', function(e) {
-        e.preventDefault();
-        
-        const regNumber = $('#enter_reg').val().trim();
-        if (!regNumber) {
-            showErrorMessage('Please enter a registration number');
-            return;
-        }
-
-        $('.reg-search-button').prop('disabled', true).text('Searching...');
-        $('#reg-search-error').hide();
-
-        // Make API call to get vehicle details through our server
-        $.ajax({
-            url: vehicleFilterAjax.ajaxurl,
-            type: 'POST',
-            data: {
-                action: 'lookup_vehicle_by_reg',
-                reg_number: regNumber,
-                nonce: vehicleFilterAjax.nonce
-            },
-            success: function(response) {
-                if (response.success && response.data && response.data.Results) {
-                    const vehicleDetails = response.data.Results.VehicleDetails;
-                    const modelDetails = response.data.Results.ModelDetails;
-                    
-                    // Extract vehicle details
-                    const make = modelDetails.ModelIdentification.Make;
-                    const model = modelDetails.ModelIdentification.Model;
-                    const listing = modelDetails.ModelIdentification.ModelVariant;
-                    const year = vehicleDetails.VehicleIdentification.YearOfManufacture;
-                    const engine = modelDetails.Powertrain.IceDetails.EngineDescription;
-
-                    // Get vehicle_id from our database
-                    $.ajax({
-                        url: vehicleFilterAjax.ajaxurl,
-                        type: 'POST',
-                        data: {
-                            action: 'get_vehicle_id',
-                            make: make,
-                            model: model,
-                            listing: listing,
-                            year: year,
-                            engine: engine,
-                            nonce: vehicleFilterAjax.nonce
-                        },
-                        success: function(vehicleResponse) {
-                            if (vehicleResponse.success && vehicleResponse.data.vehicle_id) {
-                                // Store vehicle data in localStorage
-                                const vehicleData = {
-                                    make: make,
-                                    model: model,
-                                    listing: listing,
-                                    year: year,
-                                    engine: engine
-                                };
-                                localStorage.setItem('vehicleFilter', JSON.stringify(vehicleData));
-                                localStorage.setItem('vehicle_id', vehicleResponse.data.vehicle_id);
-                                setVehicleIdCookie(vehicleResponse.data.vehicle_id);
-                                window.location.href = vehicleFilterAjax.shop_url;
-                            } else {
-                                showErrorMessage('No matching vehicle found in our database for this registration number');
-                            }
-                        },
-                        error: function() {
-                            showErrorMessage('Error looking up vehicle in our database. Please try again.');
-                        },
-                        complete: function() {
-                            $('.reg-search-button').prop('disabled', false).text('Go');
-                        }
-                    });
-                } else {
-                    showErrorMessage('No vehicle found for this registration number');
-                    $('.reg-search-button').prop('disabled', false).text('Go');
-                }
-            },
-            error: function() {
-                showErrorMessage('Error looking up vehicle. Please try again.');
-                $('.reg-search-button').prop('disabled', false).text('Go');
-            }
-        });
-    });
-
     // Set vehicle_id in cookie (expires in 7 days)
     function setVehicleIdCookie(vehicle_id) {
         var d = new Date();
         d.setTime(d.getTime() + (7*24*60*60*1000)); // 7 days
         var expires = "expires="+ d.toUTCString();
         document.cookie = "vehicle_id=" + vehicle_id + ";" + expires + ";path=/";
+    }
+
+    // Clear vehicle_id cookie
+    function clearVehicleIdCookie() {
+        document.cookie = "vehicle_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     }
 });
