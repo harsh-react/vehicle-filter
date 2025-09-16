@@ -8,22 +8,19 @@
  */
 
 use PhpOffice\PhpSpreadsheet\Calculation\TextData\Trim;
-
 // Add admin menu
-add_action('admin_menu', 'vehicle_filter_admin_menu');
-
+add_action("admin_menu", "vehicle_filter_admin_menu");
 // Register settings for admin messages
-add_action('admin_init', 'vehicle_filter_admin_init');
-
-function vehicle_filter_admin_init() {
+add_action("admin_init", "vehicle_filter_admin_init");
+function vehicle_filter_admin_init()
+{
     // Register settings for admin messages
-    register_setting('vehicle_filter', 'vehicle_filter_messages');
+    register_setting("vehicle_filter", "vehicle_filter_messages");
 }
-
 // Enqueue custom admin CSS for the vehicle filter page
-add_action('admin_head', function () {
+add_action("admin_head", function () {
     global $pagenow;
-    if (isset($_GET['page']) && $_GET['page'] === 'vehicle-filter') {
+    if (isset($_GET["page"]) && $_GET["page"] === "vehicle-filter") {
         echo '<style>
         .vehicle-filter-flex-row {
             display: flex;
@@ -31,15 +28,16 @@ add_action('admin_head', function () {
             gap: 32px;
             margin: 20px 0px;
             flex-wrap: wrap;
-            align-items: stretch;
-            justify-content: center;
+            align-items: flex-start;
+            justify-content: flex-start;
             max-width: 1200px;
         }
         .vehicle-filter-flex-row .vehicle-filter-card {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            height: 100%;
+            height: auto;
+            min-height: auto;
             box-sizing: border-box;
         }
         .vehicle-filter-card {
@@ -52,7 +50,9 @@ add_action('admin_head', function () {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            height: 100%;
+            height: auto;
+            min-height: auto;
+            width: 100%;
         }
         .vehicle-filter-card h2 {
             margin-top: 0;
@@ -105,6 +105,7 @@ add_action('admin_head', function () {
             box-shadow: none;
             padding: 32px 24px 24px 24px;
             margin-bottom: 0;
+            width: 100%;
         }
         .vehicle-filter-card-manual form {
             display: grid;
@@ -171,73 +172,187 @@ add_action('admin_head', function () {
         .vehicle-filter-feedback { margin-bottom: 24px; padding: 12px 18px; border-radius: 5px; font-size: 1.1em; }
         .vehicle-filter-feedback-success { background: #e7f7e2; color: #217a00; border: 1px solid #b6e2b1; }
         .vehicle-filter-feedback-error { background: #fbeaea; color: #a00; border: 1px solid #f5c2c7; }
+        .search-results-item {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 10px;
+            transition: background-color 0.2s;
+        }
+        .search-results-item:hover {
+            background: #f0f0f0;
+        }
+        .search-results-item h4 {
+            margin: 0 0 8px 0;
+            color: #2271b1;
+            font-size: 1.1em;
+        }
+        .search-results-item .vehicle-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+        .search-results-item .vehicle-detail {
+            font-size: 0.9em;
+        }
+        .search-results-item .vehicle-detail strong {
+            color: #555;
+        }
+        .search-results-item .engines {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #ddd;
+        }
+        .search-results-item .engines strong {
+            color: #555;
+        }
+        .search-results-item .engines span {
+            background: #e1ecf4;
+            color: #39739d;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            margin-right: 5px;
+            display: inline-block;
+            margin-bottom: 3px;
+        }
+        .search-loading {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+        .search-no-results {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-style: italic;
+        }
+        #search-results {
+            min-height: 0;
+            margin: 0;
+            padding: 0;
+        }
+        #search-results:empty {
+            display: none !important;
+            height: 0;
+            margin: 0;
+            padding: 0;
+        }
+        #search-results:not(:empty) {
+            margin-top: 20px;
+        }
+        .search-results-header {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #333;
+        }
+        .delete-vehicle-btn {
+            background: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 6px 12px;
+            font-size: 0.85em;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-top: 10px;
+        }
+        .delete-vehicle-btn:hover {
+            background: #c82333;
+        }
+        .delete-vehicle-btn:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+        }
+        .search-results-item .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .search-results-item .item-header h4 {
+            margin: 0;
+        }
         </style>';
     }
 });
-
 function vehicle_filter_admin_menu()
 {
     add_menu_page(
-        'Vehicle Filter',
-        'Vehicle Filter',
-        'manage_options',
-        'vehicle-filter',
-        'vehicle_filter_admin_page',
-        'dashicons-car',
+        "Vehicle Filter",
+        "Vehicle Filter",
+        "manage_options",
+        "vehicle-filter",
+        "vehicle_filter_admin_page",
+        "dashicons-car",
         30
     );
 }
-
 function vehicle_filter_admin_page()
 {
     // Check user capabilities
-    if (!current_user_can('manage_options')) {
+    if (!current_user_can("manage_options")) {
         return;
     }
-
     // Handle form submissions first
-    $message = '';
-    $message_type = '';
-
+    $message = "";
+    $message_type = "";
     // Save form data if submitted
-    if (isset($_POST['vehicle_filter_submit'])) {
-        check_admin_referer('vehicle_filter_nonce');
+    if (isset($_POST["vehicle_filter_submit"])) {
+        check_admin_referer("vehicle_filter_nonce");
         $result = handle_vehicle_form_submission();
-        if (isset($result['message'])) {
-            $message = $result['message'];
-            $message_type = $result['type'];
+        if (isset($result["message"])) {
+            $message = $result["message"];
+            $message_type = $result["type"];
         }
     }
-
     // Handle CSV imports if submitted
-    if (isset($_POST['vehicle_filter_csv_import'])) {
-        check_admin_referer('vehicle_filter_nonce');
+    if (isset($_POST["vehicle_filter_csv_import"])) {
+        check_admin_referer("vehicle_filter_nonce");
         $result = handle_csv_import();
-        if (isset($result['message'])) {
-            $message = $result['message'];
-            $message_type = $result['type'];
+        if (isset($result["message"])) {
+            $message = $result["message"];
+            $message_type = $result["type"];
         }
     }
-
     // Display admin notices
-    settings_errors('vehicle_filter');
-
-?>
+    settings_errors("vehicle_filter");
+    ?>
     <div class="wrap">
         <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
-
         <?php if (!empty($message)): ?>
-            <div class="vehicle-filter-feedback vehicle-filter-feedback-<?php echo esc_attr($message_type); ?>">
+            <div class="vehicle-filter-feedback vehicle-filter-feedback-<?php echo esc_attr(
+                $message_type
+            ); ?>">
                 <?php echo esc_html($message); ?>
             </div>
         <?php endif; ?>
-
         <div class="vehicle-filter-flex-row">
+            <!-- Vehicle Search Section -->
+            <div class="vehicle-filter-card">
+                <h2>Search Vehicles</h2>
+                <form id="vehicle-search-form">
+                    <?php wp_nonce_field("vehicle_filter_nonce"); ?>
+                    <div class="vehicle-filter-form-row">
+                        <label for="search_query">Search Vehicle</label>
+                        <div style="display: flex; align-items: center;">
+                            <input type="text" name="search_query" id="search_query" class="regular-text" placeholder="Type vehicle make, model, or listing (e.g., volkswagen, toyota camry)" required>
+                            <button type="submit" class="button button-primary" style="margin-left: 10px;">Search</button>
+                        </div>
+                    </div>
+                </form>
+                <div id="search-results" style="display: none;">
+                    <div id="search-results-list"></div>
+                </div>
+            </div>
             <!-- CSV Import Section -->
             <div class="vehicle-filter-card">
                 <h2>Import Vehicle Data</h2>
                 <form method="post" enctype="multipart/form-data">
-                    <?php wp_nonce_field('vehicle_filter_nonce'); ?>
+                    <?php wp_nonce_field("vehicle_filter_nonce"); ?>
                     <div class="vehicle-filter-form-row">
                         <label for="vehicle_base_csv">Vehicle Base CSV</label>
                         <div><input type="file" name="vehicle_base_csv" id="vehicle_base_csv" accept=".csv"></div>
@@ -255,12 +370,11 @@ function vehicle_filter_admin_page()
                     </div>
                 </form>
             </div>
-
             <!-- Manual Entry Form -->
             <div class="vehicle-filter-card-manual ">
                 <h2>Add New Vehicle</h2>
                 <form method="post">
-                    <?php wp_nonce_field('vehicle_filter_nonce'); ?>
+                    <?php wp_nonce_field("vehicle_filter_nonce"); ?>
                     <div class="vehicle-filter-form-row">
                         <label for="make">Make</label>
                         <div><input type="text" name="make" id="make" class="regular-text" required></div>
@@ -298,365 +412,515 @@ function vehicle_filter_admin_page()
             </div>
         </div>
     </div>
+    
+    <script>
+    jQuery(document).ready(function($) {
+        // Clear search results on page load
+        $('#search-results').hide();
+        
+        // Hide results when user starts typing
+        $('#search_query').on('input', function() {
+            if ($(this).val().trim() === '') {
+                $('#search-results').hide();
+            }
+        });
+        
+        $('#vehicle-search-form').on('submit', function(e) {
+            e.preventDefault();
+            
+            var searchQuery = $('#search_query').val().trim();
+            if (!searchQuery) {
+                alert('Please enter a search term');
+                return;
+            }
+            
+            var $resultsDiv = $('#search-results');
+            var $resultsList = $('#search-results-list');
+            
+            // Show loading state
+            $resultsDiv.show();
+            $resultsList.html('<div class="search-loading">Searching vehicles...</div>');
+            
+            // Make AJAX request
+            $.ajax({
+                url: ajaxurl,
+                type: 'POST',
+                data: {
+                    action: 'search_vehicles',
+                    search_query: searchQuery,
+                    nonce: '<?php echo wp_create_nonce("vehicle_filter_nonce"); ?>'
+                },
+                success: function(response) {
+                    if (response.success) {
+                        var vehicles = response.data.vehicles;
+                        var message = response.data.message;
+                        
+                        if (vehicles.length === 0) {
+                            $resultsList.html('<div class="search-no-results">' + message + '</div>');
+                        } else {
+                            var html = '<div class="search-results-header">' + message + '</div>';
+                            
+                            vehicles.forEach(function(vehicle) {
+                                html += '<div class="search-results-item" data-vehicle-id="' + vehicle.vehicle_id + '">';
+                                html += '<div class="item-header">';
+                                html += '<h4>Vehicle ID: ' + vehicle.vehicle_id + '</h4>';
+                                html += '<button class="delete-vehicle-btn" onclick="deleteVehicle(' + vehicle.vehicle_id + ')">Delete</button>';
+                                html += '</div>';
+                                html += '<div class="vehicle-details">';
+                                html += '<div class="vehicle-detail"><strong>Make:</strong> ' + vehicle.make + '</div>';
+                                html += '<div class="vehicle-detail"><strong>Model:</strong> ' + vehicle.model + '</div>';
+                                html += '<div class="vehicle-detail"><strong>Listing:</strong> ' + vehicle.listing + '</div>';
+                                html += '<div class="vehicle-detail"><strong>Year Range:</strong> ' + vehicle.year_range + '</div>';
+                                html += '</div>';
+                                
+                                if (vehicle.engines && vehicle.engines.length > 0) {
+                                    html += '<div class="engines">';
+                                    html += '<strong>Engines:</strong> ';
+                                    vehicle.engines.forEach(function(engine) {
+                                        html += '<span>' + engine + '</span>';
+                                    });
+                                    html += '</div>';
+                                }
+                                
+                                html += '</div>';
+                            });
+                            
+                            $resultsList.html(html);
+                        }
+                    } else {
+                        $resultsList.html('<div class="search-no-results">Error: ' + (response.data.message || 'Unknown error occurred') + '</div>');
+                    }
+                },
+                error: function() {
+                    $resultsList.html('<div class="search-no-results">Error: Failed to search vehicles. Please try again.</div>');
+                }
+            });
+        });
+        
+        // Global function for deleting vehicles
+        window.deleteVehicle = function(vehicleId) {
+            if (!confirm('Are you sure you want to delete this vehicle? This action cannot be undone.\n\nThis will also delete:\n- All engine associations for this vehicle\n- Any orphaned engines no longer used by other vehicles')) {
+                return;
+            }
+            
+            // Disable the delete button
+            var $deleteBtn = $('button[onclick="deleteVehicle(' + vehicleId + ')"]');
+            $deleteBtn.prop('disabled', true).text('Deleting...');
+            
+            $.ajax({
+                url: ajaxurl,
+                type: 'POST',
+                data: {
+                    action: 'delete_vehicle',
+                    vehicle_id: vehicleId,
+                    nonce: '<?php echo wp_create_nonce("vehicle_filter_nonce"); ?>'
+                },
+                success: function(response) {
+                    if (response.success) {
+                        // Remove the vehicle item from the results
+                        $('div[data-vehicle-id="' + vehicleId + '"]').fadeOut(300, function() {
+                            $(this).remove();
+                            
+                            // Update the results count
+                            var remainingItems = $('.search-results-item').length;
+                            if (remainingItems === 0) {
+                                $('#search-results-list').html('<div class="search-no-results">No vehicles found. All search results have been deleted.</div>');
+                            } else {
+                                $('.search-results-header').text('Found ' + remainingItems + ' vehicles');
+                            }
+                        });
+                        
+                        // Show success message
+                        alert('Vehicle deleted successfully!');
+                    } else {
+                        // Re-enable the button on error
+                        $deleteBtn.prop('disabled', false).text('Delete');
+                        alert('Error: ' + (response.data.message || 'Failed to delete vehicle'));
+                    }
+                },
+                error: function() {
+                    // Re-enable the button on error
+                    $deleteBtn.prop('disabled', false).text('Delete');
+                    alert('Error: Failed to delete vehicle. Please try again.');
+                }
+            });
+        };
+    });
+    </script>
 <?php
 }
-
 function handle_vehicle_form_submission()
 {
     global $wpdb;
-
     // Get form data
-    $make = sanitize_text_field($_POST['make']);
-    $model = sanitize_text_field($_POST['model']);
-    $listing = sanitize_text_field($_POST['listing']);
-    $year_from = intval($_POST['year_from']);
-    $year_to = !empty($_POST['year_to']) ? intval($_POST['year_to']) : date('Y');
-    $engines = isset($_POST['engine']) ? array_map('sanitize_text_field', $_POST['engine']) : array();
+    $make = sanitize_text_field($_POST["make"]);
+    $model = sanitize_text_field($_POST["model"]);
+    $listing = sanitize_text_field($_POST["listing"]);
+    $year_from = intval($_POST["year_from"]);
+    $year_to = !empty($_POST["year_to"])
+        ? intval($_POST["year_to"])
+        : date("Y");
+    $engines = isset($_POST["engine"])
+        ? array_map("sanitize_text_field", $_POST["engine"])
+        : [];
     $engines = array_filter($engines); // Remove empty values
-
     // Validate required fields
-    if (empty($make) || empty($model) || empty($listing) || empty($year_from) || empty($engines)) {
-        return array(
-            'message' => 'Please fill in all required fields.',
-            'type' => 'error'
-        );
+    if (
+        empty($make) ||
+        empty($model) ||
+        empty($listing) ||
+        empty($year_from) ||
+        empty($engines)
+    ) {
+        return [
+            "message" => "Please fill in all required fields.",
+            "type" => "error",
+        ];
     }
-
     // Start transaction
-    $wpdb->query('START TRANSACTION');
-
+    $wpdb->query("START TRANSACTION");
     try {
         // Get next vehicle_id
-        $last_vehicle_id = $wpdb->get_var("SELECT MAX(vehicle_id) FROM {$wpdb->prefix}vehicle_base");
+        $last_vehicle_id = $wpdb->get_var(
+            "SELECT MAX(vehicle_id) FROM {$wpdb->prefix}vehicle_base"
+        );
         $new_vehicle_id = $last_vehicle_id ? $last_vehicle_id + 1 : 1;
-
         // Insert into vehicle_base
         $vehicle_inserted = $wpdb->insert(
-            $wpdb->prefix . 'vehicle_base',
-            array(
-                'vehicle_id' => $new_vehicle_id,
-                'make' => $make,
-                'model' => $model,
-                'listing' => $listing,
-                'year_from' => $year_from,
-                'year_to' => $year_to
-            ),
-            array('%d', '%s', '%s', '%s', '%d', '%d')
+            $wpdb->prefix . "vehicle_base",
+            [
+                "vehicle_id" => $new_vehicle_id,
+                "make" => $make,
+                "model" => $model,
+                "listing" => $listing,
+                "year_from" => $year_from,
+                "year_to" => $year_to,
+            ],
+            ["%d", "%s", "%s", "%s", "%d", "%d"]
         );
-
         if (!$vehicle_inserted) {
-            throw new Exception('Failed to insert vehicle data');
+            throw new Exception("Failed to insert vehicle data");
         }
-
-        $engine_ids = array();
+        $engine_ids = [];
         // Process each engine
         foreach ($engines as $engine_code) {
             // Get next engine_id
-            $last_engine_id = $wpdb->get_var("SELECT MAX(engine_id) FROM {$wpdb->prefix}engine");
+            $last_engine_id = $wpdb->get_var(
+                "SELECT MAX(engine_id) FROM {$wpdb->prefix}engine"
+            );
             $new_engine_id = $last_engine_id ? $last_engine_id + 1 : 1;
-
             // Insert into engine table
             $engine_inserted = $wpdb->insert(
-                $wpdb->prefix . 'engine',
-                array(
-                    'engine_id' => $new_engine_id,
-                    'engine_code' => $engine_code
-                ),
-                array('%d', '%s')
+                $wpdb->prefix . "engine",
+                [
+                    "engine_id" => $new_engine_id,
+                    "engine_code" => $engine_code,
+                ],
+                ["%d", "%s"]
             );
-
             if (!$engine_inserted) {
-                throw new Exception('Failed to insert engine data');
+                throw new Exception("Failed to insert engine data");
             }
-
             $engine_ids[] = $new_engine_id;
-
             // Create vehicle-engine mapping
             $mapping_inserted = $wpdb->insert(
-                $wpdb->prefix . 'vehicle_engine',
-                array(
-                    'vehicle_id' => $new_vehicle_id,
-                    'engine_id' => $new_engine_id
-                ),
-                array('%d', '%d')
+                $wpdb->prefix . "vehicle_engine",
+                [
+                    "vehicle_id" => $new_vehicle_id,
+                    "engine_id" => $new_engine_id,
+                ],
+                ["%d", "%d"]
             );
-
             if (!$mapping_inserted) {
-                throw new Exception('Failed to create vehicle-engine mapping');
+                throw new Exception("Failed to create vehicle-engine mapping");
             }
         }
-
-        $wpdb->query('COMMIT');
-
+        $wpdb->query("COMMIT");
         // Show success message with details
         $message = sprintf(
-            'Vehicle added successfully! Vehicle ID: %d, Engines added: %d',
+            "Vehicle added successfully! Vehicle ID: %d, Engines added: %d",
             $new_vehicle_id,
             count($engine_ids)
         );
-        
-        return array(
-            'message' => $message,
-            'type' => 'success'
-        );
+        return [
+            "message" => $message,
+            "type" => "success",
+        ];
     } catch (Exception $e) {
-        $wpdb->query('ROLLBACK');
-        return array(
-            'message' => 'Error adding vehicle: ' . $e->getMessage(),
-            'type' => 'error'
-        );
+        $wpdb->query("ROLLBACK");
+        return [
+            "message" => "Error adding vehicle: " . $e->getMessage(),
+            "type" => "error",
+        ];
     }
 }
-
 function handle_csv_import()
 {
     global $wpdb;
-
     // Log the start of import process
-    vehicle_filter_log('Starting CSV import process');
-
+    vehicle_filter_log("Starting CSV import process");
     // Validate that files were uploaded
     if (
-        empty($_FILES['vehicle_base_csv']['tmp_name']) ||
-        empty($_FILES['engine_table_csv']['tmp_name']) ||
-        empty($_FILES['vehicle_engine_csv']['tmp_name'])
+        empty($_FILES["vehicle_base_csv"]["tmp_name"]) ||
+        empty($_FILES["engine_table_csv"]["tmp_name"]) ||
+        empty($_FILES["vehicle_engine_csv"]["tmp_name"])
     ) {
-        $error_message = 'Please upload all three required CSV files.';
-        vehicle_filter_log('Missing required CSV files');
-        return array(
-            'message' => $error_message,
-            'type' => 'error'
-        );
+        $error_message = "Please upload all three required CSV files.";
+        vehicle_filter_log("Missing required CSV files");
+        return [
+            "message" => $error_message,
+            "type" => "error",
+        ];
     }
-
     // Start transaction
-    $wpdb->query('START TRANSACTION');
-    vehicle_filter_log('Started database transaction');
-
+    $wpdb->query("START TRANSACTION");
+    vehicle_filter_log("Started database transaction");
     try {
         // Disable foreign key checks
-        $wpdb->query('SET FOREIGN_KEY_CHECKS = 0');
-        vehicle_filter_log('Disabled foreign key checks');
-
+        $wpdb->query("SET FOREIGN_KEY_CHECKS = 0");
+        vehicle_filter_log("Disabled foreign key checks");
         // Truncate tables in correct order
-        $vehicle_engine = $wpdb->prefix . 'vehicle_engine';
-        $vehicle_base = $wpdb->prefix . 'vehicle_base';
-        $engine = $wpdb->prefix . 'engine';
-
+        $vehicle_engine = $wpdb->prefix . "vehicle_engine";
+        $vehicle_base = $wpdb->prefix . "vehicle_base";
+        $engine = $wpdb->prefix . "engine";
         // Log the truncation process
-        vehicle_filter_log('Starting table truncation process');
-
+        vehicle_filter_log("Starting table truncation process");
         // Truncate all tables
-        $tables = array($vehicle_engine, $vehicle_base, $engine);
+        $tables = [$vehicle_engine, $vehicle_base, $engine];
         foreach ($tables as $table) {
             $result = $wpdb->query("TRUNCATE TABLE $table");
             if ($result === false) {
-                $error_message = "Failed to truncate $table: " . $wpdb->last_error;
+                $error_message =
+                    "Failed to truncate $table: " . $wpdb->last_error;
                 vehicle_filter_log($error_message);
                 throw new Exception($error_message);
             }
             vehicle_filter_log("Successfully truncated $table");
         }
-
         // Re-enable foreign key checks
-        $wpdb->query('SET FOREIGN_KEY_CHECKS = 1');
-        vehicle_filter_log('Re-enabled foreign key checks');
-
-        $current_year = date('Y');
-        $imported_count = array(
-            'vehicle_base' => 0,
-            'engine' => 0,
-            'vehicle_engine' => 0
-        );
-
+        $wpdb->query("SET FOREIGN_KEY_CHECKS = 1");
+        vehicle_filter_log("Re-enabled foreign key checks");
+        $current_year = date("Y");
+        $imported_count = [
+            "vehicle_base" => 0,
+            "engine" => 0,
+            "vehicle_engine" => 0,
+        ];
         // Process vehicle_base.csv
-        if (!empty($_FILES['vehicle_base_csv']['tmp_name'])) {
-            vehicle_filter_log('Processing vehicle_base.csv');
-            $handle = fopen($_FILES['vehicle_base_csv']['tmp_name'], 'r');
-            if ($handle === FALSE) {
+        if (!empty($_FILES["vehicle_base_csv"]["tmp_name"])) {
+            vehicle_filter_log("Processing vehicle_base.csv");
+            $handle = fopen($_FILES["vehicle_base_csv"]["tmp_name"], "r");
+            if ($handle === false) {
                 throw new Exception("Failed to open vehicle_base.csv file");
             }
-
             // Read and validate header
             $header = fgetcsv($handle);
-            if ($header === FALSE) {
-                throw new Exception("Failed to read header from vehicle_base.csv");
+            if ($header === false) {
+                throw new Exception(
+                    "Failed to read header from vehicle_base.csv"
+                );
             }
-            vehicle_filter_log('Vehicle base CSV header: ' . implode(', ', $header));
-
-            while (($data = fgetcsv($handle)) !== FALSE) {
+            vehicle_filter_log(
+                "Vehicle base CSV header: " . implode(", ", $header)
+            );
+            while (($data = fgetcsv($handle)) !== false) {
                 // Log raw data for debugging
-                vehicle_filter_log('Processing vehicle_base row: ' . implode(', ', $data));
-
+                vehicle_filter_log(
+                    "Processing vehicle_base row: " . implode(", ", $data)
+                );
                 // Always process the row, even with missing fields
-                $year_to = !empty($data[5]) ? floatval($data[5]) : floatval($current_year);
+                $year_to = !empty($data[5])
+                    ? floatval($data[5])
+                    : floatval($current_year);
                 $result = $wpdb->insert(
-                    $wpdb->prefix . 'vehicle_base',
-                    array(
-                        'vehicle_id' => intval($data[0]),
-                        'make' => isset($data[1]) ? trim($data[1]) : '',
-                        'model' => isset($data[2]) ? trim($data[2]) : '',
-                        'listing' => isset($data[3]) ? trim($data[3]) : '',
-                        'year_from' => isset($data[4]) ? floatval($data[4]) : 0,
-                        'year_to' => $year_to
-                    ),
-                    array('%d', '%s', '%s', '%s', '%f', '%f')
+                    $wpdb->prefix . "vehicle_base",
+                    [
+                        "vehicle_id" => intval($data[0]),
+                        "make" => isset($data[1]) ? trim($data[1]) : "",
+                        "model" => isset($data[2]) ? trim($data[2]) : "",
+                        "listing" => isset($data[3]) ? trim($data[3]) : "",
+                        "year_from" => isset($data[4]) ? floatval($data[4]) : 0,
+                        "year_to" => $year_to,
+                    ],
+                    ["%d", "%s", "%s", "%s", "%f", "%f"]
                 );
                 if ($result === false) {
-                    $error_message = "Failed to insert vehicle_base data: " . $wpdb->last_error . "\nData: " . implode(', ', $data);
+                    $error_message =
+                        "Failed to insert vehicle_base data: " .
+                        $wpdb->last_error .
+                        "\nData: " .
+                        implode(", ", $data);
                     vehicle_filter_log($error_message);
                     throw new Exception($error_message);
                 }
-                $imported_count['vehicle_base']++;
+                $imported_count["vehicle_base"]++;
             }
             fclose($handle);
-            vehicle_filter_log('Completed processing vehicle_base.csv. Imported: ' . $imported_count['vehicle_base'] . ' records');
+            vehicle_filter_log(
+                "Completed processing vehicle_base.csv. Imported: " .
+                    $imported_count["vehicle_base"] .
+                    " records"
+            );
         }
-
         // Process engine_table.csv
-        if (!empty($_FILES['engine_table_csv']['tmp_name'])) {
-            vehicle_filter_log('Processing engine_table.csv');
-            $handle = fopen($_FILES['engine_table_csv']['tmp_name'], 'r');
-            if ($handle === FALSE) {
+        if (!empty($_FILES["engine_table_csv"]["tmp_name"])) {
+            vehicle_filter_log("Processing engine_table.csv");
+            $handle = fopen($_FILES["engine_table_csv"]["tmp_name"], "r");
+            if ($handle === false) {
                 throw new Exception("Failed to open engine_table.csv file");
             }
-
             // Read and validate header
             $header = fgetcsv($handle);
-            if ($header === FALSE) {
-                throw new Exception("Failed to read header from engine_table.csv");
+            if ($header === false) {
+                throw new Exception(
+                    "Failed to read header from engine_table.csv"
+                );
             }
-            vehicle_filter_log('Engine table CSV header: ' . implode(', ', $header));
-
-            while (($data = fgetcsv($handle)) !== FALSE) {
+            vehicle_filter_log(
+                "Engine table CSV header: " . implode(", ", $header)
+            );
+            while (($data = fgetcsv($handle)) !== false) {
                 // Log raw data for debugging
-                vehicle_filter_log('Processing engine_table row: ' . implode(', ', $data));
-
+                vehicle_filter_log(
+                    "Processing engine_table row: " . implode(", ", $data)
+                );
                 if (count($data) >= 2 && !empty(trim($data[1]))) {
                     $result = $wpdb->insert(
-                        $wpdb->prefix . 'engine',
-                        array(
-                            'engine_id' => intval($data[0]),
-                            'engine_code' => trim($data[1])
-                        ),
-                        array('%d', '%s')
+                        $wpdb->prefix . "engine",
+                        [
+                            "engine_id" => intval($data[0]),
+                            "engine_code" => trim($data[1]),
+                        ],
+                        ["%d", "%s"]
                     );
                     if ($result === false) {
-                        $error_message = "Failed to insert engine data: " . $wpdb->last_error . "\nData: " . implode(', ', $data);
+                        $error_message =
+                            "Failed to insert engine data: " .
+                            $wpdb->last_error .
+                            "\nData: " .
+                            implode(", ", $data);
                         vehicle_filter_log($error_message);
                         throw new Exception($error_message);
                     }
-                    $imported_count['engine']++;
+                    $imported_count["engine"]++;
                 } else {
-                    vehicle_filter_log('Skipping invalid engine_table row: ' . implode(', ', $data));
+                    vehicle_filter_log(
+                        "Skipping invalid engine_table row: " .
+                            implode(", ", $data)
+                    );
                 }
             }
             fclose($handle);
-            vehicle_filter_log('Completed processing engine_table.csv. Imported: ' . $imported_count['engine'] . ' records');
+            vehicle_filter_log(
+                "Completed processing engine_table.csv. Imported: " .
+                    $imported_count["engine"] .
+                    " records"
+            );
         }
-
         // Process vehicle_engine.csv
-        if (!empty($_FILES['vehicle_engine_csv']['tmp_name'])) {
-            vehicle_filter_log('Processing vehicle_engine.csv');
-            $handle = fopen($_FILES['vehicle_engine_csv']['tmp_name'], 'r');
-            if ($handle === FALSE) {
+        if (!empty($_FILES["vehicle_engine_csv"]["tmp_name"])) {
+            vehicle_filter_log("Processing vehicle_engine.csv");
+            $handle = fopen($_FILES["vehicle_engine_csv"]["tmp_name"], "r");
+            if ($handle === false) {
                 throw new Exception("Failed to open vehicle_engine.csv file");
             }
-
             // Read and validate header
             $header = fgetcsv($handle);
-            if ($header === FALSE) {
-                throw new Exception("Failed to read header from vehicle_engine.csv");
+            if ($header === false) {
+                throw new Exception(
+                    "Failed to read header from vehicle_engine.csv"
+                );
             }
-            vehicle_filter_log('Vehicle engine CSV header: ' . implode(', ', $header));
-
-            while (($data = fgetcsv($handle)) !== FALSE) {
+            vehicle_filter_log(
+                "Vehicle engine CSV header: " . implode(", ", $header)
+            );
+            while (($data = fgetcsv($handle)) !== false) {
                 // Log raw data for debugging
-                vehicle_filter_log('Processing vehicle_engine row: ' . implode(', ', $data));
-
+                vehicle_filter_log(
+                    "Processing vehicle_engine row: " . implode(", ", $data)
+                );
                 if (count($data) >= 2) {
                     $result = $wpdb->insert(
-                        $wpdb->prefix . 'vehicle_engine',
-                        array(
-                            'vehicle_id' => intval($data[0]),
-                            'engine_id' => intval($data[1])
-                        ),
-                        array('%d', '%d')
+                        $wpdb->prefix . "vehicle_engine",
+                        [
+                            "vehicle_id" => intval($data[0]),
+                            "engine_id" => intval($data[1]),
+                        ],
+                        ["%d", "%d"]
                     );
                     if ($result === false) {
-                        $error_message = "Failed to insert vehicle_engine data: " . $wpdb->last_error . "\nData: " . implode(', ', $data);
+                        $error_message =
+                            "Failed to insert vehicle_engine data: " .
+                            $wpdb->last_error .
+                            "\nData: " .
+                            implode(", ", $data);
                         vehicle_filter_log($error_message);
                         throw new Exception($error_message);
                     }
-                    $imported_count['vehicle_engine']++;
+                    $imported_count["vehicle_engine"]++;
                 } else {
-                    vehicle_filter_log('Skipping invalid vehicle_engine row: ' . implode(', ', $data));
+                    vehicle_filter_log(
+                        "Skipping invalid vehicle_engine row: " .
+                            implode(", ", $data)
+                    );
                 }
             }
             fclose($handle);
-            vehicle_filter_log('Completed processing vehicle_engine.csv. Imported: ' . $imported_count['vehicle_engine'] . ' records');
+            vehicle_filter_log(
+                "Completed processing vehicle_engine.csv. Imported: " .
+                    $imported_count["vehicle_engine"] .
+                    " records"
+            );
         }
-
-        $wpdb->query('COMMIT');
-        vehicle_filter_log('Transaction committed successfully');
-
+        $wpdb->query("COMMIT");
+        vehicle_filter_log("Transaction committed successfully");
         // Show success message with import counts
         $success_message = sprintf(
-            'Import completed successfully! Imported: %d vehicles, %d engines, %d vehicle-engine mappings.',
-            $imported_count['vehicle_base'],
-            $imported_count['engine'],
-            $imported_count['vehicle_engine']
+            "Import completed successfully! Imported: %d vehicles, %d engines, %d vehicle-engine mappings.",
+            $imported_count["vehicle_base"],
+            $imported_count["engine"],
+            $imported_count["vehicle_engine"]
         );
         vehicle_filter_log($success_message);
-        
-        return array(
-            'message' => $success_message,
-            'type' => 'success'
-        );
+        return [
+            "message" => $success_message,
+            "type" => "success",
+        ];
     } catch (Exception $e) {
-        $wpdb->query('ROLLBACK');
+        $wpdb->query("ROLLBACK");
         // Re-enable foreign key checks in case of error
-        $wpdb->query('SET FOREIGN_KEY_CHECKS = 1');
-
-        $error_message = 'Error during import: ' . $e->getMessage();
+        $wpdb->query("SET FOREIGN_KEY_CHECKS = 1");
+        $error_message = "Error during import: " . $e->getMessage();
         vehicle_filter_log($error_message);
-        
-        return array(
-            'message' => $error_message,
-            'type' => 'error'
-        );
+        return [
+            "message" => $error_message,
+            "type" => "error",
+        ];
     }
 }
-
-if (!defined('ABSPATH')) {
-    define('ABSPATH', dirname(__FILE__) . '/');
+if (!defined("ABSPATH")) {
+    define("ABSPATH", dirname(__FILE__) . "/");
 }
-if (!function_exists('plugin_dir_path')) {
-    require_once(ABSPATH . 'wp-includes/plugin.php');
+if (!function_exists("plugin_dir_path")) {
+    require_once ABSPATH . "wp-includes/plugin.php";
 }
-
 // Test logging
-vehicle_filter_log('Plugin loaded - Testing logging functionality');
-
+vehicle_filter_log("Plugin loaded - Testing logging functionality");
 // Include WordPress core files
-require_once(ABSPATH . 'wp-includes/pluggable.php');
-require_once(ABSPATH . 'wp-includes/formatting.php');
-require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
-
+require_once ABSPATH . "wp-includes/pluggable.php";
+require_once ABSPATH . "wp-includes/formatting.php";
+require_once ABSPATH . "wp-admin/includes/upgrade.php";
 // Plugin activation hook
-register_activation_hook(__FILE__, 'vehicle_filter_activate');
-
+register_activation_hook(__FILE__, "vehicle_filter_activate");
 function vehicle_filter_activate()
 {
     global $wpdb;
     $charset_collate = $wpdb->get_charset_collate();
-    $vehicle_base = $wpdb->prefix . 'vehicle_base';
-    $engine = $wpdb->prefix . 'engine';
-    $vehicle_engine = $wpdb->prefix . 'vehicle_engine';
-
+    $vehicle_base = $wpdb->prefix . "vehicle_base";
+    $engine = $wpdb->prefix . "engine";
+    $vehicle_engine = $wpdb->prefix . "vehicle_engine";
     // Log activation start
-    vehicle_filter_log('Plugin activation started');
-
+    vehicle_filter_log("Plugin activation started");
     // Create vehicle_base table
     $sql1 = "CREATE TABLE IF NOT EXISTS $vehicle_base (
         vehicle_id INT NOT NULL,
@@ -667,14 +931,12 @@ function vehicle_filter_activate()
         year_to FLOAT NOT NULL,
         PRIMARY KEY (vehicle_id)
     ) $charset_collate;";
-
     // Create engine table
     $sql2 = "CREATE TABLE IF NOT EXISTS $engine (
         engine_id INT NOT NULL,
         engine_code VARCHAR(100) NOT NULL,
         PRIMARY KEY (engine_id)
     ) $charset_collate;";
-
     // Create vehicle_engine table
     $sql3 = "CREATE TABLE IF NOT EXISTS $vehicle_engine (
         vehicle_id INT NOT NULL,
@@ -683,329 +945,307 @@ function vehicle_filter_activate()
         FOREIGN KEY (vehicle_id) REFERENCES $vehicle_base(vehicle_id) ON DELETE CASCADE,
         FOREIGN KEY (engine_id) REFERENCES $engine(engine_id) ON DELETE CASCADE
     ) $charset_collate;";
-
-    require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
-
+    require_once ABSPATH . "wp-admin/includes/upgrade.php";
     // Log table creation
-    vehicle_filter_log('Creating/updating tables');
-    vehicle_filter_log('SQL for vehicle_base:', $sql1);
-    vehicle_filter_log('SQL for engine:', $sql2);
-    vehicle_filter_log('SQL for vehicle_engine:', $sql3);
-
+    vehicle_filter_log("Creating/updating tables");
+    vehicle_filter_log("SQL for vehicle_base:", $sql1);
+    vehicle_filter_log("SQL for engine:", $sql2);
+    vehicle_filter_log("SQL for vehicle_engine:", $sql3);
     dbDelta($sql1);
     dbDelta($sql2);
     dbDelta($sql3);
-
     // The following code for truncating and importing CSV data is now removed as per new requirements.
     // vehicle_filter_log('Truncating tables before import');
     // ... (truncate and import logic removed) ...
-
-    vehicle_filter_log('Plugin activation completed');
+    vehicle_filter_log("Plugin activation completed");
 }
-
 // Enqueue scripts
-add_action('wp_enqueue_scripts', 'vehicle_filter_enqueue_scripts');
-
+add_action("wp_enqueue_scripts", "vehicle_filter_enqueue_scripts");
 function vehicle_filter_enqueue_scripts()
 {
-    wp_enqueue_script('jquery');
+    wp_enqueue_script("jquery");
     wp_enqueue_script(
-        'vehicle-filter-script',
-        plugins_url('js/vehicle-filter.js', __FILE__),
-        array('jquery'),
+        "vehicle-filter-script",
+        plugins_url("js/vehicle-filter.js", __FILE__),
+        ["jquery"],
         time(),
         true
     );
-
-    wp_localize_script(
-        'vehicle-filter-script',
-        'vehicleFilterAjax',
-        array(
-            'ajaxurl' => admin_url('admin-ajax.php'),
-            'nonce' => wp_create_nonce('vehicle_filter_nonce'),
-            'shop_url' => get_permalink(wc_get_page_id('shop'))
-        )
-    );
+    wp_localize_script("vehicle-filter-script", "vehicleFilterAjax", [
+        "ajaxurl" => admin_url("admin-ajax.php"),
+        "nonce" => wp_create_nonce("vehicle_filter_nonce"),
+        "shop_url" => get_permalink(wc_get_page_id("shop")),
+    ]);
 }
-
 // Add shortcode for the filter form
-add_shortcode('vehicle_filter_form', 'vehicle_filter_form_shortcode');
-
+add_shortcode("vehicle_filter_form", "vehicle_filter_form_shortcode");
 function vehicle_filter_form_shortcode()
 {
-    ob_start();
-?>
+    ob_start(); ?>
     <div class="find_car_parts" id="find_car_parts">
         <div class="find_car_parts_form">
             <form id="vehicle-filter-form">
                 <div class="fcp2" id="fcp2"><span>Search your vehicle</span></div>
-
                 <div class="fcp-row">
                     <div class="fcp-col">
-                        <label for="make" class="fcp-label">Select car maker</label>
+                        <label for="make" class="fcp-label">Make <span class="req">*</span></label>
                         <select name="make" id="make">
                             <option value="">Select Make</option>
                         </select>
                     </div>
-
                     <div class="fcp-col">
-                        <label for="model" class="fcp-label">Select car model</label>
+                        <label for="model" class="fcp-label">Model <span class="req">*</span></label>
                         <select name="model" id="model" disabled>
                             <option value="">Select Model</option>
                         </select>
                     </div>
-
                     <div class="fcp-col">
-                        <label for="listing" class="fcp-label">Select listing</label>
+                        <label for="listing" class="fcp-label">Listing <span class="req">*</span></label>
                         <select name="listing" id="listing" disabled>
                             <option value="">Select Listing</option>
                         </select>
                     </div>
-
                     <div class="fcp-col">
-                        <label for="year" class="fcp-label">Select year</label>
+                        <label for="year" class="fcp-label">Year <span class="req">*</span></label>
                         <select name="year" id="year" disabled>
                             <option value="">Select Year</option>
                         </select>
                     </div>
-
                     <div class="fcp-col fcp-col-12">
-                        <label for="engine" class="fcp-label">Select engine type</label>
+                        <label for="engine" class="fcp-label">Engine <span class="req">*</span></label>
                         <select name="engine" id="engine" disabled>
                             <option value="">Select Engine</option>
                         </select>
                     </div>
-
                     <div class="fcp-col fcp-col-12">
-                        <button type="submit" class="button btn-primary search-button vehicle-filter-btn">
-                            Search Parts
-                        </button>
+                        <button type="submit" class="button btn-primary search-button vehicle-filter-btn" disabled><span class="icon-vehicle-search"></span> Search Parts</button>
                     </div>
                 </div>
+                <div id="vehicle-summary"></div>
             </form>
         </div>
     </div>
-    <?php
-
-    return ob_get_clean();
+    <?php return ob_get_clean();
 }
-
 // Register AJAX actions
-add_action('wp_ajax_filter_products', 'filter_products_ajax');
-add_action('wp_ajax_nopriv_filter_products', 'filter_products_ajax');
-
+add_action("wp_ajax_filter_products", "filter_products_ajax");
+add_action("wp_ajax_nopriv_filter_products", "filter_products_ajax");
 // Register other AJAX actions
-add_action('wp_ajax_get_makes', 'get_makes');
-add_action('wp_ajax_nopriv_get_makes', 'get_makes');
-
-add_action('wp_ajax_get_models', 'get_models');
-add_action('wp_ajax_nopriv_get_models', 'get_models');
-
-add_action('wp_ajax_get_listings', 'get_listings');
-add_action('wp_ajax_nopriv_get_listings', 'get_listings');
-
-add_action('wp_ajax_get_years', 'get_years');
-add_action('wp_ajax_nopriv_get_years', 'get_years');
-
-add_action('wp_ajax_get_engines', 'get_engines');
-add_action('wp_ajax_nopriv_get_engines', 'get_engines');
-
-add_action('wp_ajax_get_vehicle_id', 'get_vehicle_id');
-add_action('wp_ajax_nopriv_get_vehicle_id', 'get_vehicle_id');
-
+add_action("wp_ajax_get_makes", "get_makes");
+add_action("wp_ajax_nopriv_get_makes", "get_makes");
+add_action("wp_ajax_get_models", "get_models");
+add_action("wp_ajax_nopriv_get_models", "get_models");
+add_action("wp_ajax_get_listings", "get_listings");
+add_action("wp_ajax_nopriv_get_listings", "get_listings");
+add_action("wp_ajax_get_years", "get_years");
+add_action("wp_ajax_nopriv_get_years", "get_years");
+add_action("wp_ajax_get_engines", "get_engines");
+add_action("wp_ajax_nopriv_get_engines", "get_engines");
+add_action("wp_ajax_get_vehicle_id", "get_vehicle_id");
+add_action("wp_ajax_nopriv_get_vehicle_id", "get_vehicle_id");
+add_action("wp_ajax_search_vehicles", "search_vehicles");
+add_action("wp_ajax_nopriv_search_vehicles", "search_vehicles");
+add_action("wp_ajax_delete_vehicle", "delete_vehicle");
+add_action("wp_ajax_nopriv_delete_vehicle", "delete_vehicle");
 // Add logging function
 // Enable or disable logging
 global $enable_log;
 $enable_log = false; // Set to true to enable logging
-
 function vehicle_filter_log($message, $data = null)
 {
     global $enable_log;
-
     if (!$enable_log) {
-        error_log('Vehicle Filter: Logging is disabled');
+        error_log("Vehicle Filter: Logging is disabled");
         return;
     }
-
     try {
         // Get plugin directory path
         $plugin_dir = dirname(__FILE__);
-        $log_dir = $plugin_dir . '/logs';
-
+        $log_dir = $plugin_dir . "/logs";
         // Log directory path for debugging
-        error_log('Vehicle Filter: Log directory path: ' . $log_dir);
-
+        error_log("Vehicle Filter: Log directory path: " . $log_dir);
         // Create logs directory if it doesn't exist
         if (!file_exists($log_dir)) {
-            error_log('Vehicle Filter: Creating logs directory');
+            error_log("Vehicle Filter: Creating logs directory");
             if (!wp_mkdir_p($log_dir)) {
-                error_log('Vehicle Filter: Failed to create logs directory at ' . $log_dir);
+                error_log(
+                    "Vehicle Filter: Failed to create logs directory at " .
+                        $log_dir
+                );
                 return;
             }
         }
-
         // Ensure directory is writable
         if (!is_writable($log_dir)) {
-            error_log('Vehicle Filter: Logs directory is not writable at ' . $log_dir);
+            error_log(
+                "Vehicle Filter: Logs directory is not writable at " . $log_dir
+            );
             return;
         }
-
-        $log_file = $log_dir . '/vehicle-filter-debug.log';
-        $timestamp = date('Y-m-d H:i:s');
+        $log_file = $log_dir . "/vehicle-filter-debug.log";
+        $timestamp = date("Y-m-d H:i:s");
         $log_message = "[$timestamp] $message";
-
         if ($data !== null) {
             $log_message .= "\nData: " . print_r($data, true);
         }
-
-        $log_message .= "\n" . str_repeat('-', 80) . "\n";
-
+        $log_message .= "\n" . str_repeat("-", 80) . "\n";
         // Write to log file
         if (file_put_contents($log_file, $log_message, FILE_APPEND) === false) {
-            error_log('Vehicle Filter: Failed to write to log file at ' . $log_file);
-            error_log('Vehicle Filter: PHP error: ' . error_get_last()['message']);
+            error_log(
+                "Vehicle Filter: Failed to write to log file at " . $log_file
+            );
+            error_log(
+                "Vehicle Filter: PHP error: " . error_get_last()["message"]
+            );
         } else {
-            error_log('Vehicle Filter: Successfully wrote to log file');
+            error_log("Vehicle Filter: Successfully wrote to log file");
         }
     } catch (Exception $e) {
-        error_log('Vehicle Filter: Error in logging - ' . $e->getMessage());
-        error_log('Vehicle Filter: Stack trace: ' . $e->getTraceAsString());
+        error_log("Vehicle Filter: Error in logging - " . $e->getMessage());
+        error_log("Vehicle Filter: Stack trace: " . $e->getTraceAsString());
     }
 }
-
 // Add function to ensure terms exist and are assigned
-function ensure_vehicle_terms($product_id, $make, $model, $listing, $year, $engine)
-{
-    vehicle_filter_log('Ensuring terms for product', array(
-        'product_id' => $product_id,
-        'make' => $make,
-        'model' => $model,
-        'listing' => $listing,
-        'year' => $year,
-        'engine' => $engine
-    ));
-
+function ensure_vehicle_terms(
+    $product_id,
+    $make,
+    $model,
+    $listing,
+    $year,
+    $engine
+) {
+    vehicle_filter_log("Ensuring terms for product", [
+        "product_id" => $product_id,
+        "make" => $make,
+        "model" => $model,
+        "listing" => $listing,
+        "year" => $year,
+        "engine" => $engine,
+    ]);
     // Create and assign make term
-    $make_term = term_exists($make, 'make');
+    $make_term = term_exists($make, "make");
     if (!$make_term) {
-        $make_term = wp_insert_term($make, 'make');
+        $make_term = wp_insert_term($make, "make");
     }
     if (!is_wp_error($make_term)) {
-        wp_set_object_terms($product_id, $make_term['term_id'], 'make');
+        wp_set_object_terms($product_id, $make_term["term_id"], "make");
     }
-
     // Create and assign model term
-    $model_term = term_exists($model, 'model');
+    $model_term = term_exists($model, "model");
     if (!$model_term) {
-        $model_term = wp_insert_term($model, 'model');
+        $model_term = wp_insert_term($model, "model");
     }
     if (!is_wp_error($model_term)) {
-        wp_set_object_terms($product_id, $model_term['term_id'], 'model');
+        wp_set_object_terms($product_id, $model_term["term_id"], "model");
     }
-
     // Create and assign listing term
-    $listing_term = term_exists($listing, 'listing');
+    $listing_term = term_exists($listing, "listing");
     if (!$listing_term) {
-        $listing_term = wp_insert_term($listing, 'listing');
+        $listing_term = wp_insert_term($listing, "listing");
     }
     if (!is_wp_error($listing_term)) {
-        wp_set_object_terms($product_id, $listing_term['term_id'], 'listing');
+        wp_set_object_terms($product_id, $listing_term["term_id"], "listing");
     }
-
     // Create and assign year term
-    $year_term = term_exists($year, 'date_range');
+    $year_term = term_exists($year, "date_range");
     if (!$year_term) {
-        $year_term = wp_insert_term($year, 'date_range');
+        $year_term = wp_insert_term($year, "date_range");
     }
     if (!is_wp_error($year_term)) {
-        wp_set_object_terms($product_id, $year_term['term_id'], 'date_range');
+        wp_set_object_terms($product_id, $year_term["term_id"], "date_range");
     }
-
     // Create and assign engine term
-    $engine_term = term_exists($engine, 'engine');
+    $engine_term = term_exists($engine, "engine");
     if (!$engine_term) {
-        $engine_term = wp_insert_term($engine, 'engine');
+        $engine_term = wp_insert_term($engine, "engine");
     }
     if (!is_wp_error($engine_term)) {
-        wp_set_object_terms($product_id, $engine_term['term_id'], 'engine');
+        wp_set_object_terms($product_id, $engine_term["term_id"], "engine");
     }
-
     // Log the assigned terms
-    $assigned_terms = array(
-        'make' => wp_get_post_terms($product_id, 'make'),
-        'model' => wp_get_post_terms($product_id, 'model'),
-        'listing' => wp_get_post_terms($product_id, 'listing'),
-        'date_range' => wp_get_post_terms($product_id, 'date_range'),
-        'engine' => wp_get_post_terms($product_id, 'engine')
-    );
-    vehicle_filter_log('Assigned terms for product', $assigned_terms);
+    $assigned_terms = [
+        "make" => wp_get_post_terms($product_id, "make"),
+        "model" => wp_get_post_terms($product_id, "model"),
+        "listing" => wp_get_post_terms($product_id, "listing"),
+        "date_range" => wp_get_post_terms($product_id, "date_range"),
+        "engine" => wp_get_post_terms($product_id, "engine"),
+    ];
+    vehicle_filter_log("Assigned terms for product", $assigned_terms);
 }
-
 // Add function to process all products
 function process_all_products()
 {
-    $args = array(
-        'post_type' => 'product',
-        'posts_per_page' => -1,
-        'post_status' => 'publish'
-    );
-
+    $args = [
+        "post_type" => "product",
+        "posts_per_page" => -1,
+        "post_status" => "publish",
+    ];
     $query = new WP_Query($args);
-
     if ($query->have_posts()) {
         while ($query->have_posts()) {
             $query->the_post();
             $product_id = get_the_ID();
-
             // Get product attributes
             $product = wc_get_product($product_id);
             $attributes = $product->get_attributes();
-
             // Extract vehicle attributes
-            $make = isset($attributes['make']) ? $attributes['make']->get_options()[0] : '';
-            $model = isset($attributes['model']) ? $attributes['model']->get_options()[0] : '';
-            $listing = isset($attributes['listing']) ? $attributes['listing']->get_options()[0] : '';
-            $year = isset($attributes['date_range']) ? $attributes['date_range']->get_options()[0] : '';
-            $engine = isset($attributes['engine']) ? $attributes['engine']->get_options()[0] : '';
-
+            $make = isset($attributes["make"])
+                ? $attributes["make"]->get_options()[0]
+                : "";
+            $model = isset($attributes["model"])
+                ? $attributes["model"]->get_options()[0]
+                : "";
+            $listing = isset($attributes["listing"])
+                ? $attributes["listing"]->get_options()[0]
+                : "";
+            $year = isset($attributes["date_range"])
+                ? $attributes["date_range"]->get_options()[0]
+                : "";
+            $engine = isset($attributes["engine"])
+                ? $attributes["engine"]->get_options()[0]
+                : "";
             if ($make && $model && $listing && $year && $engine) {
-                ensure_vehicle_terms($product_id, $make, $model, $listing, $year, $engine);
+                ensure_vehicle_terms(
+                    $product_id,
+                    $make,
+                    $model,
+                    $listing,
+                    $year,
+                    $engine
+                );
             }
         }
     }
-
     wp_reset_postdata();
 }
-
 // Add action to process products on plugin activation
-register_activation_hook(__FILE__, 'process_all_products');
-
+register_activation_hook(__FILE__, "process_all_products");
 // Update filter_products_ajax to use term IDs
 function filter_products_ajax()
 {
-    check_ajax_referer('vehicle_filter_nonce', 'nonce');
-
+    check_ajax_referer("vehicle_filter_nonce", "nonce");
     // Get all filter values from POST
-    $make = isset($_POST['make']) ? sanitize_text_field($_POST['make']) : '';
-    $model = isset($_POST['model']) ? sanitize_text_field($_POST['model']) : '';
-    $listing = isset($_POST['listing']) ? sanitize_text_field($_POST['listing']) : '';
-    $year = isset($_POST['year']) ? intval($_POST['year']) : 0;
-    $engine = isset($_POST['engine']) ? sanitize_text_field($_POST['engine']) : '';
-
-    vehicle_filter_log('Filter values:', array(
-        'make' => $make,
-        'model' => $model,
-        'listing' => $listing,
-        'year' => $year,
-        'engine' => $engine
-    ));
-
+    $make = isset($_POST["make"]) ? sanitize_text_field($_POST["make"]) : "";
+    $model = isset($_POST["model"]) ? sanitize_text_field($_POST["model"]) : "";
+    $listing = isset($_POST["listing"])
+        ? sanitize_text_field($_POST["listing"])
+        : "";
+    $year = isset($_POST["year"]) ? intval($_POST["year"]) : 0;
+    $engine = isset($_POST["engine"])
+        ? sanitize_text_field($_POST["engine"])
+        : "";
+    vehicle_filter_log("Filter values:", [
+        "make" => $make,
+        "model" => $model,
+        "listing" => $listing,
+        "year" => $year,
+        "engine" => $engine,
+    ]);
     // Get vehicle_id using the new table structure
     global $wpdb;
-    $vehicle_base = $wpdb->prefix . 'vehicle_base';
-    $vehicle_engine = $wpdb->prefix . 'vehicle_engine';
-    $engine = $wpdb->prefix . 'engine';
-
+    $vehicle_base = $wpdb->prefix . "vehicle_base";
+    $vehicle_engine = $wpdb->prefix . "vehicle_engine";
+    $engine = $wpdb->prefix . "engine";
     $vehicle_query = $wpdb->prepare(
         "SELECT vb.vehicle_id
         FROM $vehicle_base AS vb
@@ -1023,299 +1263,270 @@ function filter_products_ajax()
         $year,
         $engine
     );
-
-    vehicle_filter_log('Vehicle ID query:', $vehicle_query);
-
+    vehicle_filter_log("Vehicle ID query:", $vehicle_query);
     $vehicle_id = $wpdb->get_var($vehicle_query);
-
-    vehicle_filter_log('Found vehicle_id:', $vehicle_id);
-
+    vehicle_filter_log("Found vehicle_id:", $vehicle_id);
     if (!$vehicle_id) {
-        vehicle_filter_log('No vehicle found with the selected criteria');
-        wp_send_json_success(array(
-            'vehicle_id' => null,
-            'products' => array()
-        ));
+        vehicle_filter_log("No vehicle found with the selected criteria");
+        wp_send_json_success([
+            "vehicle_id" => null,
+            "products" => [],
+        ]);
         return;
     }
-
     // Query products that have this vehicle_id in their vehicle_no attribute
-    $args = array(
-        'post_type' => 'product',
-        'posts_per_page' => -1,
-        'post_status' => 'publish',
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'pa_vehicle_no',
-                'field' => 'name',
-                'terms' => $vehicle_id
-            )
-        )
-    );
-
+    $args = [
+        "post_type" => "product",
+        "posts_per_page" => -1,
+        "post_status" => "publish",
+        "tax_query" => [
+            [
+                "taxonomy" => "pa_vehicle_no",
+                "field" => "name",
+                "terms" => $vehicle_id,
+            ],
+        ],
+    ];
     try {
         $query = new WP_Query($args);
         $sql = $query->request;
-        vehicle_filter_log('Generated SQL query:', $sql);
-
-        $filtered_products = array();
-
+        vehicle_filter_log("Generated SQL query:", $sql);
+        $filtered_products = [];
         if ($query->have_posts()) {
             while ($query->have_posts()) {
                 $query->the_post();
                 $product_id = get_the_ID();
                 $product = wc_get_product($product_id);
-
-                $filtered_products[] = array(
-                    'id' => $product_id,
-                    'title' => get_the_title(),
-                    'link' => get_permalink(),
-                    'image' => get_the_post_thumbnail_url($product_id, 'thumbnail'),
-                    'price' => $product->get_price_html()
-                );
+                $filtered_products[] = [
+                    "id" => $product_id,
+                    "title" => get_the_title(),
+                    "link" => get_permalink(),
+                    "image" => get_the_post_thumbnail_url(
+                        $product_id,
+                        "thumbnail"
+                    ),
+                    "price" => $product->get_price_html(),
+                ];
             }
             wp_reset_postdata();
         } else {
-            vehicle_filter_log('No products found with vehicle_no attribute:', $vehicle_id);
-        }
-
-        vehicle_filter_log('Filtered products count:', count($filtered_products));
-
-        wp_send_json_success(array(
-            'vehicle_id' => $vehicle_id,
-            'products' => $filtered_products
-        ));
-    } catch (Exception $e) {
-        vehicle_filter_log('Error in filter_products_ajax:', $e->getMessage());
-        wp_send_json_error(array(
-            'message' => 'An error occurred while filtering products',
-            'error' => $e->getMessage()
-        ));
-    }
-}
-
-// Register custom taxonomies
-add_action('init', 'register_vehicle_taxonomies');
-function register_vehicle_taxonomies()
-{
-    $taxonomies = array(
-        'make' => 'Make',
-        'model' => 'Model',
-        'listing' => 'Listing',
-        'date_range' => 'Year',
-        'engine' => 'Engine'
-    );
-
-    foreach ($taxonomies as $taxonomy => $label) {
-        if (!taxonomy_exists($taxonomy)) {
-            register_taxonomy(
-                $taxonomy,
-                'product',
-                array(
-                    'label' => $label,
-                    'hierarchical' => true,
-                    'show_ui' => true,
-                    'show_in_menu' => false,
-                    'query_var' => true,
-                    'rewrite' => array('slug' => $taxonomy),
-                    'show_admin_column' => true,
-                    'update_count_callback' => '_update_post_term_count'
-                )
+            vehicle_filter_log(
+                "No products found with vehicle_no attribute:",
+                $vehicle_id
             );
         }
-    }
-
-    // Register pa_vehicle_no taxonomy
-    if (!taxonomy_exists('pa_vehicle_no')) {
-        register_taxonomy(
-            'pa_vehicle_no',
-            'product',
-            array(
-                'label' => 'Vehicle No',
-                'hierarchical' => false,
-                'show_ui' => true,
-                'show_in_menu' => false,
-                'query_var' => true,
-                'rewrite' => array('slug' => 'vehicle-no'),
-                'show_admin_column' => true,
-                'update_count_callback' => '_update_post_term_count'
-            )
+        vehicle_filter_log(
+            "Filtered products count:",
+            count($filtered_products)
         );
+        wp_send_json_success([
+            "vehicle_id" => $vehicle_id,
+            "products" => $filtered_products,
+        ]);
+    } catch (Exception $e) {
+        vehicle_filter_log("Error in filter_products_ajax:", $e->getMessage());
+        wp_send_json_error([
+            "message" => "An error occurred while filtering products",
+            "error" => $e->getMessage(),
+        ]);
     }
 }
-
+// Register custom taxonomies
+add_action("init", "register_vehicle_taxonomies");
+function register_vehicle_taxonomies()
+{
+    $taxonomies = [
+        "make" => "Make",
+        "model" => "Model",
+        "listing" => "Listing",
+        "date_range" => "Year",
+        "engine" => "Engine",
+    ];
+    foreach ($taxonomies as $taxonomy => $label) {
+        if (!taxonomy_exists($taxonomy)) {
+            register_taxonomy($taxonomy, "product", [
+                "label" => $label,
+                "hierarchical" => true,
+                "show_ui" => true,
+                "show_in_menu" => false,
+                "query_var" => true,
+                "rewrite" => ["slug" => $taxonomy],
+                "show_admin_column" => true,
+                "update_count_callback" => "_update_post_term_count",
+            ]);
+        }
+    }
+    // Register pa_vehicle_no taxonomy
+    if (!taxonomy_exists("pa_vehicle_no")) {
+        register_taxonomy("pa_vehicle_no", "product", [
+            "label" => "Vehicle No",
+            "hierarchical" => false,
+            "show_ui" => true,
+            "show_in_menu" => false,
+            "query_var" => true,
+            "rewrite" => ["slug" => "vehicle-no"],
+            "show_admin_column" => true,
+            "update_count_callback" => "_update_post_term_count",
+        ]);
+    }
+}
 // Remove the old pre_get_posts filter since we're using AJAX now
-remove_action('pre_get_posts', 'apply_vehicle_filters');
-
+remove_action("pre_get_posts", "apply_vehicle_filters");
 // Add debug information
-add_action('wp_footer', 'debug_vehicle_filters');
+add_action("wp_footer", "debug_vehicle_filters");
 function debug_vehicle_filters()
 {
     if (is_shop() || is_product_category()) {
-        if (current_user_can('administrator')) {
+        if (current_user_can("administrator")) {
             echo '<div style="display:none;">';
-            echo '<h3>Debug Information:</h3>';
-            echo '<pre>';
+            echo "<h3>Debug Information:</h3>";
+            echo "<pre>";
             print_r($_GET);
-            echo '</pre>';
-
+            echo "</pre>";
             global $wp_query;
-            echo '<h3>Query Vars:</h3>';
-            echo '<pre>';
+            echo "<h3>Query Vars:</h3>";
+            echo "<pre>";
             print_r($wp_query->query_vars);
-            echo '</pre>';
-
-            echo '<h3>Tax Query:</h3>';
-            echo '<pre>';
+            echo "</pre>";
+            echo "<h3>Tax Query:</h3>";
+            echo "<pre>";
             print_r($wp_query->tax_query);
-            echo '</pre>';
-            echo '</div>';
+            echo "</pre>";
+            echo "</div>";
         }
     }
 }
-
 // Add function to update CSV file
 function update_vehicle_csv()
 {
     $plugin_dir = plugin_dir_path(__FILE__);
-    $csv_file = $plugin_dir . 'demo-sheet-cleaned.csv';
-
+    $csv_file = $plugin_dir . "demo-sheet-cleaned.csv";
     // Create the CSV file if it doesn't exist
     if (!file_exists($csv_file)) {
         $csv_content = "vehicle_id,make,model,listing,date_range,engine\n";
         file_put_contents($csv_file, $csv_content);
     }
-
     // Update the CSV file with new data
     $csv_content = file_get_contents($csv_file);
     if ($csv_content === false) {
         return false;
     }
-
     return true;
 }
-
 // Add action to update CSV on plugin activation
-register_activation_hook(__FILE__, 'update_vehicle_csv');
-
+register_activation_hook(__FILE__, "update_vehicle_csv");
 // Add function to get CSV data
 function get_vehicle_csv_data()
 {
-    $csv_file = plugin_dir_path(__FILE__) . 'demo-sheet-cleaned.csv';
-    $data = array();
-
+    $csv_file = plugin_dir_path(__FILE__) . "demo-sheet-cleaned.csv";
+    $data = [];
     if (file_exists($csv_file)) {
-        $handle = fopen($csv_file, 'r');
-        if ($handle !== FALSE) {
+        $handle = fopen($csv_file, "r");
+        if ($handle !== false) {
             // Skip header row
             fgetcsv($handle);
-
-            while (($row = fgetcsv($handle)) !== FALSE) {
-                $data[] = array(
-                    'vehicle_id' => $row[0],
-                    'make' => $row[1],
-                    'model' => $row[2],
-                    'listing' => $row[3],
-                    'date_range' => $row[4],
-                    'engine' => $row[5]
-                );
+            while (($row = fgetcsv($handle)) !== false) {
+                $data[] = [
+                    "vehicle_id" => $row[0],
+                    "make" => $row[1],
+                    "model" => $row[2],
+                    "listing" => $row[3],
+                    "date_range" => $row[4],
+                    "engine" => $row[5],
+                ];
             }
             fclose($handle);
         }
     }
-
     return $data;
 }
-
 function get_makes()
 {
-    vehicle_filter_log('get_makes function called');
-    check_ajax_referer('vehicle_filter_nonce', 'nonce');
+    vehicle_filter_log("get_makes function called");
+    check_ajax_referer("vehicle_filter_nonce", "nonce");
     global $wpdb;
-    $table_name = $wpdb->prefix . 'vehicle_base';
-
+    $table_name = $wpdb->prefix . "vehicle_base";
     // Debug log
-    vehicle_filter_log('Getting makes from table: ' . $table_name);
-
-    $makes = $wpdb->get_col("SELECT DISTINCT make FROM $table_name ORDER BY make");
+    vehicle_filter_log("Getting makes from table: " . $table_name);
+    $makes = $wpdb->get_col(
+        "SELECT DISTINCT make FROM $table_name ORDER BY make"
+    );
     // Filter out null, empty, and 'null' string values
     $makes = array_filter($makes, function ($make) {
-        return $make !== null && $make !== '' && strtolower($make) !== 'null';
+        return $make !== null && $make !== "" && strtolower($make) !== "null";
     });
     $makes = array_values($makes); // Re-index array
-
-    vehicle_filter_log('Found makes:', $makes);
-
+    vehicle_filter_log("Found makes:", $makes);
     wp_send_json_success($makes);
 }
-
 function get_models()
 {
-    check_ajax_referer('vehicle_filter_nonce', 'nonce');
+    check_ajax_referer("vehicle_filter_nonce", "nonce");
     global $wpdb;
-    $table_name = $wpdb->prefix . 'vehicle_base';
-    $make = trim($_POST['make']);
-
+    $table_name = $wpdb->prefix . "vehicle_base";
+    $make = trim($_POST["make"]);
     // Debug log
-    vehicle_filter_log('Getting models for make: ' . $make);
-
-    $models = $wpdb->get_col($wpdb->prepare(
-        "SELECT DISTINCT model FROM $table_name WHERE make = %s ORDER BY model",
-        $make
-    ));
-
+    vehicle_filter_log("Getting models for make: " . $make);
+    $models = $wpdb->get_col(
+        $wpdb->prepare(
+            "SELECT DISTINCT model FROM $table_name WHERE make = %s ORDER BY model",
+            $make
+        )
+    );
     // Debug log
-    vehicle_filter_log('Found models:', $models);
-
+    vehicle_filter_log("Found models:", $models);
     wp_send_json_success($models);
 }
-
 function get_listings()
 {
-    check_ajax_referer('vehicle_filter_nonce', 'nonce');
+    check_ajax_referer("vehicle_filter_nonce", "nonce");
     global $wpdb;
-    $table_name = $wpdb->prefix . 'vehicle_base';
-    $make = trim($_POST['make']);
-    $model = trim($_POST['model']);
-
+    $table_name = $wpdb->prefix . "vehicle_base";
+    $make = trim($_POST["make"]);
+    $model = trim($_POST["model"]);
     // Debug log
-    vehicle_filter_log('Getting listings for make: ' . $make . ', model: ' . $model);
-
-    $listings = $wpdb->get_col($wpdb->prepare(
-        "SELECT DISTINCT listing FROM $table_name WHERE make = %s AND model = %s ORDER BY listing",
-        $make,
-        $model
-    ));
-
+    vehicle_filter_log(
+        "Getting listings for make: " . $make . ", model: " . $model
+    );
+    $listings = $wpdb->get_col(
+        $wpdb->prepare(
+            "SELECT DISTINCT listing FROM $table_name WHERE make = %s AND model = %s ORDER BY listing",
+            $make,
+            $model
+        )
+    );
     // Debug log
-    vehicle_filter_log('Found listings:', $listings);
-
+    vehicle_filter_log("Found listings:", $listings);
     wp_send_json_success($listings);
 }
-
 function get_years()
 {
-    check_ajax_referer('vehicle_filter_nonce', 'nonce');
+    check_ajax_referer("vehicle_filter_nonce", "nonce");
     global $wpdb;
-    $table_name = $wpdb->prefix . 'vehicle_base';
-    $make = Trim($_POST['make']);
-    $model = Trim($_POST['model']);
-    $listing = Trim($_POST['listing']);
-
+    $table_name = $wpdb->prefix . "vehicle_base";
+    $make = Trim($_POST["make"]);
+    $model = Trim($_POST["model"]);
+    $listing = Trim($_POST["listing"]);
     // Debug log
-    vehicle_filter_log('Getting years for make: ' . $make . ', model: ' . $model . ', listing: ' . $listing);
-
-    $rows = $wpdb->get_results($wpdb->prepare(
-        "SELECT year_from, year_to FROM $table_name WHERE make = %s AND model = %s AND listing = %s",
-        $make,
-        $model,
-        $listing
-    ));
-
+    vehicle_filter_log(
+        "Getting years for make: " .
+            $make .
+            ", model: " .
+            $model .
+            ", listing: " .
+            $listing
+    );
+    $rows = $wpdb->get_results(
+        $wpdb->prepare(
+            "SELECT year_from, year_to FROM $table_name WHERE make = %s AND model = %s AND listing = %s",
+            $make,
+            $model,
+            $listing
+        )
+    );
     // Debug log
-    vehicle_filter_log('Found year ranges:', $rows);
-
-    $years = array();
+    vehicle_filter_log("Found year ranges:", $rows);
+    $years = [];
     foreach ($rows as $row) {
         $from = intval($row->year_from);
         $to = intval($row->year_to);
@@ -1325,34 +1536,28 @@ function get_years()
     }
     $years = array_keys($years);
     sort($years);
-
     // Debug log
-    vehicle_filter_log('Generated years array:', $years);
-
+    vehicle_filter_log("Generated years array:", $years);
     wp_send_json_success($years);
 }
-
 function get_engines()
 {
-    check_ajax_referer('vehicle_filter_nonce', 'nonce');
+    check_ajax_referer("vehicle_filter_nonce", "nonce");
     global $wpdb;
-    $vehicle_base = $wpdb->prefix . 'vehicle_base';
-    $vehicle_engine = $wpdb->prefix . 'vehicle_engine';
-    $engine = $wpdb->prefix . 'engine';
-
-    $make = trim($_POST['make']);
-    $model = trim($_POST['model']);
-    $listing = trim($_POST['listing']);
-    $year = intval($_POST['year']);
-
+    $vehicle_base = $wpdb->prefix . "vehicle_base";
+    $vehicle_engine = $wpdb->prefix . "vehicle_engine";
+    $engine = $wpdb->prefix . "engine";
+    $make = trim($_POST["make"]);
+    $model = trim($_POST["model"]);
+    $listing = trim($_POST["listing"]);
+    $year = intval($_POST["year"]);
     // Debug log
-    vehicle_filter_log('Getting engines for:', array(
-        'make' => $make,
-        'model' => $model,
-        'listing' => $listing,
-        'year' => $year
-    ));
-
+    vehicle_filter_log("Getting engines for:", [
+        "make" => $make,
+        "model" => $model,
+        "listing" => $listing,
+        "year" => $year,
+    ]);
     // Find all vehicle_ids matching make/model/listing/year
     $vehicle_query = $wpdb->prepare(
         "SELECT vehicle_id FROM $vehicle_base WHERE make = %s AND model = %s AND listing = %s AND year_from <= %d AND year_to >= %d",
@@ -1362,69 +1567,240 @@ function get_engines()
         $year,
         $year
     );
-
-    vehicle_filter_log('Vehicle ID query:', $vehicle_query);
+    vehicle_filter_log("Vehicle ID query:", $vehicle_query);
     $vehicle_ids = $wpdb->get_col($vehicle_query);
-    vehicle_filter_log('Found vehicle_ids:', $vehicle_ids);
-
+    vehicle_filter_log("Found vehicle_ids:", $vehicle_ids);
     if (empty($vehicle_ids)) {
-        vehicle_filter_log('No vehicle IDs found');
+        vehicle_filter_log("No vehicle IDs found");
         wp_send_json_success([]);
         return;
     }
-
     // Find all engine_ids for these vehicle_ids
-    $in_ids = implode(',', array_map('intval', $vehicle_ids));
+    $in_ids = implode(",", array_map("intval", $vehicle_ids));
     $engine_query = "SELECT DISTINCT engine_id FROM $vehicle_engine WHERE vehicle_id IN ($in_ids)";
-    vehicle_filter_log('Engine ID query:', $engine_query);
+    vehicle_filter_log("Engine ID query:", $engine_query);
     $engine_ids = $wpdb->get_col($engine_query);
-    vehicle_filter_log('Found engine_ids:', $engine_ids);
-
+    vehicle_filter_log("Found engine_ids:", $engine_ids);
     if (empty($engine_ids)) {
-        vehicle_filter_log('No engine IDs found');
+        vehicle_filter_log("No engine IDs found");
         wp_send_json_success([]);
         return;
     }
-
-    $in_engines = implode(',', array_map('intval', $engine_ids));
+    $in_engines = implode(",", array_map("intval", $engine_ids));
     $engine_code_query = "SELECT engine_code FROM $engine WHERE engine_id IN ($in_engines)";
-    vehicle_filter_log('Engine code query:', $engine_code_query);
+    vehicle_filter_log("Engine code query:", $engine_code_query);
     $engine_codes = $wpdb->get_col($engine_code_query);
-    vehicle_filter_log('Found engine codes:', $engine_codes);
-
+    vehicle_filter_log("Found engine codes:", $engine_codes);
     wp_send_json_success($engine_codes);
 }
-
+function search_vehicles()
+{
+    check_ajax_referer("vehicle_filter_nonce", "nonce");
+    global $wpdb;
+    
+    $search_query = isset($_POST["search_query"]) ? trim($_POST["search_query"]) : "";
+    
+    if (empty($search_query)) {
+        wp_send_json_error(["message" => "Search query is required"]);
+        return;
+    }
+    
+    $vehicle_base = $wpdb->prefix . "vehicle_base";
+    $vehicle_engine = $wpdb->prefix . "vehicle_engine";
+    $engine = $wpdb->prefix . "engine";
+    
+    // Log the search query
+    vehicle_filter_log("Searching vehicles for query: " . $search_query);
+    
+    // Search in make, model, and listing fields
+    $search_query_like = "%" . $wpdb->esc_like($search_query) . "%";
+    
+    $search_query_sql = $wpdb->prepare(
+        "SELECT DISTINCT vb.vehicle_id, vb.make, vb.model, vb.listing, vb.year_from, vb.year_to,
+                GROUP_CONCAT(DISTINCT e.engine_code ORDER BY e.engine_code SEPARATOR ', ') as engines
+        FROM $vehicle_base vb
+        LEFT JOIN $vehicle_engine ve ON vb.vehicle_id = ve.vehicle_id
+        LEFT JOIN $engine e ON ve.engine_id = e.engine_id
+        WHERE vb.make LIKE %s 
+           OR vb.model LIKE %s 
+           OR vb.listing LIKE %s
+        GROUP BY vb.vehicle_id, vb.make, vb.model, vb.listing, vb.year_from, vb.year_to
+        ORDER BY vb.make, vb.model, vb.listing
+        LIMIT 50",
+        $search_query_like,
+        $search_query_like,
+        $search_query_like
+    );
+    
+    vehicle_filter_log("Search SQL query:", $search_query_sql);
+    
+    $results = $wpdb->get_results($search_query_sql);
+    
+    vehicle_filter_log("Found " . count($results) . " vehicles matching search query");
+    
+    if (empty($results)) {
+        wp_send_json_success([
+            "message" => "No vehicles found matching your search criteria",
+            "vehicles" => []
+        ]);
+        return;
+    }
+    
+    // Format the results
+    $formatted_results = [];
+    foreach ($results as $vehicle) {
+        $formatted_results[] = [
+            "vehicle_id" => $vehicle->vehicle_id,
+            "make" => $vehicle->make,
+            "model" => $vehicle->model,
+            "listing" => $vehicle->listing,
+            "year_from" => $vehicle->year_from,
+            "year_to" => $vehicle->year_to,
+            "engines" => $vehicle->engines ? explode(", ", $vehicle->engines) : [],
+            "year_range" => $vehicle->year_from == $vehicle->year_to ? 
+                $vehicle->year_from : 
+                $vehicle->year_from . " - " . $vehicle->year_to
+        ];
+    }
+    
+    wp_send_json_success([
+        "message" => "Found " . count($formatted_results) . " vehicles",
+        "vehicles" => $formatted_results
+    ]);
+}
+function delete_vehicle()
+{
+    check_ajax_referer("vehicle_filter_nonce", "nonce");
+    global $wpdb;
+    
+    $vehicle_id = isset($_POST["vehicle_id"]) ? intval($_POST["vehicle_id"]) : 0;
+    
+    if (empty($vehicle_id)) {
+        wp_send_json_error(["message" => "Vehicle ID is required"]);
+        return;
+    }
+    
+    $vehicle_base = $wpdb->prefix . "vehicle_base";
+    $vehicle_engine = $wpdb->prefix . "vehicle_engine";
+    $engine = $wpdb->prefix . "engine";
+    
+    // Log the deletion attempt
+    vehicle_filter_log("Attempting to delete vehicle ID: " . $vehicle_id);
+    
+    // Start transaction
+    $wpdb->query("START TRANSACTION");
+    
+    try {
+        // First, get all engine_ids associated with this vehicle
+        $engine_ids = $wpdb->get_col(
+            $wpdb->prepare(
+                "SELECT engine_id FROM $vehicle_engine WHERE vehicle_id = %d",
+                $vehicle_id
+            )
+        );
+        
+        vehicle_filter_log("Found engine IDs for vehicle " . $vehicle_id . ":", $engine_ids);
+        
+        // Delete from vehicle_engine table first (foreign key constraint)
+        $deleted_mappings = $wpdb->delete(
+            $vehicle_engine,
+            ["vehicle_id" => $vehicle_id],
+            ["%d"]
+        );
+        
+        if ($deleted_mappings === false) {
+            throw new Exception("Failed to delete vehicle-engine mappings: " . $wpdb->last_error);
+        }
+        
+        vehicle_filter_log("Deleted " . $deleted_mappings . " vehicle-engine mappings");
+        
+        // Delete from vehicle_base table
+        $deleted_vehicle = $wpdb->delete(
+            $vehicle_base,
+            ["vehicle_id" => $vehicle_id],
+            ["%d"]
+        );
+        
+        if ($deleted_vehicle === false) {
+            throw new Exception("Failed to delete vehicle: " . $wpdb->last_error);
+        }
+        
+        if ($deleted_vehicle === 0) {
+            throw new Exception("Vehicle not found or already deleted");
+        }
+        
+        vehicle_filter_log("Deleted vehicle from vehicle_base table");
+        
+        // Delete engines that are no longer associated with any vehicle
+        if (!empty($engine_ids)) {
+            $engine_ids_str = implode(",", array_map("intval", $engine_ids));
+            $orphaned_engines = $wpdb->get_col(
+                "SELECT e.engine_id FROM $engine e 
+                 LEFT JOIN $vehicle_engine ve ON e.engine_id = ve.engine_id 
+                 WHERE e.engine_id IN ($engine_ids_str) AND ve.engine_id IS NULL"
+            );
+            
+            if (!empty($orphaned_engines)) {
+                $orphaned_ids_str = implode(",", array_map("intval", $orphaned_engines));
+                $deleted_engines = $wpdb->query(
+                    "DELETE FROM $engine WHERE engine_id IN ($orphaned_ids_str)"
+                );
+                
+                vehicle_filter_log("Deleted " . $deleted_engines . " orphaned engines");
+            }
+        }
+        
+        $wpdb->query("COMMIT");
+        vehicle_filter_log("Vehicle deletion completed successfully");
+        
+        wp_send_json_success([
+            "message" => "Vehicle deleted successfully",
+            "vehicle_id" => $vehicle_id
+        ]);
+        
+    } catch (Exception $e) {
+        $wpdb->query("ROLLBACK");
+        $error_message = "Error deleting vehicle: " . $e->getMessage();
+        vehicle_filter_log($error_message);
+        
+        wp_send_json_error([
+            "message" => $error_message
+        ]);
+    }
+}
 // Add pre_get_posts hook to filter products
-add_action('pre_get_posts', 'filter_products_by_vehicle');
+add_action("pre_get_posts", "filter_products_by_vehicle");
 function filter_products_by_vehicle($query)
 {
-    if (!is_admin() && $query->is_main_query() && (is_shop() || is_product_category())) {
-        $vehicle_id = '';
-        if (isset($_COOKIE['vehicle_id'])) {
-            $vehicle_id = sanitize_text_field($_COOKIE['vehicle_id']);
+    if (
+        !is_admin() &&
+        $query->is_main_query() &&
+        (is_shop() || is_product_category())
+    ) {
+        $vehicle_id = "";
+        if (isset($_COOKIE["vehicle_id"])) {
+            $vehicle_id = sanitize_text_field($_COOKIE["vehicle_id"]);
         }
         if ($vehicle_id) {
-            $tax_query = $query->get('tax_query');
-            if (!is_array($tax_query))
-                $tax_query = array();
-            $tax_query[] = array(
-                'taxonomy' => 'pa_vehicle_no',
-                'field' => 'name',
-                'terms' => $vehicle_id,
-                'operator' => 'IN'
-            );
-            $query->set('tax_query', $tax_query);
+            $tax_query = $query->get("tax_query");
+            if (!is_array($tax_query)) {
+                $tax_query = [];
+            }
+            $tax_query[] = [
+                "taxonomy" => "pa_vehicle_no",
+                "field" => "name",
+                "terms" => $vehicle_id,
+                "operator" => "IN",
+            ];
+            $query->set("tax_query", $tax_query);
         }
     }
 }
-
 // Add loading state to shop page
-add_action('wp_head', 'add_vehicle_filter_loading_state');
+add_action("wp_head", "add_vehicle_filter_loading_state");
 function add_vehicle_filter_loading_state()
 {
-    if (is_shop() || is_product_category()) {
-    ?>
+    if (is_shop() || is_product_category()) { ?>
         <style>
             .products {
                 opacity: 0;
@@ -1435,62 +1811,64 @@ function add_vehicle_filter_loading_state()
                 opacity: 1;
             }
         </style>
-    <?php
-    }
+    <?php }
 }
-
 // Add script to handle loading state
-add_action('wp_footer', 'add_vehicle_filter_loading_script');
+add_action("wp_footer", "add_vehicle_filter_loading_script");
 function add_vehicle_filter_loading_script()
 {
-    if (is_shop() || is_product_category()) {
-    ?>
+    if (is_shop() || is_product_category()) { ?>
         <script>
             jQuery(document).ready(function($) {
                 // Show products once they're loaded
                 $('.products').addClass('loaded');
             });
         </script>
-        <?php
-    }
+        <?php }
 }
-
 // Add debug output to footer
-add_action('wp_footer', 'debug_vehicle_filter_output');
+add_action("wp_footer", "debug_vehicle_filter_output");
 function debug_vehicle_filter_output()
 {
     if (is_shop() || is_product_category()) {
-        if (current_user_can('administrator')) {
+        if (current_user_can("administrator")) {
+
             global $wp_query;
             echo '<div style="display:none;" id="vehicle-filter-debug">';
-            echo '<h3>Vehicle Filter Debug Info:</h3>';
-            echo '<pre>';
-            echo 'URL vehicle_id: ' . (isset($_GET['vehicle_id']) ? $_GET['vehicle_id'] : 'none') . "\n";
-            echo 'Query vars: ' . print_r($wp_query->query_vars, true) . "\n";
-            echo 'Tax query: ' . print_r($wp_query->tax_query, true) . "\n";
-
+            echo "<h3>Vehicle Filter Debug Info:</h3>";
+            echo "<pre>";
+            echo "URL vehicle_id: " .
+                (isset($_GET["vehicle_id"]) ? $_GET["vehicle_id"] : "none") .
+                "\n";
+            echo "Query vars: " . print_r($wp_query->query_vars, true) . "\n";
+            echo "Tax query: " . print_r($wp_query->tax_query, true) . "\n";
             // Add product visibility debug info
-            if (isset($_GET['vehicle_id'])) {
+            if (isset($_GET["vehicle_id"])) {
                 global $wpdb;
-                $vehicle_id = sanitize_text_field($_GET['vehicle_id']);
-                $product_ids = $wpdb->get_col($wpdb->prepare(
-                    "SELECT tr.object_id 
+                $vehicle_id = sanitize_text_field($_GET["vehicle_id"]);
+                $product_ids = $wpdb->get_col(
+                    $wpdb->prepare(
+                        "SELECT tr.object_id 
                     FROM {$wpdb->term_relationships} tr 
                     INNER JOIN {$wpdb->term_taxonomy} tt ON tr.term_taxonomy_id = tt.term_taxonomy_id 
                     INNER JOIN {$wpdb->terms} t ON tt.term_id = t.term_id 
                     WHERE tt.taxonomy = 'pa_vehicle_no' 
                     AND t.name = %s",
-                    $vehicle_id
-                ));
-                echo 'Products with vehicle_id ' . $vehicle_id . ': ' . count($product_ids) . "\n";
-                echo 'Product IDs: ' . implode(', ', $product_ids) . "\n";
+                        $vehicle_id
+                    )
+                );
+                echo "Products with vehicle_id " .
+                    $vehicle_id .
+                    ": " .
+                    count($product_ids) .
+                    "\n";
+                echo "Product IDs: " . implode(", ", $product_ids) . "\n";
             }
-
-            echo '</pre>';
-            echo '</div>';
+            echo "</pre>";
+            echo "</div>";
 
             // Add JavaScript to show debug info
-        ?>
+            ?>
             <!-- <script>
                 jQuery(document).ready(function ($) {
                     console.log('Vehicle Filter Debug Info:', $('#vehicle-filter-debug').text());
@@ -1500,29 +1878,26 @@ function debug_vehicle_filter_output()
         }
     }
 }
-
 function get_vehicle_id()
 {
-    check_ajax_referer('vehicle_filter_nonce', 'nonce');
+    check_ajax_referer("vehicle_filter_nonce", "nonce");
     global $wpdb;
-    $make = isset($_POST['make']) ? trim($_POST['make']) : '';
-    $model = isset($_POST['model']) ? trim($_POST['model']) : '';
-    $listing = isset($_POST['listing']) ? trim($_POST['listing']) : '';
-    $year = isset($_POST['year']) ? intval($_POST['year']) : 0;
-    $engine = isset($_POST['engine']) ? trim($_POST['engine']) : '';
-    $vehicle_base = $wpdb->prefix . 'vehicle_base';
-    $vehicle_engine = $wpdb->prefix . 'vehicle_engine';
-    $engine_table = $wpdb->prefix . 'engine';
-
+    $make = isset($_POST["make"]) ? trim($_POST["make"]) : "";
+    $model = isset($_POST["model"]) ? trim($_POST["model"]) : "";
+    $listing = isset($_POST["listing"]) ? trim($_POST["listing"]) : "";
+    $year = isset($_POST["year"]) ? intval($_POST["year"]) : 0;
+    $engine = isset($_POST["engine"]) ? trim($_POST["engine"]) : "";
+    $vehicle_base = $wpdb->prefix . "vehicle_base";
+    $vehicle_engine = $wpdb->prefix . "vehicle_engine";
+    $engine_table = $wpdb->prefix . "engine";
     // Log the input parameters
-    vehicle_filter_log('Getting vehicle_id for:', array(
-        'make' => $make,
-        'model' => $model,
-        'listing' => $listing,
-        'year' => $year,
-        'engine' => $engine
-    ));
-
+    vehicle_filter_log("Getting vehicle_id for:", [
+        "make" => $make,
+        "model" => $model,
+        "listing" => $listing,
+        "year" => $year,
+        "engine" => $engine,
+    ]);
     $vehicle_query = $wpdb->prepare(
         "SELECT vb.vehicle_id
         FROM $vehicle_base AS vb
@@ -1540,37 +1915,30 @@ function get_vehicle_id()
         $year,
         $engine
     );
-
     // Log the query
-    vehicle_filter_log('Vehicle ID query:', $vehicle_query);
-
+    vehicle_filter_log("Vehicle ID query:", $vehicle_query);
     $vehicle_id = $wpdb->get_var($vehicle_query);
-
     // Log the result
-    vehicle_filter_log('Found vehicle_id:', $vehicle_id);
-
+    vehicle_filter_log("Found vehicle_id:", $vehicle_id);
     if ($vehicle_id) {
-        wp_send_json_success(['vehicle_id' => $vehicle_id]);
+        wp_send_json_success(["vehicle_id" => $vehicle_id]);
     } else {
-        wp_send_json_success(['vehicle_id' => null]);
+        wp_send_json_success(["vehicle_id" => null]);
     }
 }
-
 // Add filter for product titles
-add_filter('the_title', 'modify_product_title_with_vehicle', 10, 2);
-
+add_filter("the_title", "modify_product_title_with_vehicle", 10, 2);
 function modify_product_title_with_vehicle($title, $post_id)
 {
     // Only modify product titles
-    if (get_post_type($post_id) !== 'product') {
+    if (get_post_type($post_id) !== "product") {
         return $title;
     }
     // No JS injection here!
     return $title;
 }
-
 // Add JS to footer to modify product titles based on vehicleFilter
-add_action('wp_footer', function () {
+add_action("wp_footer", function () {
     if (is_shop() || is_product_category() || is_product()) { ?>
         <script>
             (function() {
@@ -1596,53 +1964,72 @@ add_action('wp_footer', function () {
         </script>
     <?php }
 });
-
 // --- WooCommerce: Attach vehicle info to cart, show in cart/checkout, and pass to order ---
-
 // Store vehicle info in cart item meta
-add_filter('woocommerce_add_cart_item_data', function ($cart_item_data, $product_id, $variation_id) {
-    foreach (['make', 'model', 'listing', 'year', 'engine'] as $key) {
-        if (isset($_POST['vehicle_' . $key])) {
-            $cart_item_data['vehicle_' . $key] = sanitize_text_field($_POST['vehicle_' . $key]);
+add_filter(
+    "woocommerce_add_cart_item_data",
+    function ($cart_item_data, $product_id, $variation_id) {
+        foreach (["make", "model", "listing", "year", "engine"] as $key) {
+            if (isset($_POST["vehicle_" . $key])) {
+                $cart_item_data["vehicle_" . $key] = sanitize_text_field(
+                    $_POST["vehicle_" . $key]
+                );
+            }
         }
-    }
-    return $cart_item_data;
-}, 10, 3);
-
+        return $cart_item_data;
+    },
+    10,
+    3
+);
 // Show vehicle info in cart/checkout
-add_filter('woocommerce_get_item_data', function ($item_data, $cart_item) {
-    $vehicle_keys = ['make', 'model', 'listing', 'year', 'engine'];
-    $vehicle_data = [];
-    foreach ($vehicle_keys as $key) {
-        if (!empty($cart_item['vehicle_' . $key])) {
-            //$vehicle_data[] = ucfirst($key) . ': ' . esc_html($cart_item['vehicle_' . $key]);
-            $vehicle_data[] = '<p><span class="vehicle-label">' . ucfirst($key) . ' : </span> ' .
-                '<span class="vehicle-value">' . esc_html($cart_item['vehicle_' . $key]) . '</span></p>';
+add_filter(
+    "woocommerce_get_item_data",
+    function ($item_data, $cart_item) {
+        $vehicle_keys = ["make", "model", "listing", "year", "engine"];
+        $vehicle_data = [];
+        foreach ($vehicle_keys as $key) {
+            if (!empty($cart_item["vehicle_" . $key])) {
+                //$vehicle_data[] = ucfirst($key) . ': ' . esc_html($cart_item['vehicle_' . $key]);
+                $vehicle_data[] =
+                    '<p><span class="vehicle-label">' .
+                    ucfirst($key) .
+                    " : </span> " .
+                    '<span class="vehicle-value">' .
+                    esc_html($cart_item["vehicle_" . $key]) .
+                    "</span></p>";
+            }
         }
-    }
-
-    if (!empty($vehicle_data)) {
-        $item_data[] = [
-            'name' => __('Compatible with ', 'vehicle-filter'),
-            'value' => implode('', $vehicle_data),
-            'display' => implode('', $vehicle_data),
-        ];
-    }
-
-    return $item_data;
-}, 10, 2);
-
+        if (!empty($vehicle_data)) {
+            $item_data[] = [
+                "name" => __("Compatible with ", "vehicle-filter"),
+                "value" => implode("", $vehicle_data),
+                "display" => implode("", $vehicle_data),
+            ];
+        }
+        return $item_data;
+    },
+    10,
+    2
+);
 // Copy vehicle info to order item meta
-add_action('woocommerce_checkout_create_order_line_item', function ($item, $cart_item_key, $values, $order) {
-    foreach (['make', 'model', 'listing', 'year', 'engine'] as $key) {
-        if (!empty($values['vehicle_' . $key])) {
-            $item->add_meta_data('Vehicle ' . ucfirst($key), $values['vehicle_' . $key], true);
+add_action(
+    "woocommerce_checkout_create_order_line_item",
+    function ($item, $cart_item_key, $values, $order) {
+        foreach (["make", "model", "listing", "year", "engine"] as $key) {
+            if (!empty($values["vehicle_" . $key])) {
+                $item->add_meta_data(
+                    "Vehicle " . ucfirst($key),
+                    $values["vehicle_" . $key],
+                    true
+                );
+            }
         }
-    }
-}, 10, 4);
-
+    },
+    10,
+    4
+);
 // Enqueue JS to add vehicle info to add-to-cart form
-add_action('wp_footer', function () {
+add_action("wp_footer", function () {
     if (is_product() || is_shop() || is_product_category()) { ?>
         <script>
             jQuery(function($) {
